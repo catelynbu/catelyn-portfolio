@@ -1,0 +1,463 @@
+body{
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+
+}
+
+#container{
+    padding: 2% 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+h1, h2, h3{
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    margin: 0;
+}
+
+#about{
+    text-align: center;
+    margin-top: 24px;
+}
+
+
+#projects{
+    margin: auto;
+    font-size: 1.6em;
+}
+
+#aboutText{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    
+}
+
+
+h3{
+    font-size: 1.4em;
+}
+
+
+
+p{
+    line-height: 1.8em;
+    font-size: 1.1em;
+    margin: 0;
+}
+
+a, li{
+    font-size: 1.1em;
+    margin: 0;
+}
+
+
+header #homeHeaderText{
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0;;
+}
+
+header #headerText{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+
+header{
+    background: hsla(233, 100%, 90%, 1);
+    background: linear-gradient(225deg, hsla(233, 100%, 90%, 1) 0%, hsla(198, 53%, 92%, 1) 100%);
+    padding: 2% 5%;
+
+}
+
+header #home{
+    background-color: pink;
+    height: 50vh;
+}
+
+header nav{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+
+header nav ul, footer > ul{
+    list-style: none;
+    display: flex;
+    gap: 24px;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+
+
+header #headerContainer{
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    justify-content: center;
+
+}
+
+header h1{
+    font-size: 2.5em;
+}
+
+header #headerContainer #homeText{
+    font-size: 1.4em;
+}
+
+
+header #headerContainer img{
+    width: 80%;
+    height: auto;
+    margin: auto;
+}
+
+
+section{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin: 4% 0;
+}
+
+#desktop{
+    display: none;
+}
+
+
+#listFlex{
+    display: flex;
+    gap: 40px;
+}
+
+#portrait{
+    width: 50%;
+    border-radius: 50%;
+    box-shadow: 0px 0px 9px 5px rgba(0,0,0,0.10);
+    margin: auto;
+}
+
+.homeArticle:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 9px 5px rgba(0,0,0,0.10);
+}
+
+.homeArticle{
+    padding: 2% 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    box-shadow: 0px 0px 9px 5px rgba(0, 0, 0, 0.03);
+    padding: 42px;
+    transition: transform 0.6s;
+    border-radius: 25px;
+}
+
+.articleText{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    
+}
+
+.articleText h3{
+    border-left: solid 2px black;
+    padding-left: 12px;
+}
+
+.homeImg{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    transition: transform 0.6s;
+
+}
+
+.homeImg:hover{
+    transform: scale(1.05);
+}
+
+
+.post{
+    display: flex;
+}
+
+
+aside .resources ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+aside .resources ul li{
+    margin-bottom: 24px;
+}
+
+aside, .bottom{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+
+#contact{
+    background-color: #f3f5fa;
+    padding: 40px 5%;
+    margin: 30px 5%;
+    text-align: center;
+    box-shadow: 0px 0px 9px 5px rgba(0,0,0,0.08);
+    border-radius: 25px;
+    
+}
+
+#contact p{
+    font-size: 1.2em;
+}
+
+
+footer{
+    height: 20vh;
+    background: hsla(233, 100%, 90%, 1);
+    background: linear-gradient(225deg, hsla(233, 100%, 90%, 1) 0%, hsla(198, 53%, 92%, 1) 100%);
+    padding: 2% 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+footer > ul > li > ul{
+    list-style: none;
+    gap: 24px;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+header nav img, footer ul li img{
+    width: 45px;
+}
+
+
+
+
+/* LINKS */
+
+a:link{
+    color: #2C4FCC;
+    text-decoration: none;
+
+}
+
+a:visited{
+    color: #2C4FCC;
+}
+
+a:hover{
+    text-decoration: underline;
+    font-style: italic;
+}
+
+footer ul li a{
+    margin: 100px 0;
+}
+
+.button a, li .button, address .button{
+    padding: 6px 20px;
+    background-color: #2C4FCC;
+    border-radius: 25px;
+    color: white;
+    font-style: normal;
+}
+
+
+
+
+.button a:hover, li .button:hover, address .button:hover{
+    background-color: white;
+    border: #2C4FCC solid 1px;
+    color: #2C4FCC;
+
+}
+
+@media only screen and (min-width: 1000px){
+    #container{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        margin: 40px 0;
+    }
+
+    #home{
+        height: 24vh;
+    }
+
+    header{
+        padding: 2% 25%;
+    }
+
+    footer, #container{
+        padding: 0px 25%;
+    }
+
+    header #headerContainer{
+        display: flex;
+        flex-direction: row;
+    }
+
+    header #headerContainer img{
+        width: 60%;
+        height: auto;
+        margin: auto;
+    }
+
+    header #headerText{
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        gap: 20px;
+    }
+
+    section{
+        gap: 40px;
+        display: flex;
+    }
+
+    .projectSection, .aboutSection{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .aboutSection{
+        flex-direction: row-reverse;
+    }
+
+    .projectSection img{
+        width: 40%;
+        height: 40%;
+    }
+
+    .homeArticle{
+        flex-direction: row;
+        width: 40vw;
+        height: 25vh;
+        margin: auto;
+    }
+
+    #flip{
+        flex-direction: row-reverse;
+    }
+
+    .articleText{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        justify-content: center;
+    }
+
+    .homeImg{
+        width: 40%;
+        height: auto;
+        margin: auto;
+    }
+
+    .projectText, #aboutText{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #objective{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        text-align: center;
+        width: 60%;
+    }
+
+    #aboutText{
+        margin-right: 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    #about{
+        text-align: left;
+    }
+
+    #portrait{
+        width: 100%;
+    }
+
+    #contact{
+        padding: 2% 10%;
+        margin-right: auto;
+        gap: 12px;
+    }
+
+    aside{
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .resources{
+        gap: 12px;
+    }
+
+    .resources ul{
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    #flex{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 24px;
+    }
+
+    aside>section{
+        gap: 12px;
+    }
+
+    aside .bottom{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    
+    
+    .resources{
+        flex: 1;
+    }
+
+    #mobile{
+        display: none;
+    }
+
+    #desktop{
+        display: block;
+    }
+}
