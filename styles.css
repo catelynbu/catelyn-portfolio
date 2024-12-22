@@ -374,6 +374,7 @@ aside ul li a:hover, #nextProject a:hover{
     height: auto;
     margin: auto;
     padding: 0 0 10% 0;
+    object-fit: contain;
 }
 
 #container, #homeContainer{
