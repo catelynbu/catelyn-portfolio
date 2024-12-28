@@ -377,6 +377,14 @@ aside ul li a:hover, #nextProject a:hover{
     object-fit: contain;
 }
 
+.homeImgSafely{
+    width: 80%;
+    height: auto;
+    margin: auto;
+    padding: 0 0 8% 0;
+    object-fit: contain;
+}
+
 #container, #homeContainer{
     padding: 2% 6%;
     display: flex;
