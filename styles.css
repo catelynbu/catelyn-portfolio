@@ -119,7 +119,6 @@ body{
 
 .bg-purple{
     background-color: #cc87e7;
-    /* background-color: yellow; */
 }
 
 .bg-magenta{
@@ -168,11 +167,9 @@ header{
 
 header h1{
     font-size: 11vw;
-    /* text-align: center; */
 }
 
 #headerText{
-    /* background-color: red; */
     justify-content: center;
     text-align: right;
     font-family: "Raleway", sans-serif;
@@ -185,13 +182,13 @@ header h1{
     margin: auto;
 }
 
-#headerTextProjects{
+#headerTextProjects, #safelyHeader{
     width: 100%;
     text-align: center;
     padding: 20% 0;
 }
 
-#headerTextProjects img{
+#headerTextProjects img, #safelyHeader img{
     width: 80%;
     height: auto;
     margin: auto;
@@ -663,7 +660,6 @@ aside h3{
     margin: auto;
     width: 60%;
     padding: 5%;
-    /* border: #771D4F solid 2px; */
     border-radius: 25px;
     background-color: white;
     box-shadow: 0px 0px 9px 5px rgba(0, 0, 0, 0.03);
@@ -770,7 +766,6 @@ aside h3{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    /* gap: 24px; */
     justify-content: space-between;
 }
 
@@ -829,24 +824,22 @@ footer{
 @media only screen and (min-width: 640px){
     #homeContainer{
         padding: 5% 20vw;
-        /* background-color: burlywood; */
     }
 
     #container{
         padding: 5% 16vw;
-        /* background-color: burlywood; */
     }
 
-    #headerTextProjects{
+    #headerTextProjects, #safelyHeader{
         padding: 6% 0;
     }
 
 
-    #headerTextProjects h1{
+    #headerTextProjects h1, #safelyHeader h1{
         font-size: 4em;
     }
     
-    #headerTextProjects img{
+    #headerTextProjects img, #safelyHeader img{
         width: 50%;
         height: auto;
         margin: auto;
@@ -885,9 +878,7 @@ footer{
     }
 
     #homeContainer{
-        /* padding: 5% 10%; */
         padding: 5% 24vw;
-        /* background-color: indianred; */
     }
 
     #container{
@@ -978,6 +969,10 @@ footer{
         padding: 5%;
     }
 
+    #takeaways{
+        margin-top: 2%;
+    }
+
     #nextProject a{
         margin: 16px 10% 50px auto;
     }
@@ -1007,13 +1002,11 @@ footer{
     }
 
     .safelyGif{
-        /* background-color: cadetblue; */
         justify-content: space-around;
         gap: 24px;
     }
 
     .safelyWrap{
-        /* background-color: palegoldenrod; */
         gap: 12px;
     }
 
@@ -1048,10 +1041,10 @@ footer{
     }
 
 
-    /* CONTACTS PAGE */
 
+
+    /* CONTACTS PAGE */
     #contactFlex{
-        /* background-color: wheat; */
         display: flex;
         flex-direction: row;
         gap: 8vw;
@@ -1113,10 +1106,6 @@ footer{
 
 
 @media only screen and (min-width: 1200px){
-    /* header, #container, #homeContainer{
-        padding: 5% 8%;
-    } */
-
     #homeContainer h2{
         font-size: 2.5em;
         text-align: right;
@@ -1124,7 +1113,6 @@ footer{
     }
 
     #homeContainer{
-        /* background-color: antiquewhite; */
         padding: 10% 12vw;
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -1154,12 +1142,10 @@ footer{
     }
 
     #container{
-        /* background-color: antiquewhite; */
-        padding: 10% 12vw;
+        padding: 10% 10vw;
     }
 
     #headerTextProjects{
-        /* width: 400px; */
         text-align: right;
         padding: 4% 0;
         display: flex;
@@ -1167,10 +1153,20 @@ footer{
         align-items: center;
         justify-content: center;
         gap: 20px;
-        background-color: cadetblue;
     }
 
-    #headerTextProjects h1{
+    #safelyHeader{
+        text-align: right;
+        padding: 0;
+        padding-top: 2%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 24px;
+        justify-content: center;
+    }
+
+    #headerTextProjects h1, #safelyHeader h1{
         text-align: right;
         font-size: 5em;
     }
@@ -1180,17 +1176,22 @@ footer{
         height: auto;
         margin: auto;
         padding: 0;
-        background-color: navajowhite;
+    }
+
+    #safelyHeader img{
+        width: 35%;
+        padding: 0;
+        margin: 0;
     }
 
     #headerTextProjects h1{
         text-align: right;
-        background-color: lavender;
     }
 
     #takeaways{
         flex-direction: row;
         flex: 1;
+        align-items: start;
     }
 
     .takeawayCard{
@@ -1212,7 +1213,6 @@ footer{
         width: 100%;
         justify-content: left;
         gap: 12%;
-        /* background-color: rebeccapurple; */
     }
 
     #usability{
@@ -1225,27 +1225,20 @@ footer{
 
     .usabilityColumn{
         width: 90%;
-        /* background-color: cadetblue; */
     }
     
-    .safelyWrap img{
-        width: 9vw;
-    }
-
-    
-    
-
 }
+
+
+
 
 @media only screen and (min-width: 1440px){
     #homeContainer{
-        /* background-color: aliceblue; */
         padding: 10% 20vw;
     }
 
     #container{
-        /* background-color: aliceblue; */
-        padding: 10% 20vw;
+        padding: 10% 18vw;
     }
 
     #headerTextProjects{
@@ -1260,21 +1253,18 @@ footer{
         margin: auto 12vw auto auto;
     }
 
-    #headerTextProjects h1{
-        text-align: right;
+    #headerTextProjects h1, #safelyHeader h1{
         font-size: 6em;
     }
-    
-    #headerTextProjects img{
-        width: 50%;
-        height: auto;
-        margin: auto;
-        padding: 0;
+
+    #safelyHeader{
+        gap: 48px;
     }
 
-    .safelyWrap img{
-        width: 8vw;
+    #safelyHeader img{
+        width: 25%;
     }
+
 
 
 }
