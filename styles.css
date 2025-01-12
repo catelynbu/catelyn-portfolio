@@ -60,24 +60,6 @@ body{
     animation: three 12s linear infinite alternate;
 }
 
-.bg-shape4{
-    width: 70vw;
-    height: 70vw;
-    border-radius: 9999px;
-}
-
-.bg-shape5{
-    width: 70vw;
-    height: 70vw;
-    border-radius: 9999px;
-}
-
-.bg-shape6{
-    width: 70vw;
-    height: 70vw;
-    border-radius: 9999px;
-}
-
 /* blue */
 @keyframes one{
     0%{left: 0px; top: 20px;}
@@ -133,7 +115,7 @@ body{
 }
 
 .logoAnimate:hover{
-    transform: scale(1.25);
+    transform: scale(1.15);
 }
 
 
@@ -143,7 +125,7 @@ nav ul{
     list-style: none;
     display: flex;
     flex-direction: row;
-    gap: 40px;
+    gap: 42px;
     margin: 0;
     padding: 0;
     align-items: center;
@@ -244,7 +226,7 @@ h4{
 }
 
 p, nav, ul li{
-    font-size: 1.1em;
+    font-size: 1em;
     line-height: 1.5em;
     font-weight: 400;
 }
@@ -361,7 +343,7 @@ a:hover{
     color: white;
 }
 
-aside ul li a:hover, #nextProject a:hover{
+aside ul li a:hover, #nextProjectDetails:hover{
     transform: translate(20px);
 }
 
@@ -392,7 +374,7 @@ aside ul li a:hover, #nextProject a:hover{
     gap: 72px;
 }
 
-.card:hover, .takeawayCard:hover{
+.card:hover, .takeawayCard:hover, #nextProject:hover{
     transform: scale(1.05);
     box-shadow: 0px 0px 9px 5px rgba(0,0,0,0.10);
 }
@@ -710,16 +692,45 @@ aside h3{
     flex: 1;
 }
 
-#nextProject a{
+#nextProject{
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 0px 0px 9px 5px rgba(0, 0, 0, 0.03);
+    padding: 42px;
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 18px;
-    margin: 16px 10% 20vw auto;
-    transition-duration: 700ms;
-    width: fit-content;
-    font-size: 1.4rem;
+    flex-direction: column;
+    gap: 12px;
+    transition: transform 5s;
 }
+
+#nextProjectText{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+#nextProjectDetails{
+    transition: 700ms;
+}
+
+#nextProjectCaption{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    text-align: left;
+    justify-content: left;
+}
+
+#nextProjectCaption h3{
+    text-align: left;
+}
+
+#nextProject img{
+    max-width: 50%;
+    margin-top: 24px;
+}
+
+
 
 #usability{
     width: 100%;
@@ -804,22 +815,45 @@ aside h3{
 
 /* FOOTER */
 footer{
-    overflow: hidden;
-    padding-top: 75px;
-    height: 24vh;
+    background-image: url(images/footer-bg.png);
+    background-size: cover;
+    background-position: bottom;
+    padding: 8% 4%;
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+    margin-top: 100px;
+
+}
+
+#footerLinks{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.3em;
 }
 
 #footerText{
+    margin: auto;
+    text-align: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 24px;
+    gap: 16px;
 }
 
-#footerGraphic{
+#footerTag{
     display: flex;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
 }
+
+#footerTag a img{
+    display: block;
+}
+
 
 @media only screen and (min-width: 640px){
     #homeContainer{
@@ -852,6 +886,11 @@ footer{
         margin: 4% 0 ;
     }
 }
+
+
+
+
+
 
 @media only screen and (min-width: 992px){
     .bg-shape1{
@@ -1040,6 +1079,29 @@ footer{
         justify-content: center;
     }
 
+    #nextProject{
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        transition: transform 0.6s;
+        width: 50%;
+        margin: auto;
+    }
+    
+    #nextProjectDetails a{
+        transition: 0.3s;
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
+    
+    #nextProject img{
+        max-width: 30%;
+        margin-top: 0;
+    }
 
 
 
@@ -1099,6 +1161,32 @@ footer{
     .safelyBox{
         padding: 4%;
         width: 60%;
+    }
+    
+
+
+
+    /* FOOTER */
+    footer{
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        padding: 4% 8%;
+        align-items: center;
+    }
+
+    #footerText{
+        margin: 0;
+    }
+
+    #footerLinks{
+        justify-content: center;
+        gap: 42px;
+    }
+
+    #footerTag{
+        justify-content: left;
+        flex-direction: column;
+        align-items: flex-start;
     }
     
 
@@ -1196,10 +1284,6 @@ footer{
 
     .takeawayCard{
         padding: 4%;
-    }
-
-    #nextProject a{
-        margin: 16px 4% 40px auto;
     }
 
     .safelyRow img{
