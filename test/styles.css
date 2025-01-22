@@ -1,5 +1,5 @@
 #not{
-    padding: 10%;
+    padding: 4% 4% 0;
     display: flex;
     flex-direction: column;
     gap: 42px;
@@ -22,7 +22,7 @@
 
 #responsive{
     display: flex;
-    padding: 10%;
+    padding: 4%;
     gap: 42px;
     flex-wrap: wrap;
 }
