@@ -268,7 +268,7 @@ a:hover{
     display: flex;
     flex-direction: row;
     gap: 12px;
-    width: 136px;
+    width: fit-content;
     border-radius: 25px;
     padding: 6px 20px;
     background-color:#d14291;
@@ -407,6 +407,37 @@ aside ul li a:hover, #nextProjectDetails:hover{
     line-height: 1.8em;
 }
 
+
+.label-container{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    gap: 8px;
+}
+
+.in-progress, .design, .research, .development{
+    padding: 4px 16px;
+    border-radius: 1000px;
+    font-size: 0.9em;
+}
+
+.in-progress{
+    background-color: #ffd50048;
+}
+
+.design{
+    background-color: #d142913b;
+}
+
+.research{
+    background-color: #82aae544;
+}
+
+.development{
+    background-color: #cc75ee3a;
+}
 
 
 
@@ -1208,7 +1239,8 @@ footer{
         padding: 10% 12vw;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 8% 8%;   
+        grid-template-rows: 1fr 1.5fr 1.2fr;
+        /* gap: 8% 8%;    */
     }
 
     #grid{
