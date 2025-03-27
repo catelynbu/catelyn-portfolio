@@ -6,7 +6,7 @@ body{
     justify-content: center;
     box-sizing: border-box;
     background-color: #FAFAFA;
-    font-family: "Raleway", sans-serif;
+    font-family: "Figtree", sans-serif;
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
@@ -154,7 +154,7 @@ header h1{
 #headerText{
     justify-content: center;
     text-align: right;
-    font-family: "Raleway", sans-serif;
+    font-family: "Figtree", sans-serif;
     font-weight: 300;
     display: flex;
     flex-direction: column;
@@ -188,6 +188,7 @@ header h1{
 
 
 /* GENERAL TEXT */
+
 h1, h2{
     color: #771D4F;
     font-family: "Unbounded", sans-serif;
@@ -232,7 +233,7 @@ p, nav, ul li{
 }
 
 p, .homeH4{
-    font-family: "Raleway", sans-serif;
+    font-family: "Figtree", sans-serif;
 }
 
 h1, h2, h3, h4, p{
@@ -850,10 +851,13 @@ aside h3{
 
 /* FOOTER */
 footer{
-    background-image: url(images/footer-bg.png);
+    background-image: url(images/footer.png);
+    /* background-color: cadetblue; */
     background-size: cover;
-    background-position: bottom;
-    padding: 8% 4%;
+    background-position: center;
+
+    
+    padding: 30px;
     display: flex;
     flex-direction: column;
     gap: 72px;
@@ -861,33 +865,60 @@ footer{
 
 }
 
-#footerLinks{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+#footer-container{
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
     display: flex;
-    justify-content: space-around;
-    font-size: 1.3em;
+    gap: 72px;
+    flex-direction: column;
+    backdrop-filter: blur(1.5px);
 }
 
-#footerText{
-    margin: auto;
-    text-align: center;
+.footer-main{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+#footer-socials{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+#footer-CTA{
+    font-size: 1.5em;
+} 
+
+#footer-buttons{
     display: flex;
     flex-direction: column;
     gap: 16px;
 }
 
-#footerTag{
+#footer-links ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
     display: flex;
-    gap: 24px;
-    align-items: center;
-    justify-content: center;
+    gap: 50px;
+    flex-direction: column;
 }
 
-#footerTag a img{
-    display: block;
+footer aside{
+    display: flex;
+    color: #771D4F;
+    align-items: center;
+    gap: 24px;
 }
+
+#footer-logo{
+    display: block;
+    width: 25px;
+    height: 25px;
+}
+
 
 
 @media only screen and (min-width: 640px){
@@ -920,6 +951,37 @@ footer{
         height: auto;
         margin: 4% 0 ;
     }
+
+
+    /* FOOTER */  
+    #footer-container{
+        padding: 50px;
+    }
+    
+    .footer-main{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    #footer-socials{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    #footer-buttons{
+        flex-direction: row;
+    }
+    
+    
+    #footer-links ul{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+
+    
 }
 
 
@@ -1201,27 +1263,29 @@ footer{
 
 
 
-    /* FOOTER */
-    footer{
-        flex-direction: row-reverse;
-        justify-content: space-between;
-        padding: 4% 8%;
-        align-items: center;
+    /* FOOTER */  
+    #footer-container{
+        padding: 50px;
     }
-
-    #footerText{
-        margin: 0;
+    
+    .footer-main{
+        display: flex;
+        flex-direction: row;
+       justify-content: space-between;
+       align-items: center;
     }
-
-    #footerLinks{
-        justify-content: center;
-        gap: 42px;
-    }
-
-    #footerTag{
-        justify-content: left;
+    
+    #footer-socials{
+        display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        gap: 24px;
+    }
+    
+    
+    #footer-links ul{
+        display: flex;
+        gap: 50px;
+        flex-direction: row;
     }
     
 
