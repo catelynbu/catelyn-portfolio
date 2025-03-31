@@ -10,247 +10,271 @@
     <!-- font awesone icons -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
-    <link href="../styles.css" rel="stylesheet">
-
+    <!-- css files -->
+    <link href="../global.css" rel="stylesheet">
+    <link href="projects.css" rel="stylesheet">
+   
+    <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300..900&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+
+    <!-- JS -->
+    <script src="../script.js" defer></script>
 
     <title>Best Buddies | Catelyn Bu Portfolio</title>
     <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
 
 </head>
 <body>
-    <header id="top">
-        <nav>
-            <ul>
-                <li><a href="../index.html" id="navLogo"><img src="../images/logo-DMG-SM.png" class="logoAnimate" alt="logo"></li></a>
-                <li><a href="../index.html">home</a></li>
-                <!-- <li><a href="../all-projects.html">all projects</a></li> -->
-                <li><a href="../about.html">about</a></li>
-                <li><a href="../contact.html">contact</a></li>
-            </ul>
-        </nav>
+    <div id="full-header-container">
+        <div id="nav-container">
+            <nav>
+                <ul>
+                    <li><a href="../index.html"><img src="../images/logo-DMG-SM.png" class="logoAnimate" alt="logo"></a></li>
 
-        <div id="headerTextProjects">
-            <h1>Best Buddies</h1>
-            <img src="../images/bestBuddies-images/bestBuddies-mainMockup.png" alt="A laptop and phone showing screens of the Best Buddies' website interface">
+                    <div id="nav-mainlinks">
+                        <li><a href="../index.html">work</a></li>
+                        <!-- <li><a href="#">play</a></li> -->
+                        <li><a href="../about/about.html">about</a></li>
+                        <li><a href="https://docs.google.com/document/d/1HRfi9Xt-KR-UvQB5UztDyjA18uAoPxoR46futannPXE/edit?usp=sharing" target="_blank">resume</a></li>
+                    </div>
+                    
+                    <li id="menu"><i class="fas fa-bars fa-lg"></i></li>
+
+                    <li id="contactCTA"><a class="button" href="../contact/contact.html">contact</a></li>
+                </ul>
+
+                <ul id="menu-links">
+                    <li><a href="../index.html">work</a></li>
+                    <!-- <li><a href="#">play</a></li> -->
+                    <li><a href="../about/about.html">about</a></li>
+                    <li><a href="https://docs.google.com/document/d/1HRfi9Xt-KR-UvQB5UztDyjA18uAoPxoR46futannPXE/edit?usp=sharing" target="_blank">resume</a></li>
+                    <li><a href="../contact/contact.html">contact</a></li>
+                </ul>
+            </nav>
         </div>
-        
-
-        <div class="absolute">
-            <div class="relative inset-0 justify-center">
-                <div class="bg-shape1 bg-blue opacity-50 bg-blur"></div>
-                <div class="bg-shape2 bg-purple opacity-50 bg-blur"></div>
-                <div class="bg-shape3 bg-magenta opacity-50 bg-blur"><div>
+    
+        <header>
+            <div id="header-projects">
+                <h1>Best Buddies</h1>
+                <img id="header-project-img" src="../images/bestBuddies-images/bestBuddies-mainMockup.png" alt="A laptop and phone showing screens of the Best Buddies' website interface">
             </div>
-        </div>
-    </header>
+            
 
-    <a href="#top"><p class="backtotop"><i class="fas fa-arrow-up fa-lg" style="color: #ffffff;"></i></p></a>
+            <div class="absolute">
+                <div class="relative inset-0 justify-center">
+                    <div class="bg-shape1 bg-blue opacity-50 bg-blur"></div>
+                    <div class="bg-shape2 bg-purple opacity-50 bg-blur"></div>
+                    <div class="bg-shape3 bg-magenta opacity-50 bg-blur"></div>
+                </div>
+            </div>
+        </header>
+    </div>
 
-    <section id="container">
-        <div id="overview">
-            <section class="projectText">
-                <h2>Overview</h2>
+
+    <a href="#full-header-container"><p class="backtotop"><i class="fas fa-arrow-up fa-lg" style="color: #ffffff;"></i></p></a>
+
+
+    <div class="container">
+        <!-- OVERVIEW SECTION -->
+        <section id="overview">
+            <h2 class="test">Overview</h2>
+
+            <div id="overview-main">
+                <section id="my-role">
+                    <h3 class="subheading">MY ROLE</h3>
         
-                <p>Best Buddies at UC Davis is a chapter of the international organization, Best Buddies, a non-profit organization that strives to promote self-advocacy and foster friendships between students and those with developmental and intellectual disabilities.</p>   
+                    <p>For this project I was one of the seven developers tasked with developing the mobile and desktop screens for Best Buddies’ website. I was responsible for both the <a href="https://ucdbestbuddies.org/about/ucd" target="_blank" class="inlineLink">About Us UC Davis Chapter</a> and <a class="inlineLink" href="https://ucdbestbuddies.org/about/intl" target="_blank">About Us International</a> pages where I worked closely in a cross-functional team and with the client to create a responsive website that fit the needs of the client.</p>
+                </section>
         
-                <p>As part of a developer team of 7 members and 2 team leads, I coded both the <a target="_blank" class="inlineLink" href="https://ucdbestbuddies.org/about/ucd">About Us UC Davis Chapter</a> and <a class="inlineLink" href="https://ucdbestbuddies.org/about/intl" target="_blank">About Us International</a> pages.</p>
+        
+                <section id="the-problem">
+                    <h3 class="subheading">THE PROBLEM</h3>
+        
+                    <p>Best Buddies at UC Davis is a non-profit organization that strives to promote self-advocacy and foster friendships between students and those with developmental and intellectual disabilities.</p>
 
-                <p>I worked closely with my cross-functional team to develop a new product for our client, Best Buddies at UC Davis, to update informational content about the organization, improve overall user experience, in addition to prioritizing accessibility and readability.</p>
+                    <p>The previous website lacked critical information about the organization, <span>clear textual hierarchy</span>, and <span>structure</span>, making it difficult to find resources. The design did not distinguish that it was the UC Davis chapter and did not follow <span>accessibility</span> guidelines for better <span>readability</span>.</p>
+                </section>
 
                 <div id="buttons">
-                    <p ><a href="https://github.com/include-davis/best-buddies-fw24" target="_blank" id="github" class="buttonProjects"><i class="fab fa-github fa-lg"></i></a></p>
+                    <!-- <p ><a href="https://github.com/include-davis/best-buddies-fw24" target="_blank" id="github" class="buttonProjects"><i class="fab fa-github fa-lg"></i></a></p> -->
                     <p ><a href="https://ucdbestbuddies.org/" target="_blank" class="buttonProjects">Best Buddies Website<i class="fas fa-arrow-right"></i></a></p>
                 </div>
-            </section>
-
-            <section id="tags">
+            </div>
+    
+            <aside id="overview-aside">
                 <ul>
-                    <li><h3>Role</h3>
+                    <li><h3 class="subheading">TOOLS</h3>
                         <ul>
-                            <li>Developer</li>
+                            <li>JavaScript, HTML, SCSS, React.js, VS Code</li>
                         </ul>
                     </li>
-                    <li><h3>Tech Used</h3>
+                    <li><h3 class="subheading">DURATION</h3>
                         <ul>
-                            <li>JavaScript, HTML, SCSS/SASS</li>
-                            <li>React</li>
-                            <li>Node.js, npm</li>
-                            <li>Git, Github</li>
-                            <li>VS Code</li>
+                            <li>October 2023 - March 2024</li>
                         </ul>
                     </li>
-                    <li><h3>Project Type</h3>
+                    <li><h3 class="subheading">PROJECT TYPE</h3>
                         <ul>
                             <li>Desktop and mobile website views</li>
                         </ul>
                     </li>
-                    <li><h3>Client</h3>
+                    <li><h3 class="subheading">TEAM</h3>
                         <ul>
-                            <li>Best Buddies at UC Davis</li>
-                        </ul>
-                    </li>
-                    <li><h3>Disipline</h3>
-                        <ul>
-                            <li>Front-end development</li>
+                            <li>2 Tech Managers</li>
+                            <li>7 Developers</li>
+                            <li>2 Design Managers</li>
+                            <li>5 Designers</li>
                         </ul>
                     </li>
                 </ul>
+            </aside>
+        </section>
+    </div>
 
 
+    <!-- <div id="bestbuddies" class="banner"></div> -->
+
+    <div class="container">
+        <!-- MY ROLE SECTION -->
+        <section class="project-section">
+            <section class="project-section-title">
+                <p class="subheading">MY ROLE</p>
+                <h2>How I Impacted the Project </h2>
             </section>
-        </div>
-    
-    
-    
-    
-    
-        <section class="projectSection" id="context">
-            <div class="projectText">
-                <h2>The Problem</h2>
-                <p>The previous website lacked some important chapter information, text hierarchy, and structure, making it difficult to find resources. The design did not distinguish that it was the UC Davis chapter and did not follow accessibility guidelines for better readability.</p>
-            </div>
-    
-            <div class="projectText">
-                <h2>The Goal</h2>
-                <p>The main goals for this project were to distinguish the UC Davis chapter from the international organization, better organize content and resources, and increase trust through the site. We wanted the site to be inviting, organized and represent the chapter and what Best Buddies stands for.</p>
-            </div>
-        </section>
-    
-    
-    
-        <section class="projectSection">
-            <div class="projectText">
-                <h2>My Role</h2>
-    
-                <p>For this client project I worked as a developer in a technical cohort. Within my technical cohort I collaborated with 7 other team members and 2 team leads. During the development process I also communicated closely with the design team to ensure accuracy.</p>
-    
-                <p>I was responsible for the development of two pages - the About Us UCD Chapters and the About Us International pages.</p>
-    
-                <p>My pages focused more on front-end development to replicate the designs from the Figma file created by the design team. My job as a developer aimed to prioritize responsiveness within the desktop and mobile versions of the website. </p>
-            </div>
-    
-            <img id="desktop" src="../images/bestBuddies-images/bestBuddies-aboutPages.png" alt="Two overlapping images of the Best Buddies' About pages">
-        </section>
-    
-    
-    
-        <section class="projectSectionColumn">
-            <h2>Development Process</h2>
 
-            <div class="imgFlex">
-                <div class="projectText">
-                    
-        
+            <div class="project-section-main">
+                <section class="project-content">
+                    <p>I was responsible for the development of two pages - the About Us UCD Chapters and the About Us International pages. These were critical pages that would provide viewers with contextual information about the organization.</p>
+
+                    <p>My pages focused more on front-end development to replicate the designs from the Figma file created by the design team. My job as a developer aimed to prioritize responsiveness within the desktop and mobile versions of the website. </p>
+
+                    <img class="drop" src="../images/bestBuddies-images/bestBuddies-aboutPages.png" alt="Two overlapping images of the Best Buddies' About pages">
+                </section>
+            </div>
+        </section>
+
+        <!-- DEVELOPMENT SECTION -->
+        <section class="project-section">
+            <section class="project-section-title">
+                <p class="subheading">DEVELOPMENT</p>
+                <h2>My Process as a Dev</h2>
+            </section>
+
+            <div class="project-section-main">
+                <section class="project-content">
                     <p>The Best Buddies project utilized JavaScript, HTML, SCSS/SASS, Node.js, npm, and React to construct the site. The development team also used Git and GitHub to share our code and work collaboratively.</p>
-        
-                    <p>A big part of the development process was the integration of reusable components or modularity. Some of these components include content cards, buttons footers, and headers. Members of the team would create these components and we  would import them to our pages.</p>
 
-                </div>
-        
-                <img src="../images/bestBuddies-images/bestBuddies-code.png" alt="Two overlapping images of code">
-            </div>
-        
-            <div class="imgFlex">
-                <div class="projectText">
+                    <p>A big part of the development process was the integration of reusable components or modularity. Some of these components include content cards, buttons footers, and headers. Members of the team would create these components and we would import them to our pages.</p>
+
+                    <img class="drop" src="../images/bestBuddies-images/bestBuddies-code.png" alt="Two overlapping images of code">
+
                     <p>Another major focus point for this project was responsiveness. As the developer I needed to consider how content would be viewed in aspect ratios beyond the mobile and desktop designs along with how content would shift as screen sizes changed. For this, my team and I used FlexBox with our CSS and utilized mixins to adjust for screen size.</p>
 
-                    <p>Throughout the development phase my team and I had weekly progress meetings with the design team to give updates. These meetings served as a way to communicate with the designers to ensure their designs were being translated accurately and to ask any questions we had about the design. We also conducted code reviews and some code debugging.</p>
-                </div>
+                    <img class="drop" src="../images/bestBuddies-images/bestBuddies-responsive.gif" alt="Animated gif showing the responsiveness of the about page">
 
-                <img src="../images/bestBuddies-images/bestBuddies-responsive.gif" alt="Animated gif showing the responsiveness of the about page">
-             </div>
+                    <p>Throughout the development phase my team and I had weekly progress meetings with the design team to give updates. These meetings served as a way to communicate with the designers to ensure their designs were being translated accurately and to ask any questions we had about the design. We also conducted code reviews and some code debugging.</p>
+                </section>
+            </div>
         </section>
-    
-        
-    
-        <section class="projectSectionColumn">
-            <div class="projectText">
-                <h2>Final Product</h2>
-    
-                <p>After a three-month design and development process, the Best Buddies UC Davis Chapter website was complete and we presented our work to the client.</p>
+
+
+        <!-- FINAL PRODUCT SECTION -->
+        <section class="project-section">
+            <section class="project-section-title">
+                <p class="subheading">FINAL PRODUCT</p>
+                <h2>The Solutions</h2>
+            </section>
+
+            <div class="project-section-main">
+                <section class="project-content">
+                    <p>After a three-month design and development process, the Best Buddies UC Davis Chapter website was complete and we presented our work to the client. </p>
+
+                    <img class="drop" src="../images/bestBuddies-images/bestbuddies-animated.gif" alt="Animated gif of the desktop version of the website">
+
+                    <img class="drop" src="../images/bestBuddies-images/bestBuddies-mobileMocks.png" alt="Three phones showing the interface of the Best Buddies' mobile interface design">
+
+                </section>
+            </div>
+        </section>
+
+
+        <!-- CHALLENGES SECTION -->
+        <section class="project-section">
+            <section class="project-section-title">
+                <p class="subheading">CHALLENGES</p>
+                <h2>Where I Ran Into Problems</h2>
+            </section>
+
+            <div class="project-section-main">
+                <section class="project-content">
+                    <p>The Best Buddies project is where I first was exposed to many new tools such as JavaScript, Git, npm, React, etc. In return, I had difficulties keeping up with the rest of my team mates who all had previous experience with those tools.</p>
+
+                    <p>One prominent issue I had was with data structures. Going into this project I had only known HTML and CSS, data structures was a completely new concept to me. The data structure I used in my pages was mapping. To understand more about mapping I spent hours debugging my own code, studying my peers’ work, and asking my team leads for help. I endlessly researched more about mapping and data structures to ensure I not only fulfill my duty as a developer for a client, but also for myself, so I fully understood this critical part of my code.</p>
+
+                    <img class="drop" src="../images/bestBuddies-images/bestBuddies-lucy.jpg" alt="A cat laying down on a laptop that shows the code and figma of the Best Buddies project">
+                </section>
+            </div>
+        </section>
+
+        <!-- TAKEAWAYS SECTION -->
+        <section class="project-section">
+            <section class="project-section-title">
+                <p class="subheading">TAKEAWAYS</p>
+                <h2>What I Gained as a Developer</h2>
+            </section>
+
+            <div class="project-section-main">
+                <section class="takeaway-card">
+                    <h3><span>01</span> New tools to my belt.</h3>
+                    <p>The Best Buddies project introduced me to so many different tech tools and concepts that completely transformed my basic understanding of front end development. It empowered my passions for web development and encouraged me to learn more.</p>
+                </section> 
+
+                <section class="takeaway-card">
+                    <h3><span>02</span> Wear multiple hats in a team.</h3>
+                    <p>Being on the tech side of a project instead of the design side was a huge change for me. As a designer I was able to share design knowledge to my fellow developers, while also learning more about design from the design team.</p>
+                </section> 
+
+                <section class="takeaway-card">
+                    <h3><span>03</span> Meet client expectations.</h3>
+                    <p>Working for a client entails strict deadlines and high standards for quality checks. Having progress check-ins every week taught me how to work efficiently to keep the project moving. In addition, to keep up with the deadlines, it taught me how to ask for help as soon as I need it.</p>
+                </section> 
             </div>
             
-            <div class="UMM">
-                <img class="imgSize" src="../images/bestBuddies-images/bestbuddies-animated.gif" alt="Animated gif of the desktop version of the website">
-                <img class="imgSize" src="../images/bestBuddies-images/bestBuddies-mobileMocks.png" alt="Three phones showing the interface of the Best Buddies' mobile interface design">
-            </div>
         </section>
-    
-    
-    
-        <section class="projectSection">
-            <div class="projectText">
-                <h2>Personal Challenges</h2>
-    
-                <p>The Best Buddies project is where I first was exposed to many new tools such as JavaScript, Git, npm, React, etc. In return, I had difficulties keeping up with the rest of my team mates who all had previous experience with those tools.</p>
+    </div>
 
-                <p>One prominent issue I had was with data structures. Going into this project I had only known HTML and CSS, data structures was a completely new concept to me. The data structure I used in my pages was mapping. To understand more about mapping I spent hours debugging my own code, studying my peers’ work, and asking my team leads for help. I endlessly researched more about mapping and data structures to ensure I not only fulfill my duty as a developer for a client, but also for myself, so I fully understood this critical part of my code.</p>
-            </div>
-    
-            <img class="imgSize" src="../images/bestBuddies-images/bestBuddies-lucy.jpg" alt="A cat laying down on a laptop that shows the code and figma of the Best Buddies project">
-    
-        </section>
-    
-    
-    
-        <section class="projectSectionColumn">
-            <div class="projectText">
-                <h2>Takeaways</h2>
-    
-                <p>This experience working as a developer for the Best Buddies project taught me invaluable skills about web development, working in a cross-functional team, and creating a product for a client. </p>
-            </div>      
-    
-            <div id="takeaways">
-                <div class="takeawayCard">
-                    <i class="fas fa-code fa-lg" style="color: #D14291; font-size: 1.8rem;"></i>
-
-                    <h3 style="color: #D14291;">Web Development Skills</h3>
-
-                    <p>The Best Buddies project introduced me to so many different tech tools and concepts that completely transformed my basic understanding of front end development. It empowered my passions for web development and encouraged me to learn more.</p>
-                </div>
-
-                <div class="takeawayCard">
-                    <i class="fas fa-users fa-lg" style="color: #1e56c3; font-size: 1.8rem;"></i>
-
-                    <h3 style="color: #1e56c3;">Cross-functional Teamwork</h3>
-
-                    <p>Being on the tech side of a project instead of the design side was a huge change for me. As a designer I was able to share design knowledge to my fellow developers, while also learning more about design from the design team.</p>
-                </div>
-
-                <div class="takeawayCard">
-                    <i class="fas fa-briefcase fa-lg" style="color: #CC75EE; font-size: 1.8rem;" ></i>
-
-                    <h3 style="color: #CC75EE;">Client Based Work</h3>
-
-                    <p>Working for a client entails strict deadlines and high standards for quality checks. Having progress check-ins every week taught me how to work efficiently to keep the project moving. In addition, to keep up with the deadlines, it taught me how to ask for help as soon as I need it.</p>
-                </div>
-            </div>
-        </section>
-
-    </section>
-
-    
 
     <footer>
-        <ul id="footerLinks">
-            <li><a href="../index.html">home</a></li>
-            <!-- <li><a href="../all-projects.html">all projects</a></li> -->
-            <li><a href="../about.html">about</a></li>
-            <li><a href="../contact.html">contact</a></li>
-        </ul>
-
-        <div id="footerText">
-            <div id="footerTag">
-                <a href="../index.html"><img src="../images/logo-DMG-SM.png" class="logoAnimate" alt="logo" width="70%" height="auto"></a>
-
-                <p>Catelyn Bu 2025</p>
-            </div>
+        <div id="footer-container">
+            <section class="footer-main">
+                <div id="footer-socials">
+                    <p id="footer-CTA">Let's keep in touch!</p>
+                    
+                    <div id="footer-buttons">
+                        <p><a class="button" href="mailto:&#099;&#097;&#116;&#101;&#108;&#121;&#110;&#046;&#098;&#117;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;" target="_blank">&#099;&#097;&#116;&#101;&#108;&#121;&#110;&#046;&#098;&#117;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;</a></p>
+                        <p><a class="button" href="https://www.linkedin.com/in/catelynbu/" target="_blank">linkedin</a></p>
+                    </div>
+                </div>
     
-            <p>Designed and developed with love by Catelyn <i class="far fa-heart" style="font-size: .8em;"></i></p>
+                <div id="footer-links">
+                    <ul>
+                        <li><a href="../index.html">work</a></li>
+                        <!-- <li><a href="#">play</a></li> -->
+                        <li><a href="../about/about.html">about</a></li>
+                        <li><a href="https://docs.google.com/document/d/1HRfi9Xt-KR-UvQB5UztDyjA18uAoPxoR46futannPXE/edit?usp=sharing" target="_blank">resume</a></li>
+                        <li><a href="../contact/contact.html">contact</a></li>
+                    </ul>
+                </div>
+            </section>
+    
+            <aside>
+                <img id="footer-logo" src="../images/logo-DMG-SM.png" alt="Logo.">
+                <p>©2025 | Designed and developed by Catelyn with love <i class="far fa-heart" style="font-size: .8em;"></i></p>
+            </aside>
         </div>
+        
     </footer>
 
 </body>
