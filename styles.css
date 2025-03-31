@@ -1,361 +1,37 @@
-html{
-    scroll-behavior: smooth;
+/* HOME TYPOGRAPHY */
+h1{
+    font-family: "Unbounded", sans-serif;
+    font-size: 9vw;
+    color: #771D4F;
+    
 }
 
-body{
-    justify-content: center;
-    box-sizing: border-box;
-    background-color: #FAFAFA;
-    font-family: "Figtree", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
-    color: black;
-}
-
-
-/* HEADER SHAPES */
-.relative{
-    position: relative;
-}
-
-.absolute{
-    position: absolute;
-    /* top: 50px !important; */
-    inset: 0;
-    justify-content: center;
-    display: inline-flex;
-    flex-direction: row;
-    gap: 10%;
-    /* height: 50px; */
-    z-index: -1;
-    overflow-x: clip;
-}
-
-.justify-center{
-    justify-content: center;
-}
-
-.bg-shape1{
-    width: 70vw;
-    height: 70vw;
-    border-radius: 9999px;
-    position: absolute;
-    animation: one 14s linear infinite alternate;
-}
-
-.bg-shape2{
-    width: 50vw;
-    height: 50vw;
-    border-radius: 9999px;
-    position: absolute;
-    animation: two 10s linear infinite alternate;
-}
-
-.bg-shape3{
-    width: 60vw;
-    height: 60vw;
-    border-radius: 9999px;
-    position: absolute;
-    animation: three 12s linear infinite alternate;
-}
-
-/* blue */
-@keyframes one{
-    0%{left: 0px; top: 20px;}
-    25%{left: -50vw; top: 70px;}
-    50%{left: -75vw; top: 150px;}
-    75%{left: -20vw; top: 100px;}
-    100%{left: 15vw; top: 50px;}
-}
-
-/* yellow/purple */
-@keyframes two{
-    0%{left: -50vw; top: 250px;}
-    25%{left: -25vw; top: -50px;}
-    50%{left: 18.75vw; top: 10px;}
-    75%{left: -15vw; top: 150px;}
-    100%{left: -25vw; top: 250px;}
-}
-
-/* magenta */
-@keyframes three{
-    0%{left: -75vw; top: 70px;}
-    25%{left: -37.5vw; top: 10px;}
-    50%{left: 12.5vw; top: 50px;}
-    75%{left: -25vw; top: 100px;}
-    100%{left: -50vw; top: 150px;}
-}
-
-.opacity-50{
-    opacity: .5;
-}
-
-.bg-blur{
-    filter: blur(80px);
-}
-
-.bg-blue{
-    background-color: #82AAE5;
-}
-
-.bg-purple{
-    background-color: #cc87e7;
-}
-
-.bg-magenta{
-    background-color: #D14291;
-}
-
-
-
-/* LOGO ANIMATIONS */
-.logoAnimate{
-    transition: transform 1s;
-}
-
-.logoAnimate:hover{
-    transform: scale(1.15);
-}
-
-
-
-/* NAVIGATION */
-nav ul{
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    gap: 42px;
-    margin: 0;
-    padding: 0;
-    align-items: center;
-}
-
-nav ul li a img{
-    display: flex;
-    align-items: center;
-    height: 25px;
-    width: auto;
-}
-
-
-
-
-
-/* HEADER */
-header{
-    padding: 5%;
-}
-
-header h1{
-    font-size: 11vw;
-}
-
-#headerText{
-    justify-content: center;
-    text-align: right;
-    font-family: "Figtree", sans-serif;
-    font-weight: 300;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    padding: 15vh 0;
-    width: fit-content;
-    margin: auto;
-}
-
-#headerTextProjects, #safelyHeader{
-    width: 100%;
+h2{
+    font-family: "Unbounded", sans-serif;
+    font-size: 2em;
+    line-height: 80px;
+    color: #771D4F;
     text-align: center;
-    padding: 20% 0;
+    font-weight: 500;
 }
 
-#headerTextProjects img, #safelyHeader img{
-    width: 80%;
-    height: auto;
-    margin: auto;
-    padding-top: 8%;
+h3{
+    font-family: "Unbounded", sans-serif;
+    font-size: 1.25em;
+    line-height: 50px;
+    font-weight: 400;
 }
 
 .role{
     color: #D14291;
     font-size: 1.5em;
     font-weight: 400;
-    
+    letter-spacing: .2em;
 }
 
 
 
-
-/* GENERAL TEXT */
-
-h1, h2{
-    color: #771D4F;
-    font-family: "Unbounded", sans-serif;
-    font-weight: 500;
-}
-
-h1{
-    font-size: 3.5em;
-    justify-content: center;
-}
-
-h2{
-    font-size: 2em;
-    justify-content: center;
-    text-align: center;
-    line-height: 1.5em;
-}
-
-h3{
-    font-family: "Unbounded", sans-serif;
-    font-size: 1.5em;
-    font-weight: 400;
-    line-height: 1.5em;
-}
-
-.homeH4{
-    font-size: .9em;
-    font-weight: 500;
-}
-
-h4{
-    font-family: "Unbounded", sans-serif;
-    font-weight: 400;
-    font-size: 1.2em;
-    
-}
-
-p, nav, ul li{
-    font-size: 1em;
-    line-height: 1.5em;
-    font-weight: 400;
-}
-
-p, .homeH4{
-    font-family: "Figtree", sans-serif;
-}
-
-h1, h2, h3, h4, p{
-    margin: 0;
-    padding: 0;
-}
-
-#centerAlign{
-    text-align: center;
-}
-
-span{
-    font-weight: 700;
-}
-
-
-
-
-
-/* LINKS */
-a{
-    text-decoration: none;
-    color: black;
-    transition: 0.3s;
-}
-
-a:hover{
-    font-weight: 500;
-    color: #D14291;
-}
-
-.button{
-    display: flex;
-    flex-direction: row;
-    gap: 12px;
-    width: fit-content;
-    border-radius: 25px;
-    padding: 6px 20px;
-    background-color:#d14291;
-    opacity: 0.7;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    transition: 0.3s;
-}
-
-.buttonProjects{
-    display: flex;
-    flex-direction: row;
-    gap: 12px;
-    /* width: 136px; */
-    width: auto;
-    height: 25px;
-    border-radius: 25px;
-    padding: 6px 20px;
-    background-color:#d14291;
-    opacity: 0.7;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    transition: 0.3s;
-}
-
-#buttons{
-    display: flex;
-    flex-direction: row;
-    gap: 16px;
-    margin: 16px 0 44px 0; 
-}
-
-#github{
-    padding: 6px 8px;
-}
-
-.inlineLink{
-    color: #D14291;
-    font-weight: 600;
-}
-
-.inlineLink:hover{
-    font-weight: 700;
-    color: #771D4F;
-    text-decoration: underline;
-}
-
-
-.backtotop{
-    position: fixed;
-    bottom: 2rem;
-    right: 2rem;
-
-    background-color: #D14291;
-    display: flex;
-    flex-direction: row;
-    gap: 12px;
-    border-radius: 50%;
-    padding: 16px;
-    opacity: 0.7;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    transition: 0.3s;
-    font-size: 1.3rem;
-    z-index: 2;
-}
-
-
-
-.button:hover, .buttonProjects:hover{
-    background-color: #771D4F;
-    opacity: 100;
-    color: white;
-}
-
-aside ul li a:hover, #nextProjectDetails:hover{
-    transform: translate(20px);
-}
-
-
-
-
-/* FEATURED WORK HOME PAGE */
+/* FEATURED WORKS*/
 .homeImg{
     width: 100%;
     height: auto;
@@ -372,13 +48,17 @@ aside ul li a:hover, #nextProjectDetails:hover{
     object-fit: contain;
 }
 
-#container, #homeContainer{
-    padding: 2% 6%;
+#homeContainer{
     display: flex;
     flex-direction: column;
-    gap: 72px;
+    gap: 36px;
+    background-color: rgb(255, 255, 255, 0.3);
+    border-radius: 20px 20px 0 0;
+    backdrop-filter: blur(1.5px);
 }
 
+
+/* might wanna add this to global css */
 .card:hover, .takeawayCard:hover, #nextProject:hover{
     transform: scale(1.05);
     box-shadow: 0px 0px 9px 5px rgba(0,0,0,0.10);
@@ -403,12 +83,28 @@ aside ul li a:hover, #nextProjectDetails:hover{
 
 }
 
-.space{
-    margin: 12px 0;
-    line-height: 1.8em;
+
+
+/* HOT LINKS */
+#asideGrid ul{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    gap: 80px;
+}
+
+#asideGrid ul li a{
+    display: flex;
+    gap: 24px;
+    font-size: 1.3em;
+    align-items: center;
+    transition-duration: 700ms;
 }
 
 
+
+
+/* CARD TAGS */
 .label-container{
     display: flex;
     flex-wrap: wrap;
@@ -419,7 +115,7 @@ aside ul li a:hover, #nextProjectDetails:hover{
 }
 
 .in-progress, .design, .research, .development{
-    padding: 4px 16px;
+    padding: 0px 16px;
     border-radius: 1000px;
     font-size: 0.9em;
 }
@@ -443,493 +139,13 @@ aside ul li a:hover, #nextProjectDetails:hover{
 
 
 
-/* ABOUT PAGE */
-#portrait{
-    border-radius: 20px;
-    height: 55vh;
-    object-fit: cover;
-}
-
-.about{
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-}
-
-.aboutText{
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-}
-
-.about p{
-    line-height: 1.8em;
-}
-
-aside ul{
-    list-style: none;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-    padding: 5% 10% 10%;
-}
-
-aside ul li a{
-    display: flex;
-    justify-content: space-between;
-    font-size: 1.5em;
-    transition-duration: 700ms;
-}
-
-aside h3{
-    text-align: center;
-    color: #771D4F;
-    font-weight: 500;
-    font-size: 2em;
-}
-
-.aboutLinksContainer{
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-}
-
-.aboutLinks{
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-
-#different{
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-
-#contactAbout{
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    background-color: #ebdef077;
-    padding: 8% 10%;
-    border-radius: 10px;
-    margin-bottom: 24px; 
-}
-
-.aboutText{
-    text-align: left;
-}
-
-
-
-
-/* CONTACT FORM */
-.contact-left{
-    /* background-color: red; */
-    margin-bottom: 50px;
-}
-
-.special{
-    text-align: left;
-    padding: 0;
-}
-
-.contact-left p{
-    margin: 4% 0 8%;
-}
-
-
-.contact-right{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2vw;
-    /* background-color: cadetblue; */
-    width: 100%;
-}
-
-.contact-inputs{
-    width: 100%;
-    height: 48px;
-    border: none;
-    outline: none;
-    /* padding-left: 25px; */
-    border-radius: 10px;
-    background-color: #ebdef093;
-    border: solid 1px #FAFAFA;
-}
-
-.contact-right textarea{
-    height: 140px;
-    padding-top: 15px;
-    border-radius: 10px;
-    max-width: 100% !important;
-    min-width: 100%;
-    min-height: 140px;
-}
-
-.contact-inputs:hover{
-    border: solid 1px #771d4f25;
-}
-
-.contact-inputs:focus{
-    border: solid 1px #771D4F;
-}
-
-.contact-inputs::placeholder{
-    color: #771D4F;
-    padding-left: 12px;
-}
-
-.contact-right button{
-   display: flex;
-    flex-direction: row;
-    gap: 12px;
-    width: 136px;
-    border-radius: 25px;
-    padding: 6px 20px;
-    background-color:#d14291;
-    opacity: 0.7;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    transition: 0.3s;
-    border: none;
-}
-
-.contact-right button:hover{
-    background-color: #771D4F;
-    opacity: 100;
-    color: white;
-}
-
-
-
-
-/* PROJECT SECTIONS */
-.projectSection img, #special img, .projectSectionColumn img{
-    width: 100%;
-    height: auto;
-    margin: 8% 0;
-}
-
-.projectSectionColumn{
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-}
-
-.projectSection{
-    align-items: center;
-}
-
-.projectText{
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
-
-.projectText p{
-    line-height: 1.8em;
-}
-
-.projectText h2{
-    text-align: left;
-}
-
-.projectText ul li{
-    font-size: 1.2em;
-}
-
-.projectText ul{
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-
-#research{
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-}
-
-#overview{
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-}
-
-#context{
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-    align-items: start;
-}
-
-
-.projectSection h2, .projectText h2, .projectSectionColumn h2{
-    text-align: left;
-}
-
-#tags{
-    margin: auto;
-    width: 60%;
-    padding: 5%;
-    border-radius: 25px;
-    background-color: white;
-    box-shadow: 0px 0px 9px 5px rgba(0, 0, 0, 0.03);
-
-}
-
-#tags > ul{
-    display: flex;
-    gap: 24px;
-    flex-direction: column;
-}
-
-#tags > ul > li > ul{
-    display: flex;
-    gap: 12px;
-    flex-direction: column;
-    margin: 8px 0;
-}
-
-#tags ul li, #tags ul{
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-
-#takeaways{
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-    margin-top: 5%;
-}
-
-.takeawayCard{
-    background-color: white;
-    width: 70%;
-    padding: 42px;
-    border-radius: 25px;
-    box-shadow: 0px 0px 9px 5px rgba(0, 0, 0, 0.03);
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    justify-content: center;
-    transition: transform 0.6s;
-    height: auto;
-    flex: 1;
-}
-
-#nextProject{
-    background-color: white;
-    border-radius: 25px;
-    box-shadow: 0px 0px 9px 5px rgba(0, 0, 0, 0.03);
-    padding: 42px;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    transition: transform 5s;
-}
-
-#nextProjectText{
-    display: flex;
-    align-items: center;
-    gap: 24px;
-}
-
-#nextProjectDetails{
-    transition: 700ms;
-}
-
-#nextProjectCaption{
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    text-align: left;
-    justify-content: left;
-}
-
-#nextProjectCaption h3{
-    text-align: left;
-}
-
-#nextProject img{
-    max-width: 50%;
-    margin-top: 24px;
-}
-
-
-
-#usability{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 36px;
-}
-
-.safelyRow, .safelyGif{
-    display: flex;
-    justify-content: space-between;
-}
-
-.usabilityColumn p{
-    margin: 0;
-}
-
-.safelyRow img, .safelyWrap img, .safelyGif img{
-    width: 48%;
-    height: auto;
-    margin: 4% 0 ;
-}
-
-.safelyGif img{
-    border-radius: 30px;
-}
-
-
-#safely-midfi{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    
-}
-
-#safely-midfi img{
-    width: 48%;
-    height: auto;
-    margin: 4% 0 ;
-}
-
-.safelyWrap{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-#problemStatement{
-    background-color: #ebdef077;
-    padding: 8% 12%;
-    border-radius: 20px;
-    font-size: 1.4em;
-    line-height: 1.6em;
-}
-
-.safelyBox{
-    margin: auto;
-    padding: 8%;
-    border-radius: 25px;
-    background-color: white;
-    box-shadow: 0px 0px 9px 5px rgba(0, 0, 0, 0.03);
-}
-
-.safelyBox > ul{
-    display: flex;
-    gap: 24px;
-    flex-direction: column;
-}
-
-.safelyBox > ul > li > ul{
-    display: flex;
-    gap: 4px;
-    flex-direction: column;
-}
-
-
-
-
-
-
-/* FOOTER */
-footer{
-    background-image: url(images/footer.png);
-    /* background-color: cadetblue; */
-    background-size: cover;
-    background-position: center;
-
-    
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    gap: 72px;
-    margin-top: 100px;
-
-}
-
-#footer-container{
-    padding: 30px;
-    background-color: rgba(255, 255, 255, 0.3);
-    border-radius: 20px;
-    display: flex;
-    gap: 72px;
-    flex-direction: column;
-    backdrop-filter: blur(1.5px);
-}
-
-.footer-main{
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-}
-
-#footer-socials{
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-}
-
-#footer-CTA{
-    font-size: 1.5em;
-} 
-
-#footer-buttons{
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
-
-#footer-links ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 50px;
-    flex-direction: column;
-}
-
-footer aside{
-    display: flex;
-    color: #771D4F;
-    align-items: center;
-    gap: 24px;
-}
-
-#footer-logo{
-    display: block;
-    width: 25px;
-    height: 25px;
-}
-
 
 
 @media only screen and (min-width: 640px){
-    #homeContainer{
-        padding: 5% 20vw;
-    }
 
-    #container{
-        padding: 5% 16vw;
-    }
 
+
+    /*
     #headerTextProjects, #safelyHeader{
         padding: 6% 0;
     }
@@ -950,37 +166,7 @@ footer aside{
         width: 30%;
         height: auto;
         margin: 4% 0 ;
-    }
-
-
-    /* FOOTER */  
-    #footer-container{
-        padding: 50px;
-    }
-    
-    .footer-main{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-    
-    #footer-socials{
-        display: flex;
-        flex-direction: column;
-        gap: 24px;
-    }
-
-    #footer-buttons{
-        flex-direction: row;
-    }
-    
-    
-    #footer-links ul{
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-
+    } */
     
 }
 
@@ -990,62 +176,37 @@ footer aside{
 
 
 @media only screen and (min-width: 992px){
-    .bg-shape1{
-        width: 50vw;
-        height: 50vw;
-    }
-    
-    .bg-shape2{
-        width: 30vw;
-        height: 30vw;
-    }
-    
-    .bg-shape3{
-        width: 40vw;
-        height: 40vw;
+    /* HOME DESKTOP TYPOGRAPHY */
+    /* h1{
+        font-family: "Unbounded", sans-serif;
+        font-size: 8em;
+        color: #771D4F;
     }
 
-    .opacity-50{
-        opacity: .4;
+    h2{
+        font-family: "Unbounded", sans-serif;
+        font-size: 5.25em;
+        line-height: 60px;
+        color: #771D4F;
     }
 
-    header{
-        padding: 1% 5%;
-    }
-
-    #homeContainer{
-        padding: 5% 24vw;
-    }
-
-    #container{
-        padding: 5% 12vw;
-        gap: 120px;
-    }
-
-
-    header h1{
-        font-size: 8vw;
+    h3{
+        font-family: "Unbounded", sans-serif;
+        font-size: 2em;
+        line-height: 50px;
     }
 
     .role{
-        font-size: 1.8em;
-    }
+        color: #D14291;
+        font-size: 2em;
+        font-weight: 400;
+        
+    } */
 
-    header p{
-        font-size: 1.3em;
-    }
 
-    nav{
-        margin: 2% 0;
-        font-size: 1.3em;
-    }
-    
-    nav ul li a img{
-        height: 50px;
-        width: auto;
-    }
 
-    #overview, #context{
+
+    /* #overview, #context{
         display: flex;
         flex-direction: row;
         gap: 50px;
@@ -1198,113 +359,27 @@ footer aside{
     #nextProject img{
         max-width: 30%;
         margin-top: 0;
-    }
+    } */
 
 
-
-    /* CONTACTS PAGE */
-    #contactFlex{
-        display: flex;
-        flex-direction: row;
-        gap: 8vw;
-    }
-
-    .contact-right textarea{
-        max-width: 30vw !important;
-        min-width: 100%;
-    }
-
-    .contact-left p{
-        margin: 4% 0 20%;
-    }
-
-
-    /* ABOUT PAGE */
-    .about{
-        display: flex;
-        flex-direction: row-reverse;
-        gap: 32px;
-    }
-
-    .aboutLinksContainer{
-        display: flex;
-        flex-direction: row;
-        gap: 50px;
-        justify-content: space-between;
-    }
-
-    .aboutLinks{
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
-        width: 44%;
-    }
-
-    #contactAbout{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    #width{
-        width: 55%;
-    }
-
-    #different{
-        width: 16vw;
-    }
-
-    .safelyBox{
-        padding: 4%;
-        width: 60%;
-    }
-    
-
-
-
-    /* FOOTER */  
-    #footer-container{
-        padding: 50px;
-    }
-    
-    .footer-main{
-        display: flex;
-        flex-direction: row;
-       justify-content: space-between;
-       align-items: center;
-    }
-    
-    #footer-socials{
-        display: flex;
-        flex-direction: column;
-        gap: 24px;
-    }
-    
-    
-    #footer-links ul{
-        display: flex;
-        gap: 50px;
-        flex-direction: row;
-    }
     
 
 }
 
 
-@media only screen and (min-width: 1200px){
-    #homeContainer h2{
-        font-size: 2.5em;
-        text-align: right;
-        height: fit-content;
-    }
 
+
+
+@media only screen and (min-width: 992px){
+    /* ADDING GRID TO THE HOME LAYOUT */
     #homeContainer{
-        padding: 10% 12vw;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1.5fr 1.2fr;
-        /* gap: 8% 8%;    */
+        grid-template-rows: 1.5fr;
+        gap: 50px 72px;
+
+        padding-top: 10%;
+        padding-bottom: 10%;
     }
 
     #grid{
@@ -1329,9 +404,59 @@ footer aside{
         gap: 40px;
     }
 
-    #container{
-        padding: 10% 10vw;
+    h2{
+        font-size: 3.2em;
+        line-height: 100px;
+        text-align: right;
     }
+
+
+}
+
+@media only screen and (min-width: 1200px){
+    .role{
+        font-size: 2em;
+        letter-spacing: .2em;
+        line-height: 1.5em;
+    }
+    
+    #school{
+        font-size: 1.4em;
+    }
+
+    #homeContainer{
+        gap: 72px 72px;
+    }
+
+    h2{
+        font-size: 2.8em;
+        line-height: 140px;
+    }
+}
+
+
+
+/* @media only screen and (min-width: 1200px){
+
+
+    .card{
+        grid-row: span 2;
+    }
+
+    aside ul{
+        padding: 0;
+        padding-right: 24px;
+    }
+
+    #asideGrid ul{
+        gap: 80px;
+    }
+
+    #asideGrid ul li a{
+        justify-content: right;
+        gap: 40px;
+    }
+
 
     #headerTextProjects{
         text-align: right;
@@ -1411,19 +536,12 @@ footer aside{
         width: 90%;
     }
     
-}
+} */
 
 
 
 
-@media only screen and (min-width: 1440px){
-    #homeContainer{
-        padding: 10% 20vw;
-    }
-
-    #container{
-        padding: 10% 18vw;
-    }
+/* @media only screen and (min-width: 1440px){
 
     #headerTextProjects{
         width: 70vw;
@@ -1451,6 +569,4 @@ footer aside{
 
 
 
-}
-
-/* you can add another break point at 1440+ for 24vw padding  also for the projects page fix the width for the tags in overview*/
+} */
