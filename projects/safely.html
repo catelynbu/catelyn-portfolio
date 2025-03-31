@@ -10,443 +10,366 @@
     <!-- font awesone icons -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
-    <link href="../styles.css" rel="stylesheet">
-
+    <!-- css files -->
+    <link href="../global.css" rel="stylesheet">
+    <link href="projects.css" rel="stylesheet">
+   
+    <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300..900&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+
+    <!-- JS -->
+    <script src="../script.js" defer></script>
 
     <title>Safely | Catelyn Bu Portfolio</title>
     <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
 
 </head>
 <body>
-    <header id="top">
-        <nav>
-            <ul>
-                <li><a href="../index.html" id="navLogo"><img src="../images/logo-DMG-SM.png" class="logoAnimate" alt="logo"></li></a>
-                <li><a href="../index.html">home</a></li>
-                <!-- <li><a href="../all-projects.html">all projects</a></li> -->
-                <li><a href="../about.html">about</a></li>
-                <li><a href="../contact.html">contact</a></li>
-            </ul>
-        </nav>
+    <div id="full-header-container">
+        <div id="nav-container">
+            <nav>
+                <ul>
+                    <li><a href="../index.html"><img src="../images/logo-DMG-SM.png" class="logoAnimate" alt="logo"></a></li>
 
-        <div id="safelyHeader">
-            <h1>Safely</h1>
-            <img src="../images/safely-images/safely-mockupSM.png" alt="Two phones showing screens of Safely's interface">
+                    <div id="nav-mainlinks">
+                        <li><a href="../index.html">work</a></li>
+                        <!-- <li><a href="#">play</a></li> -->
+                        <li><a href="../about/about.html">about</a></li>
+                        <li><a href="https://docs.google.com/document/d/1HRfi9Xt-KR-UvQB5UztDyjA18uAoPxoR46futannPXE/edit?usp=sharing" target="_blank">resume</a></li>
+                    </div>
+                    
+                    <li id="menu"><i class="fas fa-bars fa-lg"></i></li>
+
+                    <li id="contactCTA"><a class="button" href="../contact/contact.html">contact</a></li>
+                </ul>
+
+                <ul id="menu-links">
+                    <li><a href="../index.html">work</a></li>
+                    <!-- <li><a href="#">play</a></li> -->
+                    <li><a href="../about/about.html">about</a></li>
+                    <li><a href="https://docs.google.com/document/d/1HRfi9Xt-KR-UvQB5UztDyjA18uAoPxoR46futannPXE/edit?usp=sharing" target="_blank">resume</a></li>
+                    <li><a href="../contact/contact.html">contact</a></li>
+                </ul>
+            </nav>
         </div>
-        
-
-        <div class="absolute">
-            <div class="relative inset-0 justify-center">
-                <div class="bg-shape1 bg-blue opacity-50 bg-blur"></div>
-                <div class="bg-shape2 bg-purple opacity-50 bg-blur"></div>
-                <div class="bg-shape3 bg-magenta opacity-50 bg-blur"><div>
+    
+        <header>
+            <div id="header-projects">
+                <h1>Safely</h1>
+                <img id="header-project-img" src="../images/safely-images/safely-mockup.png" alt="Two phones showing screens of Safely's interface">
             </div>
-        </div>
-    </header>
+            
 
-    <a href="#top"><p class="backtotop"><i class="fas fa-arrow-up fa-lg" style="color: #ffffff;"></i></p></a>
+            <div class="absolute">
+                <div class="relative inset-0 justify-center">
+                    <div class="bg-shape1 bg-blue opacity-50 bg-blur"></div>
+                    <div class="bg-shape2 bg-purple opacity-50 bg-blur"></div>
+                    <div class="bg-shape3 bg-magenta opacity-50 bg-blur"></div>
+                </div>
+            </div>
+        </header>
+    </div>
 
-    <section id="container">
-        <div id="overview">
-            <section class="projectText">
-                <h2>Overview</h2>
+
+    <a href="#full-header-container"><p class="backtotop"><i class="fas fa-arrow-up fa-lg" style="color: #ffffff;"></i></p></a>
+
+
+    <div class="container">
+        <!-- OVERVIEW SECTION -->
+        <section id="overview">
+            <h2 class="test">Overview</h2>
+
+            <div id="overview-main">
+                <section id="my-role">
+                    <h3 class="subheading">MY ROLE</h3>
         
-                <p>Statistically, women feel much more unsafe when in public and are the main users of personal safety apps. Women also prioritize having handy tools to keep them safe.</p>   
+                    <p>This was a solo UX project I took on during a 3-week period. I was responsible for covering all parts of the entire design process and went through multiple rounds of research, user testing, and rigorous design iterations. </p>
+                </section>
         
-                <p>Safely is a mobile app designed with the intention of keeping women safe by supplying them with location-based and hands-free tools.</p>
+        
+                <section id="the-problem">
+                    <h3 class="subheading">THE PROBLEM</h3>
+        
+                    <p>Women often feel unsafe in public due to fears of dangerous encounters, crime, or being alone. Personal safety apps are a common tool to address these needs, but many are flawed, offering solutions that don’t align with users’ needs, requiring too many steps that can create confusion during high-stress situations, or have features that may attract unwanted attention.</p>
+                </section>
 
                 <div id="buttons">
                     <p ><a href="https://www.figma.com/proto/ib7WVaBRfdHV2K8eFhTVjq/Bu_Catelyn_DES112_P2?page-id=84%3A1484&node-id=323-6761&p=f&viewport=695%2C380%2C0.08&t=FcJ5ss0vbYWAfwOY-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=323%3A6761" target="_blank" class="buttonProjects">Safely Prototype<i class="fas fa-arrow-right"></i></a></p>
                 </div>
-            </section>
-
-            <section id="tags">
+            </div>
+    
+            <aside id="overview-aside">
                 <ul>
-                    <li><h3>Role</h3>
-                        <ul>
-                            <li>Designer</li>
-                            <li>UX Researcher</li>
-                        </ul>
-                    </li>
-                    <li><h3>Tech Used</h3>
+                    <li><h3 class="subheading">TOOLS</h3>
                         <ul>
                             <li>Figma</li>
                         </ul>
                     </li>
-                    <li><h3>Project Type</h3>
+                    <li><h3 class="subheading">DURATION</h3>
+                        <ul>
+                            <li>October 2024 - December 2024</li>
+                        </ul>
+                    </li>
+                    <li><h3 class="subheading">PROJECT TYPE</h3>
                         <ul>
                             <li>Mobile app design</li>
                         </ul>
                     </li>
-                    <li><h3>Disipline</h3>
-                        <ul>
-                            <li>UI Design</li>
-                            <li>UX Research</li>
-                        </ul>
-                    </li>
                 </ul>
-
-
-            </section>
-        </div>
-    
-    
-    
-    
-    
-        <section class="projectSection" id="context">
-            <div class="projectText">
-                <h2>The Problem</h2>
-                <p>When going out in public, especially at night, women tend to feel less safe due to fears of dangerous encounters, crime, being alone, etc. People may get involved in uncomfortable or even dangerous situations where they need a tool to help them leave or find safety.</p>
-                
-                <p>Personal safety apps are a common tool used to solve these issues, however, many apps are flawed. Tools that don’t fit the needs of its users, tools that require too many steps which can raise confusion during high-stress situations, and unnecessarily loud visuals that may attract unwanted attention are a few issues.</p>
-            </div>
-    
-            <div class="projectText">
-                <h2>The Goal</h2>
-                <p>To solve these problems with pre-existing apps and to create a new product optimize to the needs of women, I followed these goals.</p>
-
-                <ul>
-                    <li>Create tools and features that streamline access to instant help</li>
-                    <li>Design a discrete UI to avoid unwanted attention</li>
-                    <li>Create an intuitive experience with tools that require few steps to complete</li>
-                    <li>Gain insight on the target audience to design a product that best fits their needs and preferences</li>
-                </ul>
-            </div>
-        </section>
-
-        <p id="problemStatement">💡 How can we provide women with resources that help them prevent dangerous interactions and overall improve general feelings of safety when going out?</p>
-    
-    
-    
-        <section class="projectSection">
-            <div class="projectText">
-                <h2>Research</h2>
-    
-                <p>To begin the design process I started with doing research. I conducted two methods of research: competitive analysis (with SWOT analysis) and surveys. </p>
-    
-                <p>This research was used to inform my visual designs and the functions of the app. What tools would women actually use and how can we make them feel safe?</p>
-    
-                <p>At this point I also defined what discrete UI meant to me. Discrete interface meant built-in dark mode with color accents that were not excessively bold or heavily contrasted the rest of the interface. I found this important because of hypothetical situations where this app may be used in a dark setting. Bright whites are blinding in the dark and can easily grab the attention of others when the user may prefer to discretely access their phone.</p>
-            </div>
-
-
-              <!-- for this part just copy some of the css properties from id=tags but make a NEW ID for these kind of sections -->
-            <section class="safelyBox"> 
-                <h3>Research Goals</h3>
-                <ul>
-                    <li>Learn more about common tools within safety apps</li>
-                    <li>Observe visual layouts of other safety apps  and what makes them successful</li>
-                    <li>Gain insight on what women fear the most when going outside and what makes them feel safe</li>
-                    <li>Understand what tools would help women the most</li>
-                </ul>
-            </section>
+            </aside>
         </section>
 
 
-        <section class="projectSectionColumn">
-            <div class="projectText">
-                <h3>Competitive Analysis</h3>
-    
-                <p>I looked at three popular competing safety apps: Im Safe, Life 360, and Noonlight to analyze their strengths, weaknesses, and how I could leverage this information to optimize my product.</p>
-            </div>
+        <!-- RESEARCH SECTION -->
+        <section class="project-section">
+            <section class="project-section-title">
+                <p class="subheading">RESEARCH</p>
+                <h2>Understanding the Problem</h2>
 
-            <div class="projectSection">
-                <div class="projectText">
-                    <h4>Research Findings</h4>
-
-                    <ul>
-                        <li>Common tools included a live location tracker, a fake call feature, a SOS button, and a hidden camera/audio recording tool</li>
-                        <li>Most features within these apps could be sorted into either communication or location based</li>
-                        <li>Some functions were not intuitive to understand</li>
-                        <li>The visual UI used bright colors and lots of white</li>
-                        <li>Emphasis on a couple of tools, not on a lot of different tools</li>
-                        <li>Maps are a crucial focal point and tool</li>
-                    </ul>
-
-                    <p>From conducting a competitive analysis I identified the components that make up safety apps. I analyze how a user would navigate through each app and detected pain points and areas of confusion. I took these insights and used them to inform my future design decisions.</p>
+                <div class="sectionBtn-container">
+                    <button id="goal" class="section-button selected-button">Goals</button>
+                    <!-- <button id="literature" class="section-button">Literature Review</button> -->
+                    <button id="survey" class="section-button">User Surveys</button>
+                    <button id="competitive" class="section-button">Competitive Analysis</button>
                 </div>
-
-                <img src="../images/safely-images/safely-compAnalysis.jpg" alt="A chart comparing four qualities between the three apps Im Safe, Life 360, and Noonlight">
-            </div>
-        </section>
-
-
-
-        <section class="projectSectionColumn">
-            <div class="projectText">
-                <h3>Surveys</h3>
-    
-                <p>This survey gathered 18 responses and aimed to collect qualitative and quantitative data from the target audience to understand their feelings about personal safety and tools they would like to see in an app.</p>
-
-                <p>This research method helped me understand the current trends and commonalities within personal safety apps. It also informed the direction of my app and how I wanted to differentiate my product while still maintaining core functions.</p>
-            </div>
-
-            <section class="safelyBox" > 
-                <!-- stylying needed for h4s -->
-                <h4>Survey Findings</h4>
-                <ul>
-                    <li>Women tend to feel somewhat safe in general but lean heavily towards somewhat unsafe at night</li>
-                    <li>The most likely to be used features include:
-                        <ul>
-                            <li>Route and area suggestions (61.1%)</li>
-                            <li>Real-time location sharing (44.4%)</li>
-                            <li>Safeword voice recognition (44.4%)</li>
-                        </ul>
-                    </li>
-                    <li>When asked about further suggestions, of those who responded, most people (5/9) replied with a location-based feature (e.g. safe zones  or suspicious/high risk areas outlined on a map).</li>
-                    <li>When asked about the discreteness of the app, 11/18 people valued it at a 4 or 5 for how important it is for them.</li>
-                    <li>Most participants marked a 4 or 5 on how likely they were to use a safety app (13/18)</li>
-                </ul>
             </section>
-        </section>
-    
-        <section class="projectSection">
-            <div class="projectText">
-                <h2>Ideation</h2>
-                <h3>Low-fidelity Sketches</h3>
-    
-                <p>To begin the design process I went ahead and started with low fidelity sketches. These sketches captured the main static screens of the four different tools, but also were created to be a wireflow.</p>
 
-                <p>The purpose of these sketches were to:</p>
+            <div class="project-section-main">
+                <section id="goal-content">
+                    <h3>Outling the Goals</h3>
+                    <p>Before designing the product I needed to better understand this sensitive topic and learn about how women feel about general safety. These are the goals I generated to direct my research.</p>
 
-                <ul>
-                    <li>Understand the flow of navigating through different tools and steps</li>
-                    <li>Visualize the interface and how elements harmonize with each other</li>
-                    <li>Flesh out the mechanics and details of tools</li>
-                </ul>
+                    <!-- <img src="../../images/chevron-images/chevron-goals.png" alt=""> -->
+                </section>
+
+                <!-- <section class="no-display" id="literature-content">
+                    <h3>Comparing Market Competitors</h3>
+                    <p>I conducted a <span>competitive analysis</span> on Chevron’s current web scraper and two other web extension scrapers. I used the <span>S.W.O.T method</span> and also took a closer look specifically at how each program handled <span>task creation</span>, <span>task status</span>, <span>results presentation</span>, and <span>history</span> along with recording general pain points throughout the process.</p>
+
+                    <img src="../../images/chevron-images/chevron-competitiveAnalysis.png" alt="">
+                </section> -->
+
+                <section class="no-display" id="survey-content">
+                    <h3>Connecting with the Users</h3>
+                    <p>For this I survey gathered 18 responses and aimed to collect qualitative and quantitative data using Google Surveys. The goal was to reach out to the target audience to understand their feelings about personal safety and tools they would like to see in an app.</p>
+
+                    <img src="../../images/chevron-images/chevron-userTest.png" alt="">
+
+                    <p>From this survey I found that many people, mainly women, feel unsafe in public, especially at night.  Most respondents preferred location-based tools and some testimonials specifically requested a tool that integrated location, marked areas, and maps. Respondents also wanted a method of contacting or notifying trusted contacts.</p>
+
+                    <img src="../../images/chevron-images/chevron-userTest.png" alt="">
+                </section>
+
+                <section class="no-display" id="competitive-content">
+                    <h3>Looking at Market Competitors</h3>
+                    <p>I looked at three popular competing safety apps: Im Safe, Life 360, and Noonlight to analyze their strengths, weaknesses, and how I could leverage this information to optimize my product.</p>
+
+                    <img class="drop" src="../../images/chevron-images/chevron-affinity.jpg" alt="">
+                </section>
             </div>
-
-            <img src="../images/safely-images/safely-lowfi.png" alt="A series of pencil sketches that depict the flow between screens">
-        </section>
-
-        <section class="projectSection">
-            <div class="projectText">
-                <h2>Prototype</h2>
-                <h3>Mid-fidelity Wireflows</h3>
-    
-                <p>After developing the low-fidelity designs, I took my paper sketches and started digitalizing them in Figma. This prototype used my preliminary sketches to create a fully functional prototype with multiple safety tools and a simple UI design. I experimented with white space and sizing to reduce cognitive load.</p>
-
-                <p>Creating a wireflow strengthened my understanding of how different elements interact with one another in addition to how a user would navigate through the app’s tools.</p>
-            </div>
-
-            <img src="../images/safely-images/safely-wireflow.png" alt="A screenshot of several different minimally designed screens with blue arrows pointing to other screens showing the navigation and flow between the screens of the app">
-        </section>
-
-        <section class="projectSection">
-            <div class="projectText">
-                <h3>Design System</h3>
-    
-                <p>To ensure consistency between elements within my app, I created a design system to outline the design’s typography and colors.</p>
-
-                <p>I opted for a dark mode UI to create a more discrete interface. This would be ideal in dark or low light settings so that the glow of a bright, white screen wouldn’t attract unwanted attention.</p>
-
-                <p>I used green and yellow in subtle gradients and lower saturation shades to employ a smoothing feeling. These colors and application methods are more calming to reduce stress during potentially high-risk situations.</p>
-            </div>
-
-            <img src="../images/safely-images/safely-designSystem.jpg" alt="A diagram outlining Safely's branding including typography and colors">
         </section>
 
-        <section class="projectSection">
-            <div class="projectText">
-                <h3>High-fidelity Designs Version 1</h3>
-    
-                <p>For high-fidelity designs I integrated the design system and focused on refining the visual design and functions of the tools.  I carefully considered the visual presentation  to optimize readability and cohesion.</p>
 
-                <!-- h4? -->
-                <p>Main features:</p>
-                <ul>
-                    <li>Minimalistic, modern design to reduce distractions and unnecessary content</li>
-                    <li>Subtle color usage to provide enough visual interest without being distracting or overwhelming</li>
-                    <li>Activation buttons to maintain user privacy</li>
-                    <li>Simple tasks with short steps to prevent confusion</li>
-                    <li>User customization to adjust features to the user’s needs</li>
-                </ul>
+        <!-- DEFINE SECTION -->
+        <section class="project-section">
+            <section class="project-section-title">
+                <p class="subheading">DEFINE</p>
+                <h2>Determining the Scope</h2>
+            </section>
 
-                <p>These high-fidelity designs functioned as a fully prototyped app that could be used for usability tests where I tasked users with completing the four main tasks within the app.</p>
-            </div>
+            <div class="project-section-main">
+                <section class="project-content">
+                    <p>To finalize all of our research methods, I determined the three key goals to help guide our design process. <span>Accuracy</span>, <span>Collaboration</span>, and <span>Simplicity</span> were some of the most requested and discussed topics throughout our research, indicating our priorities.</p>
 
-            <div id="safely-midfi">
-                <img src="../images/safely-images/safely-midfiV1-img/safely-midfiV1-1.jpg" alt="High-fidelity screen of the home page">
-                <img src="../images/safely-images/safely-midfiV1-img/safely-midfiV1-2.jpg" alt="High-fidelity screen of the location sharing tool">
-                <img src="../images/safely-images/safely-midfiV1-img/safely-midfiV1-3.jpg" alt="High-fidelity screen of the route suggestion tool">
-                <img src="../images/safely-images/safely-midfiV1-img/safely-midfiV1-4.jpg" alt="High-fidelity screen of the arrived screen">
-                <img src="../images/safely-images/safely-midfiV1-img/safely-midfiV1-5.jpg" alt="High-fidelity screen of the voice recognition tool">
-                <img src="../images/safely-images/safely-midfiV1-img/safely-midfiV1-6.jpg" alt="High-fidelity screen of adding a contact">
+                    <img src="../../images/chevron-images/chevron-scope.png" alt="">
+                </section>
             </div>
             
         </section>
 
-        <section class="projectSection">
-            <div class="projectText">
-                <h3>Usability Testing</h3>
-    
-                <p>I conducted 5 user tests with users between the ages of 20 - 22 to determine how intuitive the design was and to identify areas of improvement. These users were all UC Davis students, three of which being female, two being male. I asked them to complete these four tasks as they are the main functions of the app.</p>
 
-                <ul>
-                    <li>Share your location</li>
-                    <li>Find a suggested route</li>
-                    <li>Activate voice recognition and create a safeword</li>
-                    <li>Add a contact</li>
-                </ul>
+        <!-- IDEATE SECTION -->
+        <section class="project-section">
+            <section class="project-section-title">
+                <p class="subheading">IDEATE</p>
+                <h2>Brainstorming Solutions</h2>
 
-                <p>This usability test was very helpful and brought up issues I had not originally seen in my design. It gave me the opportunity to bring in new ideas and communicate more with my target audience. The main takeaways from the usability test were:</p>
+                <div class="sectionBtn-container">
+                    <button id="lowfi" class="section-button selected-button">Low-fi Sketches</button>
+                    <button id="midfi" class="section-button">Mid-fi Wireframes</button>
+                </div>
+            </section>
 
-                <ul>
-                    <li>The danger alert pop-up found in the route suggestion tool was a strong feature that should be integrated into the main map on the home page</li>
-                    <li>The interface for certain actions such as adding a safeword or adding a contact were too small, making it difficult to navigate</li>
-                    <li>Needs improvement on general readability for colors and text</li>
-                </ul>
+            <div class="project-section-main">
+
+                <section id="lowfi-content">
+                    <h3>Sketching the Initial Ideas</h3>
+                    <p>My low-fidelity sketches captured the main static screens of the four different tools, but also were created to be a wireflow. From these sketches I was able to understand the flow of navigating through different tools and steps, visualize the interface and how elements harmonize with each other, and flesh out the mechanics and details of tools.</p>
+
+                    <img class="drop" src="../images/safely-images/safely-lowfi.jpg" alt="">
+                </section>
+
+                <section class="no-display" id="midfi-content">
+                    <h3>Digitalizing the Ideas</h3>
+                    <p>After developing the low-fidelity designs, I took my sketches and digitalized them as mid-fidelity wireflows in Figma. This was a fully functional prototype with multiple safety tools and a simple UI design. I experimented with white space and sizing to reduce cognitive load.</p>
+
+                    <p>Creating a wireflow strengthened my understanding of how different elements interact with one another in addition to how a user would navigate through the app’s tools.</p>
+
+                    <img class="drop" src="../images/safely-images/safely-midfi.jpg" alt="">
+                </section>
+            </div>
+        </section>
+
+
+        <!-- PROTOTYPE SECTION -->
+        <section class="project-section">
+            <section class="project-section-title">
+                <p class="subheading">PROTOTYPE</p>
+                <h2>Bringing it all Together</h2>
+
+                <div class="sectionBtn-container">
+                    <button id="system" class="section-button selected-button">Design System</button>
+                    <button id="hifi" class="section-button">High-Fi V1</button>
+                    <button id="test" class="section-button">Usability Testing</button>
+                </div>
+            </section>
+
+            <div class="project-section-main">
+                <section id="designSystem">
+                    <h3>Design System</h3>
+                    <p>For my <span>design system</span>, I opted for a <span>dark mode UI</span> to create a more <span>discrete</span> interface. This would be ideal in dark or low light settings so that the glow of a bright, white screen wouldn’t attract unwanted attention.</p>
+
+                    <p>I used <span>green</span> and <span>yellow</span> in subtle gradients and lower saturation shades to employ a <span>smoothing</span> feeling. These colors and application methods are more <span>calming</span> to <span>reduce stress</span> during potentially high-risk situations.</p>
+
+                    <img class="drop" src="../images/safely-images/safely-designSystem.jpg" alt="">
+                </section> 
             </div>
 
-            <div id="usability">
-                <div class="usabilityColumn">
-                    <div class="safelyRow">
-                        <img src="../images/safely-images/usability-img/safely-usability1.jpg" alt="A dark map with directions and highlighed lines to indicate warning areas and the suggested travel path">
-                        <img src="../images/safely-images/usability-img/safely-usability2.jpg" alt="A pop up that says danger alert and notifys the user of potential danger in the area">
-                    </div>
-                    
-                    <p>Danger alert tool found in the route suggestion feature.</p>
-                </div> 
-                
-                <div class="usabilityColumn">
-                    <div class="safelyRow">
-                        <img src="../images/safely-images/usability-img/safely-usability3.jpg" alt="A pop up screen that shows how to add a safeword">
-                        <img src="../images/safely-images/usability-img/safely-usability4.jpg" alt="A pop up screen that shows how to add a contact">
-                    </div>
-                    
-                    <p>Small interfaces for adding a safeword and adding a contact.</p>
-                </div>
+            <div class="project-section-main">
+                <section class="no-display" id="hifiV1">
+                    <h3>High-Fidelity Version 1</h3>
+                    <p>My first <span>high-fidelity</span> iteration integrated the design system and focused on refining the visual design and functions of the tools.  I carefully considered the visual presentation to optimize <span>readability</span> and <span>cohesion</span> for the purposes of a future usability test.</p>
+
+                    <p>Main features include a <span>minimalistic</span>, <span>modern</span> design to reduce distractions and unnecessary content, user activation buttons to empower users and protect their <span>privacy</span>, <span>simple tasks</span> with short steps, and tool <span>customization</span> to fit the user’s needs.</p>
+
+                    <img class="drop" src="../images/safely-images/safely-hifiv1.jpg" alt="">
+                </section> 
+            </div>
+
+            <div class="project-section-main">
+                <section class="no-display" id="userTest">
+                    <h3>Usability Testing</h3>
+                    <p>I conducted <span>5 user tests</span> with users between the ages of 20 - 22 to identify areas of improvement. These users were all UC Davis students, three of which being female, two being male. I asked them to complete the main functions of the app: <span>share your location</span>, <span>find a suggested route</span>, <span>activate voice recognition and create a safeword</span>, and <span>add a contact</span>.</p>
+
+                    <p>This usability test revealed unnoticed design issues and allowed me to gather new ideas while engaging with my target audience. Key takeaways included the suggestion to <span>integrate</span> the danger alert function into the main map, making actions like adding a safeword or contact more <span>accessible</span>, and improving the overall <span>readability</span> of colors and text.</p>
+
+                    <img class="drop" src="../images/safely-images/safely-userTest.jpg" alt="">
+                </section> 
             </div>
             
-
-           
-
-
         </section>
-    
+
+
+
+        <!-- FINAL DESIGNS SECTION -->
+        <section class="project-section">
+            <section class="project-section-title">
+                <p class="subheading">FINAL DESIGNS</p>
+                <h2>The Solutions</h2>
+
+                <!-- <div class="sectionBtn-container">
+                    <button id="dashboard" class="section-button selected-button">Dashboard</button>
+                    <button id="search" class="section-button">Search</button>
+                    <button id="run" class="section-button">Run Status</button>
+                    <button id="preview" class="section-button">Data Preview</button>
+                    <button id="history" class="section-button">History</button>
+                </div> -->
+            </section>
+
+            <div class="project-section-main">
+                <section id="dashboard-content">
+                    <h3>Final Designs</h3>
+
+                    <div class="solutions-content">
+                        <p>After a 5-week research and design process, the Safely prototype was complete. The final design features four core tools: live-location sharing, route suggestions, voice recognition, and a contacts list. The visual design is a modern and sleek look. It uses a dark visual palette to reduce brightness during dark settings and uses calming green and yellow tones for accents.</p>
+
+                        <div id="buttons">
+                            <p ><a href="https://www.figma.com/proto/ib7WVaBRfdHV2K8eFhTVjq/Bu_Catelyn_DES112_P2?page-id=84%3A1484&node-id=323-6761&p=f&viewport=695%2C380%2C0.08&t=FcJ5ss0vbYWAfwOY-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=323%3A6761" target="_blank" class="buttonProjects">Safely Prototype<i class="fas fa-arrow-right"></i></a></p>
+                        </div>
+                    </div>
+
+                    <div class="safelyFinalDesigns">
+                        <div class="safelyGif">
+                            <img src="../images/safely-images/finalDesigns-img/safelyDemo-1.gif" alt="Animated gif showing the home page, location sharing, and route suggestion tools ">
+                            <img src="../images/safely-images/finalDesigns-img/safelyDemo-2.gif" alt="Animated gif showing the voice recognition tool and the contacts list">
+                        </div>
+                       
         
-    
-        <section class="projectSectionColumn">
-            <div class="projectText">
-                <h2>Final Product</h2>
-    
-                <p>After a 5-week research and design process, the Safely prototype was complete. The final design features four core tools: live-location sharing, route suggestions, voice recognition, and a contacts list. The visual design is a modern and sleek look. It uses a dark visual palette to reduce brightness during dark settings and uses calming green and yellow tones for accents.</p>
-
-                <div id="buttons">
-                    <p ><a href="https://www.figma.com/proto/ib7WVaBRfdHV2K8eFhTVjq/Bu_Catelyn_DES112_P2?page-id=84%3A1484&node-id=323-6761&p=f&viewport=695%2C380%2C0.08&t=FcJ5ss0vbYWAfwOY-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=323%3A6761" target="_blank" class="buttonProjects">Safely Prototype<i class="fas fa-arrow-right"></i></a></p>
-                </div>
-            </div>
-            
-            <div class="safelyFinalDesigns">
-                <div class="safelyGif">
-                    <img src="../images/safely-images/finalDesigns-img/safelyDemo-1.gif" alt="Animated gif showing the home page, location sharing, and route suggestion tools ">
-                    <img src="../images/safely-images/finalDesigns-img/safelyDemo-2.gif" alt="Animated gif showing the voice recognition tool and the contacts list">
-                </div>
-               
-
-                <div class="safelyWrap">
-                    <img src="../images/safely-images/finalDesigns-img/safely-finalDesign-1.jpg"  alt="A darkmode screen depicting a green checkmark and confirms that the user's location has been shared. At the bottom are two vertically aligned buttons">
-                    <img src="../images/safely-images/finalDesigns-img/safely-finalDesign-2.jpg"  alt="A darkmode screen that shows a map with highlighted lines that indicate the suggested routes. At the bottom is a draggable screen that shows more details about each route">
-                    <img src="../images/safely-images/finalDesigns-img/safely-finalDesign-3.jpg"  alt="A darkmode screen that shows the voice recognition tool. There are two boxes with information about each safeword and a button at the bottom to activate the voice recognition">
-                    <img src="../images/safely-images/finalDesigns-img/safely-finalDesign-4.jpg"  alt="A darkmode screen showing a contacts list of five people with color coordinated icons">
-                </div>
-            </div>
-
-           
-            
-    
-        </section>
-    
-    
-    
-        <section class="projectSection">
-            <div class="projectText">
-                <h2>Personal Challenges</h2>
-    
-                <p>This was my first time fully prototyping a project, so because of that I ran into some difficulties. Navigating how to use components was a bit tricky but overall incredibly useful for creating flows. Getting the animations and interactive buttons just right was also a bit hard. That is something I need to work more on to further improve my skills.</p>
-
-                <p>This experience taught me the importance of interactive prototypes and how powerful they are as a tool. Prototypes truly allow people to have the full experience of a product that’s more in depth than a couple of static screens.</p>
-            </div>
-    
-            <img class="imgSize" src="../images/safely-images/safely-challenges.jpg" alt="A screenshot of the high fidelity prototype designs showing blue arrows that point to other screens to indicate the user flow">
-    
-        </section>
-    
-    
-    
-        <section class="projectSectionColumn">
-            <div class="projectText">
-                <h2>Takeaways</h2>
-    
-                <p>Designing a mobile app brought new challenges and helped me develop my skills as a UX researcher and designer.</p>
-            </div>      
-    
-            <div id="takeaways">
-                <div class="takeawayCard">
-                    <i class="fas fa-comment-dots" style="color: #D14291; font-size: 1.8rem;"></i>
-
-                    <h3 style="color: #D14291;">Usability Testing</h3>
-
-                    <p>For this project I conducted 5 usability tests which provided beneficial insight on how I could further improve my product. It gave me the opportunity to talk to my target audience and get more in-depth, detailed responses on how they felt about my designs. With that feedback I made the appropriate changes to fit the needs of my users.</p>
-                </div>
-
-                <div class="takeawayCard">
-                    <i class="fas fa-pencil-ruler" style="color: #1e56c3; font-size: 1.8rem;"></i>
-
-                    <h3 style="color: #1e56c3;">User Experience Research</h3>
-
-                    <p>The Safely project required substantial research to create a successful design. I learned how to compare my work to market competitors and how to conduct and write unbiased surveys. Gathering this data informed my design process and supplied me with information about my target audience.</p>
-                </div>
-
-                <div class="takeawayCard">
-                    <i class="fas fa-pen-nib" style="color: #CC75EE; font-size: 1.8rem;"></i>
-                    <h3 style="color: #CC75EE;">Figma Skills</h3>
-
-                    <p>The Safely project was created to be  a fully functioning prototype in Figma. I quickly picked up the importance of components and a clearly defined design system. Using these tools allowed for greater efficiency and  consistency. Utilizing components and a design system is a crucial tool that will help me in the future.</p>
-                </div>
-            </div>
-        </section>
-            
-
-        <aside id="nextProject">
-            <h2 style="color: black;">Up next...</h2>
-
-            <div id="nextProjectDetails"><a href="blog.html">
-                <img src="../images/blog-images/mockups/multi-mockup.png" alt="">
-
-                <div id="nextProjectText">
-                    <div id="nextProjectCaption">
-                        <h3 style="font-weight: 400; font-size: 1.4em;">Responsive Blog Site</h3>
-                        <h4 class="homeH4">WEBSITE DESIGN & DEVELOPMENT</h4>
+                        <img class="safelyImg" src="../images/safely-images/safely-final.png" alt="">
                     </div>
-                    <i style="font-size: 1.6em;" class="fas fa-arrow-right"></i>
-                </div></a>
-            </div> 
-        </aside>
-    </section>
+                </section> 
+            </div>
+            
+        </section>
 
+
+        <!-- TAKEAWAYS SECTION -->
+        <section class="project-section">
+            <section class="project-section-title">
+                <p class="subheading">TAKEAWAYS</p>
+                <h2>What I Gained as a Designer</h2>
+            </section>
+
+            <div class="project-section-main">
+                <section class="takeaway-card">
+                    <h3><span>01</span> Empathize with the audience.</h3>
+                    <p>For this project I conducted 5 usability tests which provided beneficial insight on how I could further improve my product. It gave me the opportunity to talk to my target audience and get more in-depth, detailed responses on how they felt about my designs. With that feedback I made the appropriate changes to fit the needs of my users.</p>
+                </section> 
+
+                <section class="takeaway-card">
+                    <h3><span>02</span> Conduct in-depth research.</h3>
+                    <p>The Safely project required substantial research to create a successful design. I learned how to compare my work to market competitors and how to conduct and write unbiased surveys. Gathering this data informed my design process and supplied me with information about my target audience.</p>
+                </section> 
+
+                <section class="takeaway-card">
+                    <h3><span>03</span> The power of prototyping.</h3>
+                    <p>The Safely project was created to be  a fully functioning prototype in Figma. I quickly picked up the importance of components and a clearly defined design system. Using these tools allowed for greater efficiency and  consistency. Utilizing components and a design system is a crucial tool that will help me in the future.</p>
+                </section> 
+            </div>
+            
+        </section>
+    </div>
     
 
     <footer>
-        <ul id="footerLinks">
-            <li><a href="../index.html">home</a></li>
-            <!-- <li><a href="../all-projects.html">all projects</a></li> -->
-            <li><a href="../about.html">about</a></li>
-            <li><a href="../contact.html">contact</a></li>
-        </ul>
-
-        <div id="footerText">
-            <div id="footerTag">
-                <a href="../index.html"><img src="../images/logo-DMG-SM.png" class="logoAnimate" alt="logo" width="70%" height="auto"></a>
-
-                <p>Catelyn Bu 2025</p>
-            </div>
+        <div id="footer-container">
+            <section class="footer-main">
+                <div id="footer-socials">
+                    <p id="footer-CTA">Let's keep in touch!</p>
+                    
+                    <div id="footer-buttons">
+                        <p><a class="button" href="#" target="_blank">catelyn.bu@gmail.com</a></p>
+                        <p><a class="button" href="https://www.linkedin.com/in/catelynbu/" target="_blank">linkedin</a></p>
+                    </div>
+                </div>
     
-            <p>Designed and developed with love by Catelyn <i class="far fa-heart" style="font-size: .8em;"></i></p>
+                <div id="footer-links">
+                    <ul>
+                        <li><a href="../index.html">work</a></li>
+                        <!-- <li><a href="#">play</a></li> -->
+                        <li><a href="../about/about.html">about</a></li>
+                        <li><a href="https://docs.google.com/document/d/1HRfi9Xt-KR-UvQB5UztDyjA18uAoPxoR46futannPXE/edit?usp=sharing" target="_blank">resume</a></li>
+                        <li><a href="../contact/contact.html">contact</a></li>
+                    </ul>
+                </div>
+            </section>
+    
+            <aside>
+                <img id="footer-logo" src="../images/logo-DMG-SM.png" alt="Logo.">
+                <p>©2025 | Designed and developed by Catelyn with love <i class="far fa-heart" style="font-size: .8em;"></i></p>
+            </aside>
         </div>
     </footer>
 
