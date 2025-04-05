@@ -103,11 +103,13 @@ footer, header, #homeContainer, .container{
 }
 
 .bg-shape1{
-    width: 70vw;
-    height: 70vw;
+    width: 75vw;
+    height: 75vw;
     border-radius: 9999px;
     position: absolute;
-    animation: one 14s linear infinite alternate;
+    top: 40px;
+    left: -180px;
+    /* animation: one 14s linear infinite alternate; */
 }
 
 .bg-shape2{
@@ -115,15 +117,19 @@ footer, header, #homeContainer, .container{
     height: 50vw;
     border-radius: 9999px;
     position: absolute;
-    animation: two 10s linear infinite alternate;
+    top: -30px;
+    left: 100px;
+    /* animation: two 10s linear infinite alternate; */
 }
 
 .bg-shape3{
-    width: 60vw;
-    height: 60vw;
+    width: 65vw;
+    height: 65vw;
     border-radius: 9999px;
     position: absolute;
-    animation: three 12s linear infinite alternate;
+    top: 300px;
+    left: -300px;
+    /* animation: three 12s linear infinite alternate; */
 }
 
 /* blue */
@@ -713,6 +719,19 @@ footer aside{
     }
 
 
+    .bg-shape1{
+
+        animation: one 14s linear infinite alternate;
+    }
+    
+    .bg-shape2{
+
+        animation: two 10s linear infinite alternate;
+    }
+    
+    .bg-shape3{
+        animation: three 12s linear infinite alternate;
+    }
     
 }
 
