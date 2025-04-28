@@ -88,7 +88,7 @@
 
     windowSize();
 
-    addEventListener('resize', windowSize)
+    addEventListener('resize', windowSize);
 
 
 
@@ -124,10 +124,15 @@
       for(let i=0; i<homeCards.length; i++){
         homeCards[i].addEventListener('mouseover', function(){
             console.log('touching the card!');
+            homeCards[i].style.transform = 'scale(1.05)';
+            homeCards[i].style.boxShadow = '0px 0px 9px 5px rgba(0,0,0,0.10)';
         })
 
         homeCards[i].addEventListener('mouseout', function(){
             console.log('not touching the card!');
+
+            homeCards[i].style.transform = 'scale(1)';
+            homeCards[i].style.boxShadow = '0px 0px 9px 5px rgba(0, 0, 0, 0.03)';
         })
       }
     

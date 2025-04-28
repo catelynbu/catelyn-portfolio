@@ -66,6 +66,7 @@
 
 
 
+
 /* BANNER */
 .banner{
     height: 50vw;
@@ -199,6 +200,12 @@ img{
     width: 100%;
     height: auto;
     margin: 12px auto;
+}
+
+.picture{
+    width: 100%;
+    height: auto;
+    margin-bottom: 100px;
 }
 
 
