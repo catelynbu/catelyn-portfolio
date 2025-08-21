@@ -819,12 +819,12 @@ footer aside{
 
 
 @media only screen and (min-width: 1440px){
-    #homeContainer{
+    /* #homeContainer{
         padding: 4% 20vw;
-    }
+    } */
 
     .container, footer{
-        padding: 4% 14vw;
+        padding: 4% 10vw;
     }
 
     .bigger h1{

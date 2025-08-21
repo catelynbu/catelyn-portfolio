@@ -32,12 +32,22 @@ h3{
 
 
 /* FEATURED WORKS*/
+.img-container{
+    max-width: 100%;
+    max-height: 50vh;
+    overflow: hidden;
+    border-radius: 10px 10px 0 0;
+}
+
 .homeImg{
-    width: 100%;
-    height: auto;
     margin: auto;
-    padding: 0 0 10% 0;
     object-fit: contain;
+
+    transition: transform .8s;
+}
+
+.homeImg:hover{
+    transform: scale(1.07);
 }
 
 .homeImgSafely{
@@ -52,9 +62,11 @@ h3{
     display: flex;
     flex-direction: column;
     gap: 36px;
-    background-color: rgb(255, 255, 255, 0.3);
+    /* background-color: rgb(255, 255, 255, 0.3); */
     border-radius: 20px 20px 0 0;
     backdrop-filter: blur(1.5px);
+
+    margin: auto;
 }
 
 
@@ -71,9 +83,51 @@ h3{
     gap: 12px;
     box-shadow: 0px 0px 9px 5px rgba(0, 0, 0, 0.03);
     transition: transform 0.8s;
+    border-radius: 10px;
+    background-color: white;
+    height: fit-content;
+}
+
+.card2{
+    /* padding: 10%; */
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    box-shadow: 0px 0px 9px 5px rgba(0, 0, 0, 0.03);
+    transition: transform 0.8s;
     border-radius: 25px;
     background-color: white;
     height: fit-content;
+
+}
+
+#homeContainer a{
+    display: flex;
+}
+
+#goodnotes{
+    order: 1;
+}
+
+#chevron{
+    order: 2;
+}
+
+#safely{
+    order: 3;
+}
+
+#bestBuddies{
+    order: 4;
+}
+
+#asideGrid{
+    order: 5;
+}
+
+
+.text{
+    padding: 0 20px 20px;
 }
 
 .line{
@@ -111,11 +165,11 @@ h3{
     list-style-type: none;
     margin: 0;
     padding: 0;
-    gap: 8px;
+    gap: 12px;
 }
 
 .in-progress, .design, .research, .development{
-    padding: 0px 16px;
+    padding: 0px 12px;
     border-radius: 1000px;
     font-size: 0.9em;
 }
@@ -373,13 +427,34 @@ h3{
 @media only screen and (min-width: 992px){
     /* ADDING GRID TO THE HOME LAYOUT */
     #homeContainer{
-        display: grid;
+        /* display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1.5fr;
-        gap: 50px 72px;
+        grid-template-rows: 1fr;
+        gap: 50px 72px; */
+
+        display: block;
+        flex-direction: row;
+        
+        max-width: 1200px;
+
+        columns: 2;
+        column-gap: 20px;
 
         padding-top: 10%;
         padding-bottom: 10%;
+    }
+
+    #chevron, #goodnotes, #bestBuddies, #safely{
+        order: 0;
+    }
+
+    .card2, #grid{
+        margin: 0 0  10vh 0;
+        break-inside: avoid;
+    }
+
+    #asideGrid{
+        margin-top: 8vh;
     }
 
     #grid{

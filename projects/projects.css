@@ -69,7 +69,7 @@
 
 /* BANNER */
 .banner{
-    height: 50vw;
+    height: 60vw;
     width: 100%;
     background-size: cover;
     background-position: center;
@@ -87,6 +87,9 @@
     background-image: url(../images/blog-images/blog-banner.jpg);
 }
 
+#goodnotes{
+    background-image: url(../images/goodnotes-images/goodnotes-banner.gif);
+}
 
 
 
@@ -250,7 +253,7 @@ img{
 
     /* BANNER */
     .banner{
-        height: 40vw;
+        height: 45vw;
         width: 100%;
     }
 
@@ -259,10 +262,8 @@ img{
     /* PROJECT SECTION SIDE BAR */
     .project-section-title{
         height: fit-content;
-        /* position: sticky;
-        top: 20vh; */
-        min-width: 350px;
-        max-width: 350px;
+        min-width: 300px;
+        max-width: 300px;
     }
 
     /* PROJECT SECTION WHOLE */
@@ -273,7 +274,7 @@ img{
 
     /* PROJECT SECTION MAIN */
     .project-section-main{
-        max-width: 900px;
+        max-width: 1050px;
         gap: 50px;
     }
 
@@ -284,9 +285,9 @@ img{
 
 
 @media only screen and (min-width: 1440px){
-    img{
+    /* img{
         width: 90%;
-    }
+    } */
 
     #header-projects h1{
         font-size: 5em;
