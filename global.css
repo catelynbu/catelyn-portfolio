@@ -9,7 +9,7 @@ h1{
 
 h2{
     font-family: "Unbounded", sans-serif;
-    font-size: 2em;
+    font-size: 1.6em;
     line-height: 60px;
     margin: 0;
     font-weight: 500;
@@ -17,7 +17,7 @@ h2{
 
 h3{
     font-family: "Unbounded", sans-serif;
-    font-size: 1.5em;
+    font-size: 1.4em;
     line-height: 50px;
     margin: 0;
     font-weight: 400;
@@ -32,7 +32,7 @@ h4{
 
 .subheading{
     font-family: "Figtree", sans-serif;
-    font-size: 1.25em;
+    font-size: 1.2em;
     letter-spacing: 0.3em;
     line-height: 28px;
     color: #D14291;
@@ -42,7 +42,7 @@ h4{
 
 p, li, button{
     font-family: "Figtree", sans-serif;
-    font-size: 1.125em;
+    font-size: 1.1em;
     line-height: 32px; 
     margin: 0;
     font-weight: 200;
@@ -808,7 +808,7 @@ footer aside{
     }
 
     .container, footer{
-        padding: 4% 12vw;
+        padding: 4% 10vw;
     }
 
 
