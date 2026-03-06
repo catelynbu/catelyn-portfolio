@@ -357,14 +357,14 @@ nav{
 
 .closed{
     border-radius: 10000px;
-    height: 30px;
-    /* max-height: 40px; */
+    /* height: 30px; */
+    max-height: 40px;
 }
 
 .opened{
     border-radius: 20px;
-    height: 170px;
-    /* max-height: 200px; */
+    /* height: 170px; */
+    max-height: 200px;
 
 }
 
