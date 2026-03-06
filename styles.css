@@ -1,42 +1,136 @@
-/* HOME TYPOGRAPHY */
+/*---------------- HOME TYPOGRAPHY ----------------*/
 h1{
-    font-family: "Unbounded", sans-serif;
-    font-size: 9vw;
-    color: #771D4F;
+    font-size: 16vw;
+    color: #4D433B;
+
+    font-family: "Instrument Serif", serif;
+    font-weight: 400;
+    font-style: normal;
     
 }
 
 h2{
-    font-family: "Unbounded", sans-serif;
     font-size: 2em;
     line-height: 80px;
-    color: #771D4F;
+    color: #4D433B;
     text-align: center;
     font-weight: 500;
 }
 
 h3{
-    font-family: "Unbounded", sans-serif;
-    font-size: 1.25em;
+    font-size: 2em;
     line-height: 50px;
     font-weight: 400;
 }
 
-.role{
-    color: #D14291;
-    font-size: 1.5em;
+.home{
+    font-family: "Instrument Serif", serif;
+    font-size: 1.2em;
+    font-style: italic;
     font-weight: 400;
-    letter-spacing: .2em;
+    color: #5D524A;
 }
 
 
 
-/* FEATURED WORKS*/
+/*---------------- HEADER ----------------*/
+#names{
+    display: flex;
+    align-items: start;
+    gap: 12px;
+}
+
+#names p{
+    font-family: "Long Cang", cursive;
+    font-weight: 400;
+    font-style: normal;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    font-size: 5vw;
+    color: #4D433B;
+}
+
+#headerText{
+    display: flex;
+    flex-direction: column;
+
+    padding: 100px 0;
+    margin: auto;
+
+    justify-content: center;
+    text-align: left;
+    gap: 20px;
+}
+
+#homeRoles{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4px 24px;
+}
+
+
+
+
+/*---------------- FEATURED WORKS/PROJECT CARDS ----------------*/
+
+/* container that holds all project cards */
+#cards-container{
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+}
+
+
+/* holds img + card text */
+.project-card{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+
+/* holds titles, tags, details, and button */
+.card-text{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+
+/* holds title and details (company + tags) */
+.card-titles{
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+}
+
+.card-details{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.tags{
+    display: flex;
+    gap: 12px;
+}
+
+.tag{
+    padding: 4px 12px;
+    border-radius: 100px;
+    background-color: #F7EDDC;
+}
+
+
+
 .img-container{
     max-width: 100%;
     max-height: 50vh;
     overflow: hidden;
-    border-radius: 10px 10px 0 0;
+    border-radius: 4px;
 }
 
 .homeImg{
@@ -50,13 +144,6 @@ h3{
     transform: scale(1.07);
 }
 
-.homeImgSafely{
-    width: 80%;
-    height: auto;
-    margin: auto;
-    padding: 0 0 8% 0;
-    object-fit: contain;
-}
 
 #homeContainer{
     display: flex;
@@ -71,12 +158,12 @@ h3{
 
 
 /* might wanna add this to global css */
-.card:hover, .takeawayCard:hover, #nextProject:hover{
+/* .card:hover, .takeawayCard:hover, #nextProject:hover{
     transform: scale(1.05);
     box-shadow: 0px 0px 9px 5px rgba(0,0,0,0.10);
-}
+} */
 
-.card{
+/* .card{
     padding: 10%;
     display: flex;
     flex-direction: column;
@@ -89,7 +176,6 @@ h3{
 }
 
 .card2{
-    /* padding: 10%; */
     display: flex;
     flex-direction: column;
     gap: 12px;
@@ -99,44 +185,11 @@ h3{
     background-color: white;
     height: fit-content;
 
-}
+} */
 
 #homeContainer a{
     display: flex;
 }
-
-#goodnotes{
-    order: 1;
-}
-
-#chevron{
-    order: 2;
-}
-
-#safely{
-    order: 3;
-}
-
-#bestBuddies{
-    order: 4;
-}
-
-#asideGrid{
-    order: 5;
-}
-
-
-.text{
-    padding: 0 20px 20px;
-}
-
-.line{
-    width: 100px;
-    margin: 8px 0;
-    border: solid 1px #D14291;
-
-}
-
 
 
 /* HOT LINKS */
@@ -158,490 +211,227 @@ h3{
 
 
 
-/* CARD TAGS */
-.label-container{
-    display: flex;
-    flex-wrap: wrap;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    gap: 12px;
-}
 
-.in-progress, .design, .research, .development{
-    padding: 0px 12px;
-    border-radius: 1000px;
-    font-size: 0.9em;
-}
+/* -------------------- MEDIA QUERIES -------------------- */
 
-.in-progress{
-    background-color: #ffd50048;
-}
-
-.design{
-    background-color: #d142913b;
-}
-
-.research{
-    background-color: #82aae544;
-}
-
-.development{
-    background-color: #cc75ee3a;
-}
-
-
-
-
-
-
+/* -------- 650 PX - MOBILE SIZE -------- */
 @media only screen and (min-width: 640px){
-
-
-
-    /*
-    #headerTextProjects, #safelyHeader{
-        padding: 6% 0;
-    }
-
-
-    #headerTextProjects h1, #safelyHeader h1{
-        font-size: 4em;
-    }
-    
-    #headerTextProjects img, #safelyHeader img{
-        width: 50%;
-        height: auto;
-        margin: auto;
-        padding: 4% 0 0 0;
-    }
-
-    #safely-midfi img{
-        width: 30%;
-        height: auto;
-        margin: 4% 0 ;
-    } */
-    
-}
-
-
-
-
-
-
-@media only screen and (min-width: 992px){
-    /* HOME DESKTOP TYPOGRAPHY */
-    /* h1{
-        font-family: "Unbounded", sans-serif;
-        font-size: 8em;
-        color: #771D4F;
-    }
-
-    h2{
-        font-family: "Unbounded", sans-serif;
-        font-size: 5.25em;
-        line-height: 60px;
-        color: #771D4F;
-    }
-
-    h3{
-        font-family: "Unbounded", sans-serif;
-        font-size: 2em;
-        line-height: 50px;
-    }
-
-    .role{
-        color: #D14291;
-        font-size: 2em;
-        font-weight: 400;
-        
-    } */
-
-
-
-
-    /* #overview, #context{
-        display: flex;
-        flex-direction: row;
-        gap: 50px;
-    }
-
-    .projectText, .imgFlex, .UMM{
-        width: 100%;
-    }
-
-    .projectSection, .imgFlex, .UMM{
-        display: flex;
-        flex-direction: row;
-        gap: 50px;
+    #names{
+        gap: 24px;
+        justify-content: center;
         align-items: center;
     }
 
-    .projectSectionColumn{
-        display: flex;
-        flex-direction: column;
+    #names p{
+        font-size: 4vw;
     }
 
-    .UMM{
-         gap: 16px;
+    #headerText{
+        text-align: center;
     }
 
-    .projectSection img, .imgFlex img{
-        width: 40%;
-        margin: 0;
+    #homeRoles{
+        justify-content: center;
     }
 
-    .projectSectionColumn img{
-        margin-top: 4%;
+
+    /* --------------- WIGGLES --------------- */
+    #wiggle1{
+        bottom: 250px;
+        left: -150px;
     }
 
-    .imgFlex img{
-        width: 40%;
-        margin: 0;
+    #wiggle2{
+        top: 120px;
+        right: -300px;
     }
 
-    .imgFlex, .UMM{
-        width: 100%;
+    #wiggle3{
+        bottom: 150px;
+        right: -350px;
     }
 
-    .UMM img{
-        width: 50%;
+    #wiggle4{
+        top: 120px;
+        left: -200px;
     }
 
-    .projectSection h2, .projectText h2{
-        text-align: left;
+}
+
+
+/* -------- 992 PX - TABLET SIZE --------*/
+@media only screen and (min-width: 992px){
+    h1{
+        font-size: 14vw;
     }
 
-    #tags h3{
+    #names p{
+        font-size: 4vw;
+    }
+
+    #headerText{
+        text-align: center;
+    }
+
+    #headerText p{
         font-size: 1.2em;
     }
-    
-    .takeawayCard{
-        padding: 5%;
-    }
 
-    #takeaways{
-        margin-top: 2%;
-    }
-
-    #nextProject a{
-        margin: 16px 10% 50px auto;
-    }
-
-    #usability{
-        width: 70%;
-        display: flex;
-        flex-direction: column;
-        gap: 4%;
-    }
-
-    .safelyRow{
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-    }
-    
-    .usabilityColumn p{
-        margin: 0;
-    }
-    
-    .safelyGif img{
-        width: 50%;
-        height: auto;
-        margin: 0;
-        object-fit: contain;
-    }
-
-    .safelyGif{
-        justify-content: space-around;
-        gap: 24px;
-    }
-
-    .safelyWrap{
-        gap: 12px;
-    }
-
-    #safely-midfi{
-        width: 70%;
-    }
-
-    #safely-midfi img{
-        width: 30%;
-    }
-
-    .safelyFinalDesigns{
-        display: flex;
-        flex-direction: row;
-        gap: 40px;
-    }
-
-    .safelyWrap img{
-        width: 10vw;
-        height: auto;
-        margin: 0;
-        object-fit: contain;
-    }
-    
-    
-    .safelyWrap{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        width: 50%;
+    #homeRoles{
         justify-content: center;
     }
 
-    #nextProject{
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
-        transition: transform 0.6s;
-        width: 50%;
-        margin: auto;
+    .img-container{
+        width: 45%;
+        height: 100%;
+        overflow: hidden;
     }
-    
-    #nextProjectDetails a{
-        transition: 0.3s;
-        display: flex;
-        flex-direction: row;
+
+    .project-card{
+        flex-direction: row-reverse;
+    }
+
+    .card-text{
         gap: 24px;
-        align-items: center;
-        justify-content: center;
-        margin: 0;
-    }
-    
-    #nextProject img{
-        max-width: 30%;
-        margin-top: 0;
-    } */
-
-
-    
-
-}
-
-
-
-
-
-@media only screen and (min-width: 992px){
-    /* ADDING GRID TO THE HOME LAYOUT */
-    #homeContainer{
-        /* display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
-        gap: 50px 72px; */
-
-        display: block;
-        flex-direction: row;
-        
-        max-width: 1200px;
-
-        columns: 2;
-        column-gap: 20px;
-
-        padding-top: 10%;
-        padding-bottom: 10%;
-    }
-
-    #chevron, #goodnotes, #bestBuddies, #safely{
-        order: 0;
-    }
-
-    .card2, #grid{
-        margin: 0 0  10vh 0;
-        break-inside: avoid;
-    }
-
-    #asideGrid{
-        margin-top: 8vh;
-    }
-
-    #grid{
-        font-size: 1.5vw;
-    }
-
-    .card{
-        grid-row: span 2;
-    }
-
-    aside ul{
-        padding: 0;
-        padding-right: 24px;
-    }
-
-    #asideGrid ul{
-        gap: 80px;
-    }
-
-    #asideGrid ul li a{
-        justify-content: right;
-        gap: 40px;
+        width: 50%;
     }
 
     h2{
-        font-size: 3.2em;
-        line-height: 100px;
-        text-align: right;
+        font-size: 2.4em;
+        line-height: 140px;
     }
 
 
+    #cards-container{
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+    }
+
+
+    /* --------------- WIGGLES --------------- */
+
+    #wiggle1{
+        bottom: 150px;
+        left: -90px;
+
+    }
+
+    #wiggle2{
+        top: 120px;
+        right: -200px;
+    }
+
+    #wiggle3{
+        bottom: 100px;
+        right: -200px;
+    }
+
+    #wiggle4{
+        top: 150px;
+        left: -120px;
+    }
+
 }
 
+
+/* -------- 1200 PX - LAPTOP SIZE --------*/
 @media only screen and (min-width: 1200px){
+    h1{
+        font-size: 12vw;
+    }
+
+    #names p{
+        font-size: 3vw;
+    }
+
+    #headerText{
+        gap: 42px;
+    }
+
+    #headerText p{
+        font-size: 1.3em;
+    }
+
     .role{
         font-size: 2em;
         letter-spacing: .2em;
         line-height: 1.5em;
     }
     
-    #school{
-        font-size: 1.4em;
-    }
-
     #homeContainer{
         gap: 72px 72px;
     }
 
-    h2{
-        font-size: 2.8em;
-        line-height: 140px;
+    .project-card{
+        gap: 36px;
     }
+
+
+    
 }
 
 
-
-/* @media only screen and (min-width: 1200px){
-
-
-    .card{
-        grid-row: span 2;
+/* -------- 1440 PX - DESKTOP SIZE --------*/
+@media only screen and (min-width: 1440px){
+    h1{
+        font-size: 10vw;
     }
 
-    aside ul{
-        padding: 0;
-        padding-right: 24px;
+    #names p{
+        font-size: 2vw;
     }
 
-    #asideGrid ul{
-        gap: 80px;
+    h3{
+        font-size: 2.2em;
     }
 
-    #asideGrid ul li a{
-        justify-content: right;
-        gap: 40px;
+    .project-card{
+        gap: 56px;
+        justify-content: space-between;
     }
 
-
-    #headerTextProjects{
-        text-align: right;
-        padding: 4% 0;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        gap: 20px;
+    .img-container{
+        width: 45%;
     }
 
-    #safelyHeader{
-        text-align: right;
-        padding: 0;
-        padding-top: 2%;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 24px;
-        justify-content: center;
-    }
-
-    #headerTextProjects h1, #safelyHeader h1{
-        text-align: right;
-        font-size: 5em;
-    }
-    
-    #headerTextProjects img{
-        width: 50%;
-        height: auto;
-        margin: auto;
-        padding: 0;
-    }
-
-    #safelyHeader img{
-        width: 35%;
-        padding: 0;
-        margin: 0;
-    }
-
-    #headerTextProjects h1{
-        text-align: right;
-    }
-
-    #takeaways{
-        flex-direction: row;
-        flex: 1;
-        align-items: start;
-    }
-
-    .takeawayCard{
-        padding: 4%;
-    }
-
-    .safelyRow img{
-        width: 40%;
-        height: auto;
-        margin: 4% 0 ;
-    }
-
-    .safelyRow{
-        display: flex;
-        width: 100%;
-        justify-content: left;
-        gap: 12%;
-    }
-
-    #usability{
-        width: 70%;
-        display: flex;
-        flex-direction: column;
-        gap: 4%;
-        margin-left: auto;
-    }
-
-    .usabilityColumn{
-        width: 90%;
-    }
-    
-} */
-
-
-
-
-/* @media only screen and (min-width: 1440px){
-
-    #headerTextProjects{
-        width: 70vw;
-        text-align: right;
-        padding: 5% 0;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-around;
-        gap: 20px;
-        margin: auto 12vw auto auto;
-    }
-
-    #headerTextProjects h1, #safelyHeader h1{
-        font-size: 6em;
-    }
-
-    #safelyHeader{
-        gap: 48px;
-    }
-
-    #safelyHeader img{
-        width: 25%;
+    .card-text{
+        width: 45%;
     }
 
 
+    /* --------------- WIGGLES --------------- */
+    #wiggle1{
+        bottom: 100px;
+        left: -20px;
+    }
 
-} */
+    #wiggle2{
+        top: 120px;
+        right: -50px;
+    }
+
+    #wiggle3{
+        bottom: 100px;
+        right: -50px;
+    }
+
+    #wiggle4{
+        top: 170px;
+        left: -15px;
+    }
+
+}
+
+
+@media only screen and (min-width: 1600px){
+    #wiggle1, #wiggle2, #wiggle3, #wiggle4{
+        scale: 1.3;
+    }
+
+    #wiggle4{
+        top: 200px;
+        left: -15px;
+    }
+}
+
