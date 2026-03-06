@@ -61,7 +61,10 @@ span{
 }
 
 
-
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
 
 html{
     scroll-behavior: smooth;
@@ -75,8 +78,7 @@ body{
     font-style: normal;
     color: #5D524A;
 
-
-    overflow-x: hidden;
+    
 }
 
 .container{
@@ -310,6 +312,25 @@ body{
 
 
 /* NAVIGATION */
+.hidden{
+    display: none;
+}
+
+.hidden2{
+    opacity: 0;
+}
+
+.show{
+    display: flex;
+
+}
+
+.show2{
+    opacity: 1;
+
+}
+
+
 #nav-container{
     /* padding: 5%; */
     /* media query to reduce the padding of the top/bottom nav? */
@@ -320,13 +341,27 @@ body{
 
 nav{
     background-color: rgba(255, 255, 255, 0.3);
-    border-radius: 10000px;
-    padding: 12px 40px; 
+    padding: 12px 20px; 
     margin: auto;
     backdrop-filter: blur(1.5px);
     height: auto;
-    transition: all 0.5s ease; 
+    /* transition: all 0.5s ease;  */
     box-shadow: 0px 0px 9px 5px rgba(0, 0, 0, 0.03);
+
+
+    transition: height 1s ease, border-radius 0.01s ease;
+    
+}
+
+.closed{
+    border-radius: 10000px;
+    height: 30px;
+}
+
+.opened{
+    border-radius: 20px;
+    height: 170px;
+
 }
 
 nav ul{
@@ -339,6 +374,12 @@ nav ul{
     justify-content: space-between;
 }
 
+nav ul li ul{
+    display: flex;
+    width: 100%;
+    gap: 72px;
+}
+
 nav ul li a img{
     display: flex;
     align-items: center;
@@ -346,29 +387,24 @@ nav ul li a img{
     width: 30px;
 }
 
+.mobile-menu{
+    flex-direction: column;
+    gap: 12px;
+    transition: all .3s ease;
+
+}
+
 #nav-mainlinks{
     display: none;
     gap: 72px;
 }
 
-#menu, #nav-mainlinks, #contactCTA{
-    transition: opacity .5s;
-}
 
-#menu:hover{
+#menu-icon:hover{
     cursor: pointer;
 }
 
-#menu-links{
-    display: none;
-    flex-direction: column;
-    gap: 12px;
-    opacity: 0;
-}
 
-#menu-links a{
-    text-align: center;
-}
 
 
 
@@ -668,6 +704,9 @@ footer aside{
         font-size: 10vw;
     }
 
+    nav{
+        padding: 12px 32px; 
+    }
 
 
     /* CONTAINER PADDING */
