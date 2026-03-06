@@ -17,13 +17,13 @@
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300..900&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Instrument+Serif:ital@0;1&family=Long+Cang&display=swap" rel="stylesheet">
 
     <!-- JS -->
     <script src="safely.js" defer></script>
     <script src="../../script.js" defer></script>
 
-    <title>Safely | Catelyn Bu Portfolio</title>
+    <title>Safely Mobile App | Catelyn Bu Portfolio</title>
     <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
 
 </head>
@@ -42,7 +42,7 @@
                     
                     <li id="menu"><i class="fas fa-bars fa-lg"></i></li>
 
-                    <li id="contactCTA"><a class="button" href="https://docs.google.com/document/d/1HRfi9Xt-KR-UvQB5UztDyjA18uAoPxoR46futannPXE/edit?usp=sharing" target="_blank">resume</a></li>
+                    <li id="contactCTA"><a class="button" id="special-button" href="https://docs.google.com/document/d/1HRfi9Xt-KR-UvQB5UztDyjA18uAoPxoR46futannPXE/edit?usp=sharing" target="_blank">resume</a></li>
                 </ul>
 
                 <ul id="menu-links">
@@ -56,7 +56,11 @@
     
         <header>
             <div id="header-projects">
-                <h1>Safely</h1>
+                <div id="header-projects-text">
+                    <h1>Safely Mobile App</h1>
+                    <p>Reimagining personal safety through independent navigational tools</p>
+                </div>
+
                 <img id="header-project-img" src="../../images/safely-images/safely-mockupNoBG.png" alt="Two phones showing screens of Safely's interface">
             </div>
             
@@ -95,8 +99,13 @@
                 </section>
 
                 <div id="buttons">
-                    <p ><a href="https://www.figma.com/proto/ib7WVaBRfdHV2K8eFhTVjq/Bu_Catelyn_DES112_P2?page-id=84%3A1484&node-id=323-6761&p=f&viewport=695%2C380%2C0.08&t=FcJ5ss0vbYWAfwOY-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=323%3A6761" target="_blank" class="buttonProjects">Safely Prototype<i class="fas fa-arrow-right"></i></a></p>
+                    <p>
+                        <a href="https://www.figma.com/proto/ib7WVaBRfdHV2K8eFhTVjq/Bu_Catelyn_DES112_P2?page-id=84%3A1484&node-id=323-6761&p=f&viewport=695%2C380%2C0.08&t=FcJ5ss0vbYWAfwOY-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=323%3A6761" target="_blank" class="button">Safely Prototype
+                        
+                        <img id="safely-button-img" src="../../images/ArrowRight.svg" alt="Right Arrow icon" width="20" height="20"></a>
+                    </p>
                 </div>
+                
             </div>
     
             <aside id="overview-aside">
@@ -131,10 +140,28 @@
                 <h2>Understanding the Problem</h2>
 
                 <div class="sectionBtn-container">
-                    <button id="goal" class="section-button selected-button">Goals</button>
+                    <button id="goal" class="section-button selected-button">
+                        <svg class="arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18.7504 6V15.75C18.7504 15.9489 18.6714 16.1397 18.5307 16.2803C18.3901 16.421 18.1993 16.5 18.0004 16.5C17.8015 16.5 17.6107 16.421 17.4701 16.2803C17.3294 16.1397 17.2504 15.9489 17.2504 15.75V7.81031L6.53104 18.5306C6.39031 18.6714 6.19944 18.7504 6.00042 18.7504C5.80139 18.7504 5.61052 18.6714 5.46979 18.5306C5.32906 18.3899 5.25 18.199 5.25 18C5.25 17.801 5.32906 17.6101 5.46979 17.4694L16.1901 6.75H8.25042C8.0515 6.75 7.86074 6.67098 7.72009 6.53033C7.57943 6.38968 7.50042 6.19891 7.50042 6C7.50042 5.80109 7.57943 5.61032 7.72009 5.46967C7.86074 5.32902 8.0515 5.25 8.25042 5.25H18.0004C18.1993 5.25 18.3901 5.32902 18.5307 5.46967C18.6714 5.61032 18.7504 5.80109 18.7504 6Z" fill="#E58684"/>
+                        </svg>
+                        Goals
+                    </button>
+
+                    <button id="survey" class="section-button">
+                        <svg class="arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18.7504 6V15.75C18.7504 15.9489 18.6714 16.1397 18.5307 16.2803C18.3901 16.421 18.1993 16.5 18.0004 16.5C17.8015 16.5 17.6107 16.421 17.4701 16.2803C17.3294 16.1397 17.2504 15.9489 17.2504 15.75V7.81031L6.53104 18.5306C6.39031 18.6714 6.19944 18.7504 6.00042 18.7504C5.80139 18.7504 5.61052 18.6714 5.46979 18.5306C5.32906 18.3899 5.25 18.199 5.25 18C5.25 17.801 5.32906 17.6101 5.46979 17.4694L16.1901 6.75H8.25042C8.0515 6.75 7.86074 6.67098 7.72009 6.53033C7.57943 6.38968 7.50042 6.19891 7.50042 6C7.50042 5.80109 7.57943 5.61032 7.72009 5.46967C7.86074 5.32902 8.0515 5.25 8.25042 5.25H18.0004C18.1993 5.25 18.3901 5.32902 18.5307 5.46967C18.6714 5.61032 18.7504 5.80109 18.7504 6Z" fill="#E58684"/>
+                        </svg>
+                        User Surveys
+                    </button>
+                   
+
+                    <button id="competitive" class="section-button">
+                        <svg class="arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18.7504 6V15.75C18.7504 15.9489 18.6714 16.1397 18.5307 16.2803C18.3901 16.421 18.1993 16.5 18.0004 16.5C17.8015 16.5 17.6107 16.421 17.4701 16.2803C17.3294 16.1397 17.2504 15.9489 17.2504 15.75V7.81031L6.53104 18.5306C6.39031 18.6714 6.19944 18.7504 6.00042 18.7504C5.80139 18.7504 5.61052 18.6714 5.46979 18.5306C5.32906 18.3899 5.25 18.199 5.25 18C5.25 17.801 5.32906 17.6101 5.46979 17.4694L16.1901 6.75H8.25042C8.0515 6.75 7.86074 6.67098 7.72009 6.53033C7.57943 6.38968 7.50042 6.19891 7.50042 6C7.50042 5.80109 7.57943 5.61032 7.72009 5.46967C7.86074 5.32902 8.0515 5.25 8.25042 5.25H18.0004C18.1993 5.25 18.3901 5.32902 18.5307 5.46967C18.6714 5.61032 18.7504 5.80109 18.7504 6Z" fill="#E58684"/>
+                        </svg>
+                        Competitive Analysis
+                    </button>
                     <!-- <button id="literature" class="section-button">Literature Review</button> -->
-                    <button id="survey" class="section-button">User Surveys</button>
-                    <button id="competitive" class="section-button">Competitive Analysis</button>
                 </div>
             </section>
 
@@ -199,8 +226,20 @@
                 <h2>Brainstorming Solutions</h2>
 
                 <div class="sectionBtn-container">
-                    <button id="lowfi" class="section-button selected-button">Low-fi Sketches</button>
-                    <button id="midfi" class="section-button">Mid-fi Wireframes</button>
+                    <button id="lowfi" class="section-button selected-button">
+                            <svg class="arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18.7504 6V15.75C18.7504 15.9489 18.6714 16.1397 18.5307 16.2803C18.3901 16.421 18.1993 16.5 18.0004 16.5C17.8015 16.5 17.6107 16.421 17.4701 16.2803C17.3294 16.1397 17.2504 15.9489 17.2504 15.75V7.81031L6.53104 18.5306C6.39031 18.6714 6.19944 18.7504 6.00042 18.7504C5.80139 18.7504 5.61052 18.6714 5.46979 18.5306C5.32906 18.3899 5.25 18.199 5.25 18C5.25 17.801 5.32906 17.6101 5.46979 17.4694L16.1901 6.75H8.25042C8.0515 6.75 7.86074 6.67098 7.72009 6.53033C7.57943 6.38968 7.50042 6.19891 7.50042 6C7.50042 5.80109 7.57943 5.61032 7.72009 5.46967C7.86074 5.32902 8.0515 5.25 8.25042 5.25H18.0004C18.1993 5.25 18.3901 5.32902 18.5307 5.46967C18.6714 5.61032 18.7504 5.80109 18.7504 6Z" fill="#E58684"/>
+                        </svg>
+                            Low-fi Sketches
+                    </button>
+                    
+                    <button id="midfi" class="section-button">
+                            <svg class="arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18.7504 6V15.75C18.7504 15.9489 18.6714 16.1397 18.5307 16.2803C18.3901 16.421 18.1993 16.5 18.0004 16.5C17.8015 16.5 17.6107 16.421 17.4701 16.2803C17.3294 16.1397 17.2504 15.9489 17.2504 15.75V7.81031L6.53104 18.5306C6.39031 18.6714 6.19944 18.7504 6.00042 18.7504C5.80139 18.7504 5.61052 18.6714 5.46979 18.5306C5.32906 18.3899 5.25 18.199 5.25 18C5.25 17.801 5.32906 17.6101 5.46979 17.4694L16.1901 6.75H8.25042C8.0515 6.75 7.86074 6.67098 7.72009 6.53033C7.57943 6.38968 7.50042 6.19891 7.50042 6C7.50042 5.80109 7.57943 5.61032 7.72009 5.46967C7.86074 5.32902 8.0515 5.25 8.25042 5.25H18.0004C18.1993 5.25 18.3901 5.32902 18.5307 5.46967C18.6714 5.61032 18.7504 5.80109 18.7504 6Z" fill="#E58684"/>
+                        </svg>
+                        
+                        Mid-fi Wireframes
+                    </button>
                 </div>
             </section>
 
@@ -232,9 +271,30 @@
                 <h2>Bringing it all Together</h2>
 
                 <div class="sectionBtn-container">
-                    <button id="system" class="section-button selected-button">Design System</button>
-                    <button id="hifi" class="section-button">High-Fi V1</button>
-                    <button id="test" class="section-button">Usability Testing</button>
+                    <button id="system" class="section-button selected-button">
+                            <svg class="arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18.7504 6V15.75C18.7504 15.9489 18.6714 16.1397 18.5307 16.2803C18.3901 16.421 18.1993 16.5 18.0004 16.5C17.8015 16.5 17.6107 16.421 17.4701 16.2803C17.3294 16.1397 17.2504 15.9489 17.2504 15.75V7.81031L6.53104 18.5306C6.39031 18.6714 6.19944 18.7504 6.00042 18.7504C5.80139 18.7504 5.61052 18.6714 5.46979 18.5306C5.32906 18.3899 5.25 18.199 5.25 18C5.25 17.801 5.32906 17.6101 5.46979 17.4694L16.1901 6.75H8.25042C8.0515 6.75 7.86074 6.67098 7.72009 6.53033C7.57943 6.38968 7.50042 6.19891 7.50042 6C7.50042 5.80109 7.57943 5.61032 7.72009 5.46967C7.86074 5.32902 8.0515 5.25 8.25042 5.25H18.0004C18.1993 5.25 18.3901 5.32902 18.5307 5.46967C18.6714 5.61032 18.7504 5.80109 18.7504 6Z" fill="#E58684"/>
+                        </svg>
+                        
+                        Design System
+                    </button>
+
+                    <button id="hifi" class="section-button">
+                            <svg class="arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18.7504 6V15.75C18.7504 15.9489 18.6714 16.1397 18.5307 16.2803C18.3901 16.421 18.1993 16.5 18.0004 16.5C17.8015 16.5 17.6107 16.421 17.4701 16.2803C17.3294 16.1397 17.2504 15.9489 17.2504 15.75V7.81031L6.53104 18.5306C6.39031 18.6714 6.19944 18.7504 6.00042 18.7504C5.80139 18.7504 5.61052 18.6714 5.46979 18.5306C5.32906 18.3899 5.25 18.199 5.25 18C5.25 17.801 5.32906 17.6101 5.46979 17.4694L16.1901 6.75H8.25042C8.0515 6.75 7.86074 6.67098 7.72009 6.53033C7.57943 6.38968 7.50042 6.19891 7.50042 6C7.50042 5.80109 7.57943 5.61032 7.72009 5.46967C7.86074 5.32902 8.0515 5.25 8.25042 5.25H18.0004C18.1993 5.25 18.3901 5.32902 18.5307 5.46967C18.6714 5.61032 18.7504 5.80109 18.7504 6Z" fill="#E58684"/>
+                        </svg>
+                    
+                        High-Fi V1
+                    
+                    </button>
+
+                    <button id="test" class="section-button">
+                            <svg class="arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18.7504 6V15.75C18.7504 15.9489 18.6714 16.1397 18.5307 16.2803C18.3901 16.421 18.1993 16.5 18.0004 16.5C17.8015 16.5 17.6107 16.421 17.4701 16.2803C17.3294 16.1397 17.2504 15.9489 17.2504 15.75V7.81031L6.53104 18.5306C6.39031 18.6714 6.19944 18.7504 6.00042 18.7504C5.80139 18.7504 5.61052 18.6714 5.46979 18.5306C5.32906 18.3899 5.25 18.199 5.25 18C5.25 17.801 5.32906 17.6101 5.46979 17.4694L16.1901 6.75H8.25042C8.0515 6.75 7.86074 6.67098 7.72009 6.53033C7.57943 6.38968 7.50042 6.19891 7.50042 6C7.50042 5.80109 7.57943 5.61032 7.72009 5.46967C7.86074 5.32902 8.0515 5.25 8.25042 5.25H18.0004C18.1993 5.25 18.3901 5.32902 18.5307 5.46967C18.6714 5.61032 18.7504 5.80109 18.7504 6Z" fill="#E58684"/>
+                        </svg>
+                        Usability Testing
+                    
+                    </button>
                 </div>
             </section>
 
@@ -298,7 +358,11 @@
                         <p>After a 5-week research and design process, the Safely prototype was complete. The final design features four core tools: live-location sharing, route suggestions, voice recognition, and a contacts list. The visual design is a modern and sleek look. It uses a dark visual palette to reduce brightness during dark settings and uses calming green and yellow tones for accents.</p>
 
                         <div id="buttons">
-                            <p ><a href="https://www.figma.com/proto/ib7WVaBRfdHV2K8eFhTVjq/Bu_Catelyn_DES112_P2?page-id=84%3A1484&node-id=323-6761&p=f&viewport=695%2C380%2C0.08&t=FcJ5ss0vbYWAfwOY-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=323%3A6761" target="_blank" class="buttonProjects">Safely Prototype<i class="fas fa-arrow-right"></i></a></p>
+                            <p>
+                                <a href="https://www.figma.com/proto/ib7WVaBRfdHV2K8eFhTVjq/Bu_Catelyn_DES112_P2?page-id=84%3A1484&node-id=323-6761&p=f&viewport=695%2C380%2C0.08&t=FcJ5ss0vbYWAfwOY-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=323%3A6761" target="_blank" class="button">Safely Prototype
+                                
+                                <img id="safely-button-img" src="../../images/ArrowRight.svg" alt="Right Arrow icon" width="20" height="20"></a>
+                            </p>
                         </div>
                     </div>
 
@@ -352,8 +416,8 @@
                     <p id="footer-CTA">Let's keep in touch!</p>
                     
                     <div id="footer-buttons">
-                        <p><a class="button" href="mailto:&#099;&#097;&#116;&#101;&#108;&#121;&#110;&#046;&#098;&#117;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;" target="_blank">&#099;&#097;&#116;&#101;&#108;&#121;&#110;&#046;&#098;&#117;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;</a></p>
-                        <p><a class="button" href="https://www.linkedin.com/in/catelynbu/" target="_blank">linkedin</a></p>
+                        <p><a id="special-button" class="button" href="mailto:&#099;&#097;&#116;&#101;&#108;&#121;&#110;&#046;&#098;&#117;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;" target="_blank">&#099;&#097;&#116;&#101;&#108;&#121;&#110;&#046;&#098;&#117;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;</a></p>
+                        <p><a id="special-button" class="button" href="https://www.linkedin.com/in/catelynbu/" target="_blank">linkedin</a></p>
                     </div>
                 </div>
     

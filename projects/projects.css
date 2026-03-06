@@ -6,20 +6,72 @@
     padding: 4% 0;
 }
 
+#header-projects-text{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
 #header-projects h1{
-    text-align: center;
+    text-align: left;
     font-size: 2.5em;
     line-height: 1.3em;
+}
+
+#header-projects p{
+    font-size: 24px;
 }
 
 #header-project-img{
     display: block;
     width: 100%;
     height: auto;
+    max-width: 700px;
+    margin: auto;
 }
 
 
+#safely-button{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    width: fit-content;
+    border-radius: 25px;
+    padding: 6px 20px;
+    background-color:#F9E0DF;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    border: none;
+      height: 28px;
 
+}
+
+#safely-button:hover{
+    background-color: #E09991;
+    opacity: 100;
+    color: #3A2F26;
+    border: none;
+}
+
+#safely-button a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    height: 28px;
+}
+
+/* #safely-button a p:hover{
+    opacity: 100;
+    color: #3A2F26;
+    border: none;
+} */
+
+#safely-button-img{
+    width: 20px;
+    height: 20px;
+}
 
 
 /* PROJECT OVERVIEW SECTION */
@@ -61,7 +113,7 @@
 }
 
 #overview-aside h3{
-    font-size: 1.125em;
+    font-size: 1em;
 }
 
 
@@ -162,7 +214,7 @@
 }
 
 .section-button{
-    padding: 0 16px;
+    padding: 0;
     cursor: pointer;
 
 
@@ -172,6 +224,7 @@
     display: flex;
     align-items: center;
     gap: 12px;
+    text-align: left;
 
     transition: ease .5s;
 
@@ -184,8 +237,8 @@ svg{
 }
 
 .section-button:hover{
-    color: #D14291;
-    font-weight: 500;
+    color: #E58684;
+    font-weight: 400;
 }
 
 .section-button:hover svg{
@@ -288,8 +341,7 @@ svg{
 
     #header-projects h1{
         max-width: 600px;
-        text-align: right;
-        font-size: 3em;
+        font-size: 5em;
         line-height: 1.3em;
     }
 
