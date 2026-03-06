@@ -17,7 +17,7 @@
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300..900&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Instrument+Serif:ital@0;1&family=Long+Cang&display=swap" rel="stylesheet">
 
     <!-- JS -->
     <script src="../script.js" defer></script>
@@ -41,7 +41,7 @@
                     
                     <li id="menu"><i class="fas fa-bars fa-lg"></i></li>
 
-                    <li id="contactCTA"><a class="button" href="https://docs.google.com/document/d/1HRfi9Xt-KR-UvQB5UztDyjA18uAoPxoR46futannPXE/edit?usp=sharing" target="_blank">resume</a></li>
+                    <li id="contactCTA"><a class="button" id="special-button" href="https://docs.google.com/document/d/1HRfi9Xt-KR-UvQB5UztDyjA18uAoPxoR46futannPXE/edit?usp=sharing" target="_blank">resume</a></li>
                 </ul>
 
                 <ul id="menu-links">
@@ -54,12 +54,9 @@
         </div>
     
         <header>
-            <div id="headerText" class="bigger">
-                <h1>ABOUT</h1>
-            </div>
+            <h1 id="about-studio-h1">about</h1>
             
-            
-
+        
             <div class="absolute">
                 <div class="relative inset-0 justify-center">
                     <div class="bg-shape1 bg-blue opacity-50 bg-blur"></div>
@@ -71,49 +68,147 @@
     </div>
 
     <section class="container">
-        <section class="about"> 
+        <section class="biography-container"> 
             <img id="portrait" src="../images/selfie.jpg" alt="Catelyn Bu.">
 
-            <div class="aboutText">
-                <div id="tagline-main">
-                    <h2><span>I'm Catelyn.</span></h2>
+            <div id="biography-text">
 
-                    <p id="tagline">Merging design and development to create <span>transformative</span> digital experiences and <span>meaningful</span> connections with a <span>human-centered</span> approach.</p>
+                <section>
+                    <div class="icon-title">
+                        <img src="../images/diamond.svg" alt="Diamond icon" width="15" height="15">
+
+                        <h2>I'm Catelyn</h2>
+                    </div>
+
+                    <div class="biography-caption">
+                        <p>I’m a product designer with 2+ years of experience designing business facing and customer facing products. Beyond product and UX design, I love to do front-end development!</p>
+
+                        <p>The intersection of design and development is one of my greatest passions and directly informs my workflow, motivating me to create designs that are not only beautiful but also feasible. </p>
+                    </div>
+                    
+                </section>
+
+                <section>
+                    <div class="icon-title">
+                        <img src="../images/diamond.svg" alt="Diamond icon" width="15" height="15">
+
+                        <h2>Why do I design?</h2>
+                    </div>
+
+                    <div class="biography-caption">
+                        <p>I design because I believe digital experiences should be accessible, intuitive, and empowering for everyone. Technology has the power to make everyday life easier, to help people stay connected with the people they care about, and to provide support when it is needed most.</p>
+
+                        <p>My goal is to design tools that not only solve problems but also enhance how people interact with the world around them, making digital experiences more meaningful, inclusive, and impactful.</p>
+                    </div>
+                </section>
+
+            </div>
+        </section>
+
+
+        <section id="experience">
+            <div id="experience-heading">
+                <div class="icon-title">
+                    <img src="../images/diamond.svg" alt="Diamond icon" width="15" height="15">
+
+                    <h2>My previous experiences</h2>
                 </div>
-                
 
-                <p>I’m a new grad from UC Davis with a B.A. in design with a focus on UX/UI design. I come from a traditional art background which gives me an advanced understanding of color, hierarchy, and composition.</p>
-
-                <p>I discovered my love for web design in my final semester of community college where I took an Introduction to Web Design class. I learned the basics of HTML and CSS there along with exploring more of my interests which ultimately directed me to UI/UX design and front-end web development.</p>
-                
-                <p>Since then I have taken on multiple UI/UX, web design and development projects. Through my work I’ve uncovered my desire to create accessible and engaging digital products with improving the user’s experience in mind.</p>
-            </div>
+                <p><a class="button" href="https://docs.google.com/document/d/1HRfi9Xt-KR-UvQB5UztDyjA18uAoPxoR46futannPXE/edit?usp=sharing" target="_blank">full resume</a></p>
+            </div> 
             
+
+            <ul>
+                <li>
+                    <div class="experience-title-company">
+                        <h3>Product Design (Contract)</h3>
+
+                        <div class="company">
+                            <img src="../images/diamond.svg" alt="Diamond icon" width="15" height="15">
+
+                            <p>Goodnotes</p>
+                        </div>
+                    </div>
+
+                    <p class="dates">April 2025 - June 2025</p>
+                </li>
+
+                <li>
+                    <div class="experience-title-company">
+                        <h3>UX/UI Design Associate</h3>
+
+                        <div class="company">
+                            <img src="../images/diamond.svg" alt="Diamond icon" width="15" height="15">
+
+                            <p>Design Interactive</p>
+                        </div>
+                    </div>
+
+                    <p class="dates">January 2025 - May 2025</p>
+                </li>
+
+                <li>
+                    <div class="experience-title-company">
+                        <h3>Product Designer (Contract)</h3>
+
+                        <div class="company">
+                            <img src="../images/diamond.svg" alt="Diamond icon" width="15" height="15">
+
+                            <p>Chevron</p>
+                        </div>
+                    </div>
+
+                    <p class="dates">January 2025 - May 2025</p>
+                </li>
+
+                <li>
+                    <div class="experience-title-company">
+                        <h3>Design Manager Intern</h3>
+
+                        <div class="company">
+                            <img src="../images/diamond.svg" alt="Diamond icon" width="15" height="15">
+
+                            <p>Joan Viteri Memorial Clinic</p>
+                        </div>
+                    </div>
+
+                    <p class="dates">August 2024 - April 2025</p>
+                </li>
+
+                <li>
+                    <div class="experience-title-company">
+                        <h3>UI/UX Graphic Design Intern</h3>
+
+                        <div class="company">
+                            <img src="../images/diamond.svg" alt="Diamond icon" width="15" height="15">
+
+                            <p>SkyIT</p>
+                        </div>
+                    </div>
+
+                    <p class="dates">June 2024 - September 2024</p>
+                </li>
+
+                <li>
+                    <div class="experience-title-company">
+                        <h3>UI/UX Design Intern</h3>
+
+                        <div class="company">
+                            <img src="../images/diamond.svg" alt="Diamond icon" width="15" height="15">
+
+                            <p>SkillYah</p>
+                        </div>
+                    </div>
+
+                    <p class="dates">April 2024 - June 2024</p>
+                </li>
+            </ul>
+
         </section>
+            
+        
 
-        <section id="contactAbout">
-            <div class="aboutText" id="width">
-                <h3>Let's get in touch!</h3>
-                <p>If you want to learn more about <span>me</span>, <span>my work</span>, or just want to <span>chat</span>, feel free to reach out to me.</p>
-                <p>For more details on my work experience, <span>check out my resume</span>.</p>
-            </div>
-
-            <div id="about-buttons">
-                <p><a class="button" href="mailto:&#099;&#097;&#116;&#101;&#108;&#121;&#110;&#046;&#098;&#117;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;" target="_blank">&#099;&#097;&#116;&#101;&#108;&#121;&#110;&#046;&#098;&#117;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;</a></p>
-                <p><a class="button" href="https://www.linkedin.com/in/catelynbu/" target="_blank">linkedin</a></p>
-                <p><a class="button" href="https://docs.google.com/document/d/1HRfi9Xt-KR-UvQB5UztDyjA18uAoPxoR46futannPXE/edit?usp=sharing" target="_blank">resume</a></p>
-            </div>
-
-            <!-- <aside class="slide-link-container">
-                <ul>
-                    <li><a class="slide-link" href="../contact.html" target="_blank">contact<i class="fas fa-arrow-right"></i></a></li>
-                    <li><a class="slide-link" href="https://drive.google.com/file/d/1P9NlRZtzN87TcLyylpRJgJP-GbKLw2s6/view?usp=sharing" target="_blank">resume<i class="fas fa-arrow-right"></i></a></li>
-                </ul>
-            </aside> -->
-
-        </section>
-
-        <aside class="slide-link-flex">
+        <!-- <aside class="slide-link-flex">
             <div class="slide-link-container">
                 <h3>Other Projects</h3>
                 <ul>
@@ -132,38 +227,45 @@
                     <li><a class="slide-link" href="https://www.behance.net/catelyn-bu" target="_blank">behance<i class="fas fa-arrow-right"></i></a></li>
                 </ul>
             </div>
-        </aside>
+        </aside> -->
 
     </section>
 
-    <footer>
-        <div id="footer-container">
-            <section class="footer-main">
-                <div id="footer-socials">
-                    <p id="footer-CTA">Let's keep in touch!</p>
-                    
-                    <div id="footer-buttons">
-                        <p><a class="button" href="mailto:&#099;&#097;&#116;&#101;&#108;&#121;&#110;&#046;&#098;&#117;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;" target="_blank">&#099;&#097;&#116;&#101;&#108;&#121;&#110;&#046;&#098;&#117;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;</a></p>
-                        <p><a class="button" href="https://www.linkedin.com/in/catelynbu/" target="_blank">linkedin</a></p>
+    <div id="footer-bg2">
+        <footer>
+            <div id="footer-container">
+                
+                <section class="footer-main">
+                    <div id="footer-socials">
+                        <p id="footer-CTA">Let's keep in touch!</p>
+                        
+                        <div id="footer-buttons">
+                            <p><a id="special-button" class="button" href="mailto:&#099;&#097;&#116;&#101;&#108;&#121;&#110;&#046;&#098;&#117;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;" target="_blank">&#099;&#097;&#116;&#101;&#108;&#121;&#110;&#046;&#098;&#117;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;</a></p>
+                            <p><a id="special-button" class="button" href="https://www.linkedin.com/in/catelynbu/" target="_blank">linkedin</a></p>
+                        </div>
                     </div>
-                </div>
-    
-                <div id="footer-links">
-                    <ul>
-                        <li><a href="../index.html">work</a></li>
-                        <li><a href="../studio/studio.html">studio</a></li>
-                        <li><a href="../about/about.html">about</a></li>
-                        <li><a href="https://docs.google.com/document/d/1HRfi9Xt-KR-UvQB5UztDyjA18uAoPxoR46futannPXE/edit?usp=sharing" target="_blank">resume</a></li>
-                    </ul>
-                </div>
-            </section>
-    
-            <aside>
-                <img id="footer-logo" src="../images/logo-DMG-SM.png" alt="Logo.">
-                <p>©2025 | Designed and developed by Catelyn with love <i class="far fa-heart" style="font-size: .8em;"></i></p>
-            </aside>
-        </div>
-    </footer>
+        
+                    <div id="footer-links">
+                        <ul>
+                            <li><a href="../index.html">work</a></li>
+                            <li><a href="../studio/studio.html">studio</a></li>
+                            <li><a href="../about/about.html">about</a></li>
+                            <li><a href="https://docs.google.com/document/d/1HRfi9Xt-KR-UvQB5UztDyjA18uAoPxoR46futannPXE/edit?usp=sharing" target="_blank">resume</a></li>
+                        </ul>
+                    </div>
+                </section>
+        
+                <aside>
+                    <img id="footer-logo" src="../images/logo-DMG-SM.png" alt="Logo.">
+                    <p>©2026 | Designed and developed by Catelyn with love <i class="far fa-heart" style="font-size: .8em;"></i></p>
+                </aside>
+            </div>
+        </footer>
+    </div>
 
+    <div id="wiggle-wrapper">
+        <div id="wiggle3"></div>
+        <div id="wiggle4"></div>
+    </div>
 </body>
 </html>
