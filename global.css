@@ -124,7 +124,7 @@ footer, header, #homeContainer, .container{
     position: absolute;
     top: 40px;
     left: -180px;
-    animation: one 18s linear infinite alternate;
+    /* animation: one 18s linear infinite alternate; */
 }
 
 .bg-shape2{
@@ -134,7 +134,7 @@ footer, header, #homeContainer, .container{
     position: absolute;
     top: -30px;
     left: 100px;
-    animation: two 14s linear infinite alternate;
+    /* animation: two 14s linear infinite alternate; */
 }
 
 .bg-shape3{
@@ -144,7 +144,7 @@ footer, header, #homeContainer, .container{
     position: absolute;
     top: 300px;
     left: -300px;
-    animation: three 16s linear infinite alternate;
+    /* animation: three 16s linear infinite alternate; */
 }
 
 /* blue */
@@ -349,18 +349,22 @@ nav{
     box-shadow: 0px 0px 9px 5px rgba(0, 0, 0, 0.03);
 
 
-    transition: height 1s ease, border-radius 0.01s ease;
+    transition: height 0.3s ease, border-radius 0.01s ease;
+    overflow: hidden;
+    transform: translateZ(0);
     
 }
 
 .closed{
     border-radius: 10000px;
     height: 30px;
+    /* max-height: 40px; */
 }
 
 .opened{
     border-radius: 20px;
     height: 170px;
+    /* max-height: 200px; */
 
 }
 
@@ -390,7 +394,7 @@ nav ul li a img{
 .mobile-menu{
     flex-direction: column;
     gap: 12px;
-    transition: all .3s ease;
+    transition: opacity .3s ease;
 
 }
 

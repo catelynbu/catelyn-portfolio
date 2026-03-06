@@ -70,7 +70,7 @@
                 mobileMenu.classList.replace('hidden2', 'show2');
 
 
-            }, 100)
+            }, 50)
 
         } else {
             console.log('closed');
@@ -83,7 +83,7 @@
             setTimeout(function(){
             mobileMenu.classList.replace('show', 'hidden');
 
-            }, 300)
+            }, 50)
 
 
         }
