@@ -1,49 +1,137 @@
-#tagline-main{
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    padding: 30px;
-    border-radius: 20px;
-    background-color: rgb(255, 255, 255, 0.5);
-    
-}
-
-#tagline{
-    font-size: 1.3em;
-    font-weight: 600;
-}
-
 .container{
     display: flex;
     flex-direction: column;
     gap: 72px;
 }
 
-/* ABOUT PAGE */
-#portrait{
-    border-radius: 20px;
-    height: 55vh;
-    object-fit: cover;
+
+/* --------------- WIGGLES -------------- */
+#wiggle3{
+    bottom: 300px;
+    right: -270px;
 }
 
-.about{
+
+
+/* ABOUT PAGE */
+.biography-container{
     display: flex;
     flex-direction: column;
     gap: 32px;
     justify-content: space-between;
 }
 
-.aboutText{
+#portrait{
+    border-radius: 4px;
+    height: 60vh;
+    object-fit: cover;
+}
+
+.icon-title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+}
+
+
+
+/* --------------- BIOGRAPHY SECTION --------------- */
+#biography-text{
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+}
+
+#biography-text section, #experience{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.biography-caption{
     display: flex;
     flex-direction: column;
     gap: 24px;
 }
 
-.about p{
-    line-height: 1.8em;
+
+
+/* --------------- EXPERIENCE SECTION --------------- */
+#experience-heading{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-aside ul{
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+#experience li{
+    display: flex;
+    justify-content: space-between;
+
+    padding: 12px 0 28px 0;
+    border-bottom: 2px #f0f0f0 solid;
+}
+
+#experience li:last-child{
+    border: none;
+}
+
+
+.experience-title-company{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    width: 70%;
+
+}
+
+.experience-title-company h3{
+    font-family: "DM Sans", sans-serif;
+    font-size: 1.1em;
+    line-height: 26px;
+
+}
+
+.company{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.company p, .dates{
+    font-size: 1em;
+}
+
+.dates{
+    text-align: right;
+
+    width: 30%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* CSS USED FOR ASIDE LINKS (OTHER PROJECTS + SOCIALS) */
+/* aside ul{
     list-style: none;
     margin: 0;
     display: flex;
@@ -66,67 +154,40 @@ aside h3{
     font-size: 2em;
 }
 
-.aboutLinksContainer{
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-}
-
-.aboutLinks{
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-
-#different{
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-
-#contactAbout{
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    background-color: #ebdef077;
-    padding: 40px;
-    border-radius: 10px;
-    /* margin-bottom: 24px;  */
-}
-
-.aboutText{
-    text-align: left;
-    max-width: 750px;
-}
-
 .slide-link-flex{
     display: flex;
     flex-direction: column;
     gap: 50px;
     margin-bottom: 48px;
+} */
+
+
+
+/* --------------- 640 PX - MOBILE SIZE --------------- */
+@media only screen and (min-width: 640px){
+    /* --------------- WIGGLES --------------- */
+    #wiggle3{
+        bottom: 300px;
+        right: -250px;
+    }
+
+    #wiggle4{
+        top: 120px;
+        left: -170px;
+    }
+
 }
 
 
-#about-buttons{
-    display: flex;
-    gap: 16px;
-    flex-wrap: wrap;
-    justify-content: left;
-}
-
-#about-buttons a{
-    min-width: 80px;
-}
-
-
+/* --------------- 992 PX - TABLET SIZE --------------- */
 @media only screen and (min-width: 992px){
-    .about{
+    .biography-container{
         flex-direction: row-reverse;
+        gap: 56px;
     }
 
 
-    .slide-link-flex{
+    /* .slide-link-flex{
         flex-direction: row;
         justify-content: space-between;
     }
@@ -137,8 +198,44 @@ aside h3{
 
     .slide-link-container{
         max-width: 500px;
-    }
+    } */
 
     
+    /* --------------- WIGGLES --------------- */
+    #wiggle3{
+        bottom: 300px;
+        right: -150px;
+    }
 
+    #wiggle4{
+        top: 170px;
+        left: -120px;
+    }
+
+}
+
+@media only screen and (min-width: 1440px){
+    .biography-container{
+        gap: 72px;
+    }
+
+    #biography-text{
+        width: 65%;
+    }
+
+    /* --------------- WIGGLES --------------- */
+    #wiggle3{
+        bottom: 300px;
+        right: -50px;}
+    #wiggle4{
+        top: 170px;
+        left: -15px;}
+}
+
+@media only screen and (min-width: 1600px){
+    #wiggle3, #wiggle4{
+        scale: 1.3;}
+    #wiggle4{
+        top: 200px;
+        left: -15px;}
 }
