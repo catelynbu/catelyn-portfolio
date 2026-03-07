@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
     <!-- css files -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="../../global.css" rel="stylesheet">
     <link href="../projects.css" rel="stylesheet">
    
@@ -20,6 +21,7 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Instrument+Serif:ital@0;1&family=Long+Cang&display=swap" rel="stylesheet">
 
     <!-- JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="../../script.js" defer></script>
     <script src="goodnotes.js" defer></script>
 
@@ -36,7 +38,7 @@
 
 <body>
     <div id="full-header-container">
-        <div id="nav-container">
+        <div id="nav-container"  data-aos="fade-up">
             <nav class="closed">
                 <ul>
                     <li><a href="../../index.html"><img src="../../images/logo-DMG-SM.png" class="logoAnimate" alt="logo"></a></li>
@@ -66,7 +68,7 @@
         </div>
     
         <header>
-            <div id="header-projects">
+            <div id="header-projects"  data-aos="fade-up">
                 <div id="header-projects-text">
                     <h1>Goodnotes Draw</h1>
                     <p>Streamlining notetaking through generative AI diagrams</p>
@@ -93,7 +95,7 @@
 
     <div class="container">
         <!-- OVERVIEW SECTION -->
-        <section id="overview">
+        <section id="overview"  data-aos="fade-up">
             <h2 class="test">Overview</h2>
 
             <div id="overview-main">
@@ -120,7 +122,7 @@
 
             </div>
     
-            <aside id="overview-aside">
+            <aside id="overview-aside" data-aos="fade-left">
                 <ul>
                     <li><h3 class="subheading">TOOLS</h3>
                         <ul>
@@ -149,11 +151,11 @@
         </section>
     </div>
 
-    <div id="goodnotes" class="banner"></div>
+    <div  data-aos="fade-up" id="goodnotes" class="banner"></div>
     
     <div class="container">
         <!-- RESEARCH SECTION -->
-        <section class="project-section">
+        <section class="project-section" data-aos="fade-up">
             <section class="project-section-title">
                 <p class="subheading">RESEARCH</p>
                 <h2>Understanding the Problem</h2>
@@ -180,7 +182,7 @@
 
 
         <!-- DEFINE SECTION -->
-        <section class="project-section">
+        <section class="project-section" data-aos="fade-up">
             <section class="project-section-title">
                 <p class="subheading">DEFINE</p>
                 <h2>Determining the Scope</h2>
@@ -202,7 +204,7 @@
         
 
         <!-- IDEATE SECTION -->
-        <section class="project-section">
+        <section class="project-section" data-aos="fade-up">
             <section class="project-section-title">
                 <p class="subheading">IDEATE</p>
                 <h2>Design Iterations</h2>
@@ -235,7 +237,7 @@
 
 
         <!-- FINAL PROTOTYPE SECTION -->
-        <section class="project-section">
+        <section class="project-section" data-aos="fade-up">
             <section class="project-section-title">
                 <p class="subheading">FINAL PROTOTYPE</p>
                 <h2>The Solutions</h2>
@@ -363,7 +365,7 @@
 
 
         <!-- TAKEAWAYS SECTION -->
-        <section class="project-section">
+        <section class="project-section" data-aos="fade-up">
             <section class="project-section-title">
                 <p class="subheading">TAKEAWAYS</p>
                 <h2>What I Gained as a Designer</h2>
@@ -421,5 +423,12 @@
 
 </body>
 
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+  AOS.init({
+    once: true,
+  });
+</script>
 
 </html>

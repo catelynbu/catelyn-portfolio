@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
     <!-- css files -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="../global.css" rel="stylesheet">
     <link href="projects.css" rel="stylesheet">
    
@@ -20,6 +21,7 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Instrument+Serif:ital@0;1&family=Long+Cang&display=swap" rel="stylesheet">
 
     <!-- JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="../script.js" defer></script>
 
     <title>Best Buddies Website| Catelyn Bu Portfolio</title>
@@ -33,7 +35,7 @@
 </head>
 <body>
     <div id="full-header-container">
-        <div id="nav-container">
+        <div id="nav-container" data-aos="fade-up">
             <nav class="closed">
                 <ul>
                     <li><a href="../index.html"><img src="../images/logo-DMG-SM.png" class="logoAnimate" alt="logo"></a></li>
@@ -65,7 +67,7 @@
         <header>
             <div id="header-projects">
                 
-                <div id="header-projects-text">
+                <div id="header-projects-text" data-aos="fade-up">
                     <h1>Best Buddies Website</h1>
                     <p>Refining web accessibility to improve usability and encourage user engagement</p>
                 </div>
@@ -89,7 +91,7 @@
 
     <div class="container">
         <!-- OVERVIEW SECTION -->
-        <section id="overview">
+        <section id="overview" data-aos="fade-up">
             <h2 class="test">Overview</h2>
 
             <div id="overview-main">
@@ -114,7 +116,7 @@
                 </div>
             </div>
     
-            <aside id="overview-aside">
+            <aside data-aos="fade-left" id="overview-aside">
                 <ul>
                     <li><h3 class="subheading">TOOLS</h3>
                         <ul>
@@ -149,7 +151,7 @@
 
     <div class="container">
         <!-- MY ROLE SECTION -->
-        <section class="project-section">
+        <section class="project-section" data-aos="fade-up">
             <section class="project-section-title">
                 <p class="subheading">MY ROLE</p>
                 <h2>How I Impacted the Project </h2>
@@ -167,7 +169,7 @@
         </section>
 
         <!-- DEVELOPMENT SECTION -->
-        <section class="project-section">
+        <section class="project-section" data-aos="fade-up">
             <section class="project-section-title">
                 <p class="subheading">DEVELOPMENT</p>
                 <h2>My Process as a Dev</h2>
@@ -192,7 +194,7 @@
 
 
         <!-- FINAL PRODUCT SECTION -->
-        <section class="project-section">
+        <section class="project-section" data-aos="fade-up">
             <section class="project-section-title">
                 <p class="subheading">FINAL PRODUCT</p>
                 <h2>The Solutions</h2>
@@ -212,7 +214,7 @@
 
 
         <!-- CHALLENGES SECTION -->
-        <section class="project-section">
+        <section class="project-section" data-aos="fade-up">
             <section class="project-section-title">
                 <p class="subheading">CHALLENGES</p>
                 <h2>Where I Ran Into Problems</h2>
@@ -230,7 +232,7 @@
         </section>
 
         <!-- TAKEAWAYS SECTION -->
-        <section class="project-section">
+        <section class="project-section" data-aos="fade-up">
             <section class="project-section-title">
                 <p class="subheading">TAKEAWAYS</p>
                 <h2>What I Gained as a Developer</h2>
@@ -288,4 +290,13 @@
     </footer>
 
 </body>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+  AOS.init({
+    once: true,
+  });
+</script>
+
 </html>
