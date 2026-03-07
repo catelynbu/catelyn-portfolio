@@ -59,6 +59,10 @@
 
 
     function toggleMenu() {
+        const menuIconSVG = document.querySelector('#icon-svg');
+        const sourceUrl = menuIconSVG.src;
+
+
         if (mobileMenu.classList.contains('hidden')) {
             console.log('opened');
             
@@ -66,9 +70,13 @@
 
             nav.classList.replace('closed', 'opened');
 
+            
+            console.log(sourceUrl); 
+
             setTimeout(function(){
                 mobileMenu.classList.replace('hidden2', 'show2');
 
+                menuIconSVG.src = 'images/close.svg';
 
             }, 50)
 
@@ -77,11 +85,15 @@
 
             mobileMenu.classList.replace('show2','hidden2');
 
+            menuIconSVG.src = 'images/menu.svg';
 
             nav.classList.replace('opened', 'closed')
 
             setTimeout(function(){
-            mobileMenu.classList.replace('show', 'hidden');
+                mobileMenu.classList.replace('show', 'hidden');
+
+                
+
 
             }, 50)
 
@@ -93,9 +105,10 @@
 
 
 
-    const viewMore = document.querySelector('#more');
-    const viewLess = document.querySelector('#less');
-    const hiddenCard = document.querySelector('#hidden');
+    //CODE FOR VIEW MORE BUTTON
+    const viewMore = document.querySelector('#more'); //VIEW MORE BUTTON VARIABLE
+    const viewLess = document.querySelector('#less'); //VIEW LESS BUTTON VARIABLE
+    const hiddenCard = document.querySelector('#hidden'); //VARIABLE FOR CARDS HIDDEN ON HOME PAGE
 
     viewMore.addEventListener('click', function(){
         console.log('I want to view more')
