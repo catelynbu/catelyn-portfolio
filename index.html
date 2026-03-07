@@ -247,9 +247,9 @@
                     </div>
             </article>
 
-            <!-- <p>View More</p>
+            <p id="more" class="show2 view-button">View More</p>
 
-            <article data-aos="fade-up" class="project-card">
+            <article class="hidden hidden2" id="hidden">
                 <div class="img-container">
                     <img class="homeImg" src="images/bestBuddies-images/bestBuddies-mainMockup.png" alt="" width="100%" height="auto">
                 </div>
@@ -277,7 +277,9 @@
 
                     </a></p>
                     </div>
-            </article> -->
+            </article>
+
+            <p id="less" class="view-button hidden hidden2">View Less</p>
         </div>
 
 
@@ -450,7 +452,9 @@
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
 <script>
-  AOS.init();
+  AOS.init({
+    once: true,
+  });
 </script>
 
 

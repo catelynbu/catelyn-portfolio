@@ -92,4 +92,43 @@
     menuIcon.addEventListener('click', toggleMenu);
 
 
+
+    const viewMore = document.querySelector('#more');
+    const viewLess = document.querySelector('#less');
+    const hiddenCard = document.querySelector('#hidden');
+
+    viewMore.addEventListener('click', function(){
+        console.log('I want to view more')
+
+        hiddenCard.classList.replace('hidden', 'project-card');
+
+        viewMore.classList.add('hidden');
+
+        viewLess.classList.remove('hidden');
+
+            setTimeout(function(){
+                hiddenCard.classList.replace('hidden2', 'show2');
+                viewLess.classList.replace('hidden2', 'show2');
+
+
+            }, 50)
+    })
+
+    viewLess.addEventListener('click', function(){
+        console.log('I want to view less')
+
+        hiddenCard.classList.replace('show2', 'hidden2');
+
+
+        viewMore.classList.remove('hidden');
+
+        viewLess.classList.add('hidden');
+
+            setTimeout(function(){
+                hiddenCard.classList.replace('project-card', 'hidden');
+                viewMore.classList.replace('hidden2', 'show2');
+
+            }, 400)
+    })
+
 })();
