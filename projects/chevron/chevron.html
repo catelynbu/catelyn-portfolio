@@ -32,27 +32,31 @@
 <body>
     <div id="full-header-container">
         <div id="nav-container">
-            <nav>
+            <nav class="closed">
                 <ul>
                     <li><a href="../../index.html"><img src="../../images/logo-DMG-SM.png" class="logoAnimate" alt="logo"></a></li>
 
-                    <div id="nav-mainlinks">
-                        <li><a href="../../index.html">work</a></li>
-                        <li><a href="../../studio/studio.html">studio</a></li>
-                        <li><a href="../../about/about.html">about</a></li>
-                    </div>
+                    <li class="desktop-menu">
+                        <ul>
+                            <li><a href="../../index.html">work</a></li></li>
+                            <li><a href="../../studio/studio.html">studio</a></li>
+                            <li><a href="../../about/about.html">about</a></li>
+                        </ul>
+                    </li>
                     
-                    <li id="menu"><i class="fas fa-bars fa-lg"></i></li>
+                    <li class="hidden" id="menu-icon"><i class="fas fa-bars fa-lg"></i></li>
 
-                    <li id="contactCTA"><a class="button" id="special-button" href="https://docs.google.com/document/d/1HRfi9Xt-KR-UvQB5UztDyjA18uAoPxoR46futannPXE/edit?usp=sharing" target="_blank">resume</a></li>
+                    <li id="resume-link"><a class="button" id="special-button" href="https://docs.google.com/document/d/1HRfi9Xt-KR-UvQB5UztDyjA18uAoPxoR46futannPXE/edit?usp=sharing" target="_blank">resume</a></li>
                 </ul>
 
-                <ul id="menu-links">
+                <ul class="hidden hidden2 mobile-menu">
                     <li><a href="../../index.html">work</a></li>
                     <li><a href="../../studio/studio.html">studio</a></li>
                     <li><a href="../../about/about.html">about</a></li>
-                    <li><a href="https://docs.google.com/document/d/1HRfi9Xt-KR-UvQB5UztDyjA18uAoPxoR46futannPXE/edit?usp=sharing" target="_blank">resume</a></li>      
+                    <li><a href="https://docs.google.com/document/d/1HRfi9Xt-KR-UvQB5UztDyjA18uAoPxoR46futannPXE/edit?usp=sharing" target="_blank">resume</a></li>
                 </ul>
+
+
             </nav>
         </div>
     
@@ -174,23 +178,6 @@
             </section>
 
             <div class="project-section-main">
-                <!-- <div class="link-bar">
-                    <a href="#competitive"><article class="bar1">
-                        <i class="fas fa-search fa-lg" style="color: #771d4f;"></i>
-                        <p>Competitive Analysis</p>
-                    </article></a>
-                    
-                    <a href="#interview"><article class="bar2">
-                        <i class="far fa-clipboard fa-lg" style="color: #771d4f;"></i>
-                        <p>User Interviews</p>
-                    </article></a>
-                    
-                    <a href="#affinity"><article class="bar3">
-                        <i class="far fa-sticky-note fa-lg" style="color: #771d4f;"></i>
-                        <p>Affinity Mapping</p>
-                    </article></a>
-                </div> -->
-
                 <section id="goal-content">
                     <h3>Outling the Goals</h3>
                     <p>To best fit the needs of Chevron, I determined key goals to lead our research and design process. I used these goals to refine our direction of the project.</p>
