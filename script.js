@@ -76,7 +76,9 @@
             setTimeout(function(){
                 mobileMenu.classList.replace('hidden2', 'show2');
 
-                menuIconSVG.src = 'images/close.svg';
+                // menuIconSVG.src = 'images/close.svg';
+                //had to comment out the icon changing because it doesn't work on other pages. the image url changes depending on the page because of file management/folders. images/close.svg only works for home, for other pages ../ would have to be in front
+                //potential solution: create a function that understands which page the user currently is on. create a boolean that changes the url depending on what the current page is. 
 
             }, 50)
 
@@ -85,7 +87,7 @@
 
             mobileMenu.classList.replace('show2','hidden2');
 
-            menuIconSVG.src = 'images/menu.svg';
+            // menuIconSVG.src = 'images/menu.svg';
 
             nav.classList.replace('opened', 'closed')
 
