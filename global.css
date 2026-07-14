@@ -277,7 +277,7 @@ a:hover{
 
 .back-to-top{
     position: fixed;
-    bottom: 3vw;
+    bottom: 2.5vw;
     right: 4vw;
 
     transform: rotate(-45deg);
@@ -285,7 +285,7 @@ a:hover{
     background-color: #2D7BE1;
     display: flex;
     border-radius: 50%;
-    padding: 12px;
+    padding: 8px;
     justify-content: center;
     z-index: 2;
 
@@ -386,6 +386,9 @@ footer aside{
         justify-content: space-between;
     }
 
+    .back-to-top{
+        padding: 12px;
+    }
     
 }
 
