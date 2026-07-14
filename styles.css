@@ -1,36 +1,20 @@
 /*---------------- HOME TYPOGRAPHY ----------------*/
 h1{
-    font-size: 64px;
-    color: #1D1D1D;
-
-    font-family: "DM Sans", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-
-    letter-spacing: 8%;
+    font-size: 3.5em;
 }
-
-h2{
-    font-size: 40px;
-    font-weight: 300;
-    font-style: italic;
-    letter-spacing: 2%;
-
-    
-}
-
-
 
 h3{
     font-size: 1.5em;
     font-weight: 300;
-    line-height: 36px;
+    line-height: 2.25em;
 }
 
 
 
-/*---------------- LINKS ----------------*/
 
+
+
+/*---------------- LINKS ----------------*/
 #cards-container a{
     border: none;
 }
@@ -39,6 +23,9 @@ h3{
     border: none;
     
 }
+
+
+
 
 
 
@@ -116,7 +103,12 @@ article ul{
     flex-direction: row;
     gap: 24px;
 
+
     align-items: center;
+}
+
+.tags{
+    flex-wrap: wrap;
 }
 
 article ul li{
@@ -159,6 +151,7 @@ article ul li{
 
 .left-column, .right-column{
     width: fit-content;
+    max-width: 100%;
 }
 
 
@@ -195,7 +188,9 @@ article ul li{
 /* -------- 650 PX - MOBILE SIZE -------- */
 @media only screen and (min-width: 640px){
 
-
+    h1{
+        font-size: 5em;
+    }
 
 }
 
