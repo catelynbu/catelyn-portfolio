@@ -20,6 +20,10 @@ section a:hover h2 {
     padding-bottom: 4px;
 }
 
+
+
+
+
 /* -------------------- HEADER -------------------- */
 header{
     display: flex;
@@ -35,20 +39,20 @@ header{
     flex-wrap: wrap;
 }
 
-/* #description p{
-    width: fit-content;
-} */
+
+
 
 
 /* -------------------- MAIN CONTAINER -------------------- */
-
 .container {
-    /* padding: 144px 0; */
-
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
     gap: 42px;
 }
+
+
+
+
 
 /* -------------------- SECTION CONTAINER -------------------- */
 section section, section section a{
@@ -64,8 +68,11 @@ section section a:hover{
 }
 
 
-/* -------------------- IMAGE CARDS -------------------- */
 
+
+
+
+/* -------------------- IMAGE CARDS -------------------- */
 .img-container {
     aspect-ratio: 1 / 1;
 
@@ -98,10 +105,15 @@ section section a:hover{
 }
 
 
-/* -------------------- RESPONSIVE -------------------- */
 
+
+
+
+/* -------------------- RESPONSIVE -------------------- */
 @media only screen and (min-width: 992px) {
     .container {
         gap: 100px 42px;
+
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     }
 }
