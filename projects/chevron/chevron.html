@@ -7,9 +7,6 @@
     <!-- normalize css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"> 
 
-    <!-- font awesone icons -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-
     <!-- css files -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="../../global.css" rel="stylesheet">
@@ -18,14 +15,14 @@
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Instrument+Serif:ital@0;1&family=Long+Cang&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
 
     <!-- JS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="../../script.js" defer></script>
-    <script src="chevron.js" defer></script>
+    <script src="../project.js" defer></script>
 
-    <title>Chevron Geo-Spatial Web Scraper | Catelyn Bu Portfolio</title>
+    <title>Chevron | Catelyn Bu Portfolio</title>
  
     <!-- Favicon Links -->
     <link rel="apple-touch-icon" sizes="180x180" href="../../images/favicon/apple-touch-icon.png">
@@ -48,12 +45,11 @@
                             <li><a href="../../index.html">work</a></li></li>
                             <li><a href="../../studio/studio.html">studio</a></li>
                             <li><a href="../../about/about.html">about</a></li>
+                            <li><a href="https://drive.google.com/file/d/1QHEptJbZ5Z-rSnkVMw-N27SdC8lljr6w/view?usp=sharing" target="_blank">resume</a></li>
                         </ul>
                     </li>
-                    
-                    <li class="hidden" id="menu-icon"><img id="icon-svg" src="../../images/menu.svg" alt="Menu icon." width="25" height="25"></li>
 
-                    <li id="resume-link"><a class="button" id="special-button" href="https://drive.google.com/file/d/1QHEptJbZ5Z-rSnkVMw-N27SdC8lljr6w/view?usp=sharing" target="_blank">resume</a></li>
+                    <li class="hidden" id="menu-icon"><img id="icon-svg" src="../../images/menu.svg" alt="Menu icon." width="25" height="25"></li>
                 </ul>
 
                 <ul class="hidden hidden2 mobile-menu">
@@ -66,411 +62,426 @@
 
             </nav>
         </div>
-    
-        <header>
-            <div id="header-projects" data-aos="fade-up">
-                <div id="header-projects-text">
-                    <h1>Chevron Geo-Spatial Web Scraper</h1>
-                    <p>Boosting work productivity through efficient data extraction</p>
-                </div>
-                
-                <img id="header-project-img" src="../../images/chevron-images/chevron-mockupNoBG.png" alt="A mockup of the home screen for the product.">
-            </div>
-            
 
-            <div class="absolute">
-                <div class="relative inset-0 justify-center">
-                    <div class="bg-shape1 bg-blue opacity-50 bg-blur"></div>
-                    <div class="bg-shape2 bg-purple opacity-50 bg-blur"></div>
-                    <div class="bg-shape3 bg-magenta opacity-50 bg-blur"></div>
+        <hr  data-aos="fade-up">
+    
+        <header  data-aos="fade-up">
+            <div id="header-text">
+                <div class="text-border" id="header-logo-title">
+                    <img src="../../images/chevron-images/chevron-logo.png" alt="Chevron logo" width="72px" height="72px">
+
+                    <div id="header-title">
+                        <h1>Chevron</h1>
+
+                        <p>Geo-Spatial Web Scraper</p>
+                    </div>
                 </div>
+    
+                <p>Boosting work productivity through efficient data extraction</p>
+
+
             </div>
+           
+
+            <img src="../../images/chevron-images/chevron-banner1.jpg" alt="A large banner that depicts the dashboard screen and the data preview screen in front of a pastel blue and yellow gradient background" width="100%" height="auto">
+
+
         </header>
     </div>
     
 
-    <a href="#full-header-container"><p class="backtotop"><i class="fas fa-arrow-up fa-lg" style="color: #ffffff;"></i></p></a>    
+    <a href="#full-header-container" class="back-to-top">
+        <svg class="arrow" width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18.7504 6V15.75C18.7504 15.9489 18.6714 16.1397 18.5307 16.2803C18.3901 16.421 18.1993 16.5 18.0004 16.5C17.8015 16.5 17.6107 16.421 17.4701 16.2803C17.3294 16.1397 17.2504 15.9489 17.2504 15.75V7.81031L6.53104 18.5306C6.39031 18.6714 6.19944 18.7504 6.00042 18.7504C5.80139 18.7504 5.61052 18.6714 5.46979 18.5306C5.32906 18.3899 5.25 18.199 5.25 18C5.25 17.801 5.32906 17.6101 5.46979 17.4694L16.1901 6.75H8.25042C8.0515 6.75 7.86074 6.67098 7.72009 6.53033C7.57943 6.38968 7.50042 6.19891 7.50042 6C7.50042 5.80109 7.57943 5.61032 7.72009 5.46967C7.86074 5.32902 8.0515 5.25 8.25042 5.25H18.0004C18.1993 5.25 18.3901 5.32902 18.5307 5.46967C18.6714 5.61032 18.7504 5.80109 18.7504 6Z" fill="#FFFFFF"/>
+        </svg>
+    </a>    
 
-    <div class="container">
-        <!-- OVERVIEW SECTION -->
-        <section id="overview" data-aos="fade-up">
-            <h2 class="test">Overview</h2>
 
-            <div id="overview-main">
-                <section id="my-role">
-                    <h3 class="subheading">MY ROLE</h3>
-        
-                    <p>I was one of the four designers on this project responsible for conducting user and market research along with the visual UI design and UX design. I created iterative wire frames and interactive prototypes, and had weekly client check-ins to meet Chevron’s business goals.</p>
-        
-                    <p>For this product I designed the home page, history page, and favorites page.</p>
-        
+    <main class="container">
+        <nav id="projects-navigation"  data-aos="fade-right">
+            <ul>
+                <li>
+                    <a href="#overview" class="section-button">
+                        <ul>
+                            <li><svg class="arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18.7504 6V15.75C18.7504 15.9489 18.6714 16.1397 18.5307 16.2803C18.3901 16.421 18.1993 16.5 18.0004 16.5C17.8015 16.5 17.6107 16.421 17.4701 16.2803C17.3294 16.1397 17.2504 15.9489 17.2504 15.75V7.81031L6.53104 18.5306C6.39031 18.6714 6.19944 18.7504 6.00042 18.7504C5.80139 18.7504 5.61052 18.6714 5.46979 18.5306C5.32906 18.3899 5.25 18.199 5.25 18C5.25 17.801 5.32906 17.6101 5.46979 17.4694L16.1901 6.75H8.25042C8.0515 6.75 7.86074 6.67098 7.72009 6.53033C7.57943 6.38968 7.50042 6.19891 7.50042 6C7.50042 5.80109 7.57943 5.61032 7.72009 5.46967C7.86074 5.32902 8.0515 5.25 8.25042 5.25H18.0004C18.1993 5.25 18.3901 5.32902 18.5307 5.46967C18.6714 5.61032 18.7504 5.80109 18.7504 6Z" fill="#2D7BE1"/>
+                                </svg>
+                            </li>
+                            <li>overview</li>
+                        </ul>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#research" class="section-button">
+                        <ul>
+                            <li><svg class="arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18.7504 6V15.75C18.7504 15.9489 18.6714 16.1397 18.5307 16.2803C18.3901 16.421 18.1993 16.5 18.0004 16.5C17.8015 16.5 17.6107 16.421 17.4701 16.2803C17.3294 16.1397 17.2504 15.9489 17.2504 15.75V7.81031L6.53104 18.5306C6.39031 18.6714 6.19944 18.7504 6.00042 18.7504C5.80139 18.7504 5.61052 18.6714 5.46979 18.5306C5.32906 18.3899 5.25 18.199 5.25 18C5.25 17.801 5.32906 17.6101 5.46979 17.4694L16.1901 6.75H8.25042C8.0515 6.75 7.86074 6.67098 7.72009 6.53033C7.57943 6.38968 7.50042 6.19891 7.50042 6C7.50042 5.80109 7.57943 5.61032 7.72009 5.46967C7.86074 5.32902 8.0515 5.25 8.25042 5.25H18.0004C18.1993 5.25 18.3901 5.32902 18.5307 5.46967C18.6714 5.61032 18.7504 5.80109 18.7504 6Z" fill="#2D7BE1"/>
+                                </svg>
+                            </li>
+                            <li>research</li>
+                        </ul>
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a href="#define" class="section-button">
+                        <ul>
+                            <li><svg class="arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18.7504 6V15.75C18.7504 15.9489 18.6714 16.1397 18.5307 16.2803C18.3901 16.421 18.1993 16.5 18.0004 16.5C17.8015 16.5 17.6107 16.421 17.4701 16.2803C17.3294 16.1397 17.2504 15.9489 17.2504 15.75V7.81031L6.53104 18.5306C6.39031 18.6714 6.19944 18.7504 6.00042 18.7504C5.80139 18.7504 5.61052 18.6714 5.46979 18.5306C5.32906 18.3899 5.25 18.199 5.25 18C5.25 17.801 5.32906 17.6101 5.46979 17.4694L16.1901 6.75H8.25042C8.0515 6.75 7.86074 6.67098 7.72009 6.53033C7.57943 6.38968 7.50042 6.19891 7.50042 6C7.50042 5.80109 7.57943 5.61032 7.72009 5.46967C7.86074 5.32902 8.0515 5.25 8.25042 5.25H18.0004C18.1993 5.25 18.3901 5.32902 18.5307 5.46967C18.6714 5.61032 18.7504 5.80109 18.7504 6Z" fill="#2D7BE1"/>
+                                </svg>
+                            </li>
+                            <li>define</li>
+                        </ul>
+                    </a>
+                    
+                </li>
+
+                <li>
+                    <a href="#ideation" class="section-button">
+                        <ul>
+                            <li><svg class="arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18.7504 6V15.75C18.7504 15.9489 18.6714 16.1397 18.5307 16.2803C18.3901 16.421 18.1993 16.5 18.0004 16.5C17.8015 16.5 17.6107 16.421 17.4701 16.2803C17.3294 16.1397 17.2504 15.9489 17.2504 15.75V7.81031L6.53104 18.5306C6.39031 18.6714 6.19944 18.7504 6.00042 18.7504C5.80139 18.7504 5.61052 18.6714 5.46979 18.5306C5.32906 18.3899 5.25 18.199 5.25 18C5.25 17.801 5.32906 17.6101 5.46979 17.4694L16.1901 6.75H8.25042C8.0515 6.75 7.86074 6.67098 7.72009 6.53033C7.57943 6.38968 7.50042 6.19891 7.50042 6C7.50042 5.80109 7.57943 5.61032 7.72009 5.46967C7.86074 5.32902 8.0515 5.25 8.25042 5.25H18.0004C18.1993 5.25 18.3901 5.32902 18.5307 5.46967C18.6714 5.61032 18.7504 5.80109 18.7504 6Z" fill="#2D7BE1"/>
+                                </svg>
+                            </li>
+                            <li>ideation</li>
+                        </ul>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#solution" class="section-button">
+                        <ul>
+                            <li><svg class="arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18.7504 6V15.75C18.7504 15.9489 18.6714 16.1397 18.5307 16.2803C18.3901 16.421 18.1993 16.5 18.0004 16.5C17.8015 16.5 17.6107 16.421 17.4701 16.2803C17.3294 16.1397 17.2504 15.9489 17.2504 15.75V7.81031L6.53104 18.5306C6.39031 18.6714 6.19944 18.7504 6.00042 18.7504C5.80139 18.7504 5.61052 18.6714 5.46979 18.5306C5.32906 18.3899 5.25 18.199 5.25 18C5.25 17.801 5.32906 17.6101 5.46979 17.4694L16.1901 6.75H8.25042C8.0515 6.75 7.86074 6.67098 7.72009 6.53033C7.57943 6.38968 7.50042 6.19891 7.50042 6C7.50042 5.80109 7.57943 5.61032 7.72009 5.46967C7.86074 5.32902 8.0515 5.25 8.25042 5.25H18.0004C18.1993 5.25 18.3901 5.32902 18.5307 5.46967C18.6714 5.61032 18.7504 5.80109 18.7504 6Z" fill="#2D7BE1"/>
+                                </svg>
+                            </li>
+                            <li>solution</li>
+                        </ul>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#reflection" class="section-button">
+                        <ul>
+                            <li><svg class="arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18.7504 6V15.75C18.7504 15.9489 18.6714 16.1397 18.5307 16.2803C18.3901 16.421 18.1993 16.5 18.0004 16.5C17.8015 16.5 17.6107 16.421 17.4701 16.2803C17.3294 16.1397 17.2504 15.9489 17.2504 15.75V7.81031L6.53104 18.5306C6.39031 18.6714 6.19944 18.7504 6.00042 18.7504C5.80139 18.7504 5.61052 18.6714 5.46979 18.5306C5.32906 18.3899 5.25 18.199 5.25 18C5.25 17.801 5.32906 17.6101 5.46979 17.4694L16.1901 6.75H8.25042C8.0515 6.75 7.86074 6.67098 7.72009 6.53033C7.57943 6.38968 7.50042 6.19891 7.50042 6C7.50042 5.80109 7.57943 5.61032 7.72009 5.46967C7.86074 5.32902 8.0515 5.25 8.25042 5.25H18.0004C18.1993 5.25 18.3901 5.32902 18.5307 5.46967C18.6714 5.61032 18.7504 5.80109 18.7504 6Z" fill="#2D7BE1"/>
+                                </svg>
+                            </li>
+                            <li>reflection</li>
+                        </ul>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div id="casestudy-container">
+            <!-- OVERVIEW SECTION -->
+            <section id="overview" data-aos="fade-up">
+
+                <div id="overview-main">
+                    <h2 class="text-border">Overview</h2>
+
+                    <section>
+                        <h3 class="subheading">the problem</h3>
+
+                        <p>Chevron's existing web scraper produces inaccurate results and a frustrating user experience, forcing analysts to manually clean data and leading to slow, unreliable market research.</p>
+                    </section>
+
+                    <section>
+                        <h3 class="subheading">the client</h3>
+                        
+                        <p>Chevron is one of the world's leading integrated energy companies. Through its Renewable Natural Gas (RNG) division, Chevron identifies strategic locations to build RNG stations for large commercial fleets.</p>
+                    </section>
+
+                    <section>
+                        <h3 class="subheading">my impact</h3>
+                        
+                        <p>I designed the dashboard, history, and favorites pages for quick access to all parts of the product, and reduced form fields and clicks to simplify the scraping setup process. This achieved a 2x improvement in accuracy and a 97% reduction in search time, enabling faster decision-making for Chevron's RNG team.</p>
+                    </section>
+                </div>
+
+                <aside id="overview-aside" data-aos="fade-left">
+                    <ul>
+                        <li><h3 class="subheading">timeline</h3>
+                            <ul>
+                                <li>Jan 2025 - Apr 2025</li>
+                            </ul>
+                        </li>
+
+                        <li><h3 class="subheading">tags</h3>
+                            <ul class="tags">
+                                <li>B2B</li>
+                                <li>Product</li>
+                            </ul>
+                        </li>
+
+                        <li><h3 class="subheading">team</h3>
+                            <ul>
+                                <li>1 Project Manager</li>
+                                <li>4 Designers</li>
+                                <li>6 Developers</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </aside>
+
+
+
+            </section>
+
+
+            <!-- RESEARCH SECTION -->
+             <section id="research" class="full-project-section">
+                <section class="project-section" data-aos="fade-up">
+                    <div class="project-section-title">
+                        <div class="diamond-subheading">
+                            <img src="../../images/diamond.svg" alt="Diamond icon" width="15" height="15">
+                            <p class="subheading">research</p>
+                        </div>
+                    
+                        <h2 class="text-border">Chevron’s current practice is inaccurate, restrictive, and slow</h2>
+                    </div>
+
+                    <p>My team and I conducted two user interviews with a senior market analyst and a sales representative to understand their frustrations with the current scraper.</p>
+
+                    <p>We found that excessive features made the tool overwhelming to navigate, inaccurate data led to time-consuming rescraping, and there was no straightforward way to share findings across teams. These pain points made it clear that associates needed a scraper that was accurate, focused, and built with collaboration in mind.</p>
+
+                    <img class="text-diagram" src="../../images/chevron-images/chevron-data.png" alt="Research findings summarizing two user interviews with Chevron associates, highlighting frustrations with unnecessary features, inaccurate scraped data, and the need for easier data sharing across teams." width="100%" height="auto">
+                    
                 </section>
-        
-        
-                <section id="the-problem">
-                    <h3 class="subheading">THE PROBLEM</h3>
-        
-                    <p>The current web scraper Chevron uses has several issues with inaccurate results, unnecessary content, and poor usability. Team members at Chevron are unsatisfied with their current practice and are tired of having to manually edit and fix the results from their web scrapes. The poor experience negatively affects Chevron’s business performance and their ability to grow their industry.</p>
+
+                <section class="project-section" data-aos="fade-up">
+
+                    <h2 class="text-border">Competitors handle data well, but leave users without guidance</h2>
+
+                    <p>I examined three web scraping tools to identify what our users needed most. While most competitors offered a results page, deeper data features like detailed previews and a dedicated history page were inconsistent across the board.</p>
+
+                    <p>Guidance features were even more sparse, with no competitor offering feedback or confirmation screens and only one supporting simplistic, intuitive tools. This pointed to an opportunity to build an experience that not only surfaces data effectively, but walks users through the process with clarity and confidence.</p>
+
+                    <img class="text-diagram" src="../../images/chevron-images/chevron-competitiveAnalysis.png" alt="Feature comparison table showing Octoparse, Automatio, and NoCoding Data Scraper, highlighting support for comprehensive results pages, intuitive tools, scrape status, data previews, feedback screens, and history pages." width="100%" height="auto">
+                    
                 </section>
-            </div>
+             </section>
+
+
+            <!-- DEFINE SECTION -->
+             <section id="define" class="full-project-section">
+                <section class="project-section" data-aos="fade-up">
+                    <div class="project-section-title">
+                        <div class="diamond-subheading">
+                            <img src="../../images/diamond.svg" alt="Diamond icon" width="15" height="15">
+                            <p class="subheading">define</p>
+                        </div>
+                    
+                        <h2 class="text-border">Accuracy, simplicity, and collaboration lead the design direction</h2>
+                    </div>
+
+                    <p>To finalize all of our research methods, I determined the three key goals to help guide our design process. These were some of the most requested and discussed topics throughout our research, indicating our priorities.</p>
+
+                    <img class="text-diagram" src="../../images/chevron-images/chevron-define.png" alt="Research synthesis identifying three key design priorities: accuracy, collaboration, and simplicity, followed by a 'How Might We' statement guiding the redesign of the web scraping tool." width="100%" height="auto">
+                    
+                </section>
+             </section>
+
+             
+            <!-- IDEATION SECTION -->
+             <section id="ideation" class="full-project-section">
+                <section class="project-section" data-aos="fade-up">
+                    <div class="project-section-title">
+                        <div class="diamond-subheading">
+                            <img src="../../images/diamond.svg" alt="Diamond icon" width="15" height="15">
+                            <p class="subheading">ideation</p>
+                        </div>
+                    
+                        <h2 class="text-border">Dashboard layout optimized for responsiveness and visual balance</h2>
+                    </div>
+
+                    <p>The three-column layout was initially chosen for its clean visual structure, but client feedback revealed a critical gap: many Chevron associates work on smaller screens like tablets, where three columns would become too narrow to be functional.</p>
+
+                    <p>Shifting to a grid layout directly addressed this, ensuring content stayed readable and accessible regardless of screen size.</p>
+
+                    <img class="img-diagram" src="../../images/chevron-images/chevron-ideation1.jpg" alt="Dashboard redesign comparison showing the transition from a rigid three-column layout to a modular grid layout that improves scalability, content hierarchy, and use of space." width="100%" height="auto">
+                    
+                </section>
+
+                <section class="project-section" data-aos="fade-up">
+
+                    <h2 class="text-border">Data preview refined for clearer interaction and faster navigation</h2>
+
+                    <p>Redundant fields, a button-like tag design, and a view more pattern made the data preview harder to parse and navigate.</p>
+
+                    <p>Feedback from the client influenced these fixes: reducing fields to only what was necessary, correcting the tag styling, and introducing pagination so users could move through data more efficiently.</p>
+
+                    <img class="img-diagram" src="../../images/chevron-images/chevron-ideation2.jpg" alt="Data preview redesign comparison showing the transition from a cluttered interface to a simplified layout with streamlined fields, clearer labels, and pagination for faster data access." width="100%" height="auto">
+                    
+                </section>
+
+
+                <section class="project-section" data-aos="fade-up">
+
+                    <h2 class="text-border">History page reorganized for workflow clarity and user attribution</h2>
+
+                    <p>Client feedback and internal critique both flagged the history page as a pain point. Without bulk action controls, the checkboxes on each record served no real purpose, and the lack of an email column made it difficult to know who had run each scrape.</p>
+
+                    <p>These additions gave associates clearer context and more control over their records.</p>
+
+                    <img class="img-diagram" src="../../images/chevron-images/chevron-ideation3.jpg" alt="History page redesign comparison showing the transition from a fragmented layout to a more organized workflow with user attribution, bulk actions, and improved action placement." width="100%" height="auto">
+                    
+                </section>
+             </section>
+
+
+            <!-- SOLUTION SECTION -->
+             <section id="solution" class="full-project-section">
+                <section class="project-section" data-aos="fade-up">
+                    <div class="project-section-title">
+                        <div class="diamond-subheading">
+                            <img src="../../images/diamond.svg" alt="Diamond icon" width="15" height="15">
+                            <p class="subheading">solution</p>
+                        </div>
+                    
+                        <h2 class="text-border">A centralized dashboard with jobs at a glance</h2>
+                    </div>
+
+                    <p>Use the dashboard to have instant access to current runs, recent activity, and previous runs to easily return to the work that matters most.</p>
+
+                    <img class="img-diagram" src="../../images/chevron-images/chevron-solution1.jpg" alt="Final dashboard design for a web scraping tool displaying current scrape statuses, favorite projects, and recent activity for quick access to ongoing and completed data extractions." width="100%" height="auto">
+                    
+                </section>
+
+                <section class="project-section" data-aos="fade-up">
+
+                    <h2 class="text-border">Search the web to start your run</h2>
+
+                    <p>Start at the search page to begin the web scraping process. Search by company details and location specifics to parse for the most relevant data, such as latitude, longitude, and address.</p>
+
+                    <img class="img-diagram" src="../../images/chevron-images/chevron-solution2.gif" alt="" width="100%" height="auto">
+                    
+                </section>
+
+
+                <section class="project-section" data-aos="fade-up">
+
+                    <h2 class="text-border">Visualize your run progress</h2>
+
+                    <p>Never worry about the status of your run progress. A visual indicator is used to keep users updated on what point their run is at.</p>
+
+                    <img class="img-diagram" src="../../images/chevron-images/chevron-solution3.gif" alt="" width="100%" height="auto">
+                    
+                </section>
+
+                <section class="project-section" data-aos="fade-up">
+
+                    <h2 class="text-border">Preview data before you export</h2>
+
+                    <p>View the full parsed data to verify your results before downloading. Users are able to reference the parameters of their scrape and easily jump through pages of data.</p>
+
+                    <img class="img-diagram" src="../../images/chevron-images/chevron-solution4.gif" alt="" width="100%" height="auto">
+                    
+                </section>
+
+                <section class="project-section" data-aos="fade-up">
+
+                    <h2 class="text-border">Access your history and favorite runs instantly</h2>
+
+                    <p>Bring all previous jobs into one place, making it easier for analysts to revisit, track, and manage past scrapes over time. Select multiple runs to access bulk actions. </p>
+
+                    <img class="img-diagram" src="../../images/chevron-images/chevron-solution5.gif" alt="" width="100%" height="auto">
+                    
+                </section>
+             </section>
+
+
+            <!-- REFLECTION SECTION -->
+             <section id="reflection" class="full-project-section">
+                <section class="project-section" data-aos="fade-up">
+                    <div class="project-section-title">
+                        <div class="diamond-subheading">
+                            <img src="../../images/diamond.svg" alt="Diamond icon" width="15" height="15">
+                            <p class="subheading">reflection</p>
+                        </div>
+                    
+                        <h2 class="text-border">01 Design beyond the primary audience</h2>
+                    </div>
+
+                    <p>This product was initially built with one audience in mind: Chevron’s analysts. However, I quickly learned how the teams at Chevron work in separate departments, but are unified by using the same digital platforms and sharing the goal of efficiently using data to guide their business moves. Talking with other teams allowed me to better understand the downstream business impact and how one critical flaw can massively influence team productivity.</p>
+
+                </section>
+
+                <section class="project-section" data-aos="fade-up">
+                    
+                    <h2 class="text-border">02 Feasibility is important</h2>
+
+                    <p>Discussing with our devs revealed holes within our design ideas due to feasibility issues. So although our minds were running wild, we had to find a middle ground -  we need to respect the time of our developers but also understand the abilities and circumstances of the client. This helped me pin point exactly what was to be implemented, and what ideas to archive.</p>
+
+                    <img class="text-diagram" src="../../images/chevron-images/chevron-group.jpg" alt="A 12 person group photo of the Chevron team." width="100%" height="auto">
+                    
+                </section>
+             </section>
+
+        </div>
+
+    </main>
+
+    <!-- <div id="chevron" class="banner" data-aos="fade-up" ></div> -->
     
-            <aside id="overview-aside" data-aos="fade-left">
+
+
+
+    <hr data-aos="fade-up" id="bottom-hr">
+
+    <footer data-aos="fade-up">
+        <div id="footer-main">
+            <section id="footer-socials">
+                <h2 class="text-border">let's get in touch ~</h2>
+
                 <ul>
-                    <li><h3 class="subheading">TOOLS</h3>
+                    <li>
                         <ul>
-                            <li>Figma, Figjam</li>
+                            <li><img src="../../images/email-icon.png" alt="Email icon" width="24" height="24"></li>
+                            <li><a href="mailto:&#099;&#097;&#116;&#101;&#108;&#121;&#110;&#046;&#098;&#117;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;" target="_blank">&#099;&#097;&#116;&#101;&#108;&#121;&#110;&#046;&#098;&#117;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;</a></li>
                         </ul>
                     </li>
-                    <li><h3 class="subheading">DURATION</h3>
+
+                    <li>
                         <ul>
-                            <li>January 2025 - April 2025</li>
-                        </ul>
-                    </li>
-                    <li><h3 class="subheading">PROJECT TYPE</h3>
-                        <ul>
-                            <li>Desktop web app</li>
-                        </ul>
-                    </li>
-                    <li><h3 class="subheading">TEAM</h3>
-                        <ul>
-                            <li>1 Project Manager</li>
-                            <li>1 Project Mentor</li>
-                            <li>4 Designers</li>
-                            <li>6 Developers</li>
+                            <li><img src="../../images/linkedin-icon.png" alt="Linkedin icon" width="24" height="24"></li>
+                            <li><a href="https://www.linkedin.com/in/catelynbu/" target="_blank">linkedin.com/in/catelynbu</a></li>
                         </ul>
                     </li>
                 </ul>
-            </aside>
-        </section>
-    </div>
-
-    <div id="chevron" class="banner" data-aos="fade-up" ></div>
-    
-    <div class="container">
-        <!-- RESEARCH SECTION -->
-        <section class="project-section" data-aos="fade-up" >
-            <section class="project-section-title">
-                <p class="subheading">RESEARCH</p>
-                <h2>Understanding the Problem</h2>
-
-                 <div class="sectionBtn-container">
-                    <button id="goal" class="section-button selected-button">
-                        <svg class="arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M18.7504 6V15.75C18.7504 15.9489 18.6714 16.1397 18.5307 16.2803C18.3901 16.421 18.1993 16.5 18.0004 16.5C17.8015 16.5 17.6107 16.421 17.4701 16.2803C17.3294 16.1397 17.2504 15.9489 17.2504 15.75V7.81031L6.53104 18.5306C6.39031 18.6714 6.19944 18.7504 6.00042 18.7504C5.80139 18.7504 5.61052 18.6714 5.46979 18.5306C5.32906 18.3899 5.25 18.199 5.25 18C5.25 17.801 5.32906 17.6101 5.46979 17.4694L16.1901 6.75H8.25042C8.0515 6.75 7.86074 6.67098 7.72009 6.53033C7.57943 6.38968 7.50042 6.19891 7.50042 6C7.50042 5.80109 7.57943 5.61032 7.72009 5.46967C7.86074 5.32902 8.0515 5.25 8.25042 5.25H18.0004C18.1993 5.25 18.3901 5.32902 18.5307 5.46967C18.6714 5.61032 18.7504 5.80109 18.7504 6Z" fill="#E58684"/>
-                        </svg>
-                        Goals
-                    </button>
-
-                    <button id="competitive" class="section-button">
-                        <svg class="arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M18.7504 6V15.75C18.7504 15.9489 18.6714 16.1397 18.5307 16.2803C18.3901 16.421 18.1993 16.5 18.0004 16.5C17.8015 16.5 17.6107 16.421 17.4701 16.2803C17.3294 16.1397 17.2504 15.9489 17.2504 15.75V7.81031L6.53104 18.5306C6.39031 18.6714 6.19944 18.7504 6.00042 18.7504C5.80139 18.7504 5.61052 18.6714 5.46979 18.5306C5.32906 18.3899 5.25 18.199 5.25 18C5.25 17.801 5.32906 17.6101 5.46979 17.4694L16.1901 6.75H8.25042C8.0515 6.75 7.86074 6.67098 7.72009 6.53033C7.57943 6.38968 7.50042 6.19891 7.50042 6C7.50042 5.80109 7.57943 5.61032 7.72009 5.46967C7.86074 5.32902 8.0515 5.25 8.25042 5.25H18.0004C18.1993 5.25 18.3901 5.32902 18.5307 5.46967C18.6714 5.61032 18.7504 5.80109 18.7504 6Z" fill="#E58684"/>
-                        </svg>
-                        Competitive Analysis
-                    </button>
-
-                    <button id="interview" class="section-button">
-                        <svg class="arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M18.7504 6V15.75C18.7504 15.9489 18.6714 16.1397 18.5307 16.2803C18.3901 16.421 18.1993 16.5 18.0004 16.5C17.8015 16.5 17.6107 16.421 17.4701 16.2803C17.3294 16.1397 17.2504 15.9489 17.2504 15.75V7.81031L6.53104 18.5306C6.39031 18.6714 6.19944 18.7504 6.00042 18.7504C5.80139 18.7504 5.61052 18.6714 5.46979 18.5306C5.32906 18.3899 5.25 18.199 5.25 18C5.25 17.801 5.32906 17.6101 5.46979 17.4694L16.1901 6.75H8.25042C8.0515 6.75 7.86074 6.67098 7.72009 6.53033C7.57943 6.38968 7.50042 6.19891 7.50042 6C7.50042 5.80109 7.57943 5.61032 7.72009 5.46967C7.86074 5.32902 8.0515 5.25 8.25042 5.25H18.0004C18.1993 5.25 18.3901 5.32902 18.5307 5.46967C18.6714 5.61032 18.7504 5.80109 18.7504 6Z" fill="#E58684"/>
-                        </svg>
-                        User Interviews
-                    </button>
-
-                    <button id="affinity" class="section-button">
-                        <svg class="arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M18.7504 6V15.75C18.7504 15.9489 18.6714 16.1397 18.5307 16.2803C18.3901 16.421 18.1993 16.5 18.0004 16.5C17.8015 16.5 17.6107 16.421 17.4701 16.2803C17.3294 16.1397 17.2504 15.9489 17.2504 15.75V7.81031L6.53104 18.5306C6.39031 18.6714 6.19944 18.7504 6.00042 18.7504C5.80139 18.7504 5.61052 18.6714 5.46979 18.5306C5.32906 18.3899 5.25 18.199 5.25 18C5.25 17.801 5.32906 17.6101 5.46979 17.4694L16.1901 6.75H8.25042C8.0515 6.75 7.86074 6.67098 7.72009 6.53033C7.57943 6.38968 7.50042 6.19891 7.50042 6C7.50042 5.80109 7.57943 5.61032 7.72009 5.46967C7.86074 5.32902 8.0515 5.25 8.25042 5.25H18.0004C18.1993 5.25 18.3901 5.32902 18.5307 5.46967C18.6714 5.61032 18.7504 5.80109 18.7504 6Z" fill="#E58684"/>
-                        </svg>
-                        Affinity Mapping
-                    </button>
-                </div>
             </section>
 
-            <div class="project-section-main">
-                <section id="goal-content">
-                    <h3>Outling the Goals</h3>
-                    <p>To best fit the needs of Chevron, I determined key goals to lead our research and design process. I used these goals to refine our direction of the project.</p>
+            <section id="footer-menu">
+                <ul>
+                    <li>menu</li>
+                    <li><a href="../../index.html">work</a></li>
+                    <li><a href="../../studio/studio.html">studio</a></li>
+                    <li><a href="../../about/about.html">about</a></li>
+                    <li><a href="https://drive.google.com/file/d/1QHEptJbZ5Z-rSnkVMw-N27SdC8lljr6w/view">resume</a></li>
+                </ul>
 
-                    <img loading="lazy" src="../../images/chevron-images/chevron-goals.png" alt="">
-                </section>
-
-                <section class="no-display" id="competitive-content">
-                    <h3>Comparing Market Competitors</h3>
-                    <p>I conducted a <span>competitive analysis</span> on Chevron’s current web scraper and two other web extension scrapers. I used the <span>S.W.O.T method</span> and also took a closer look specifically at how each program handled <span>task creation</span>, <span>task status</span>, <span>results presentation</span>, and <span>history</span> along with recording general pain points throughout the process.</p>
-
-                    <img src="../../images/chevron-images/chevron-competitiveAnalysis.png" alt="">
-                </section>
-
-                <section class="no-display" id="interview-content">
-                    <h3>Connecting with the Users</h3>
-                    <p>My team and I conducted <span>two user interviews</span> to better understand the issues with the current scraper and how we could use those pain points to inform our design. We contacted one user who would directly be using the scraper and one user who would be viewing the data presented from the scraper.</p>
-
-                    <img src="../../images/chevron-images/chevron-userTest.png" alt="">
-                </section>
-
-                <section class="no-display" id="affinity-content">
-                    <h3>Organizing Our Findings</h3>
-                    <p>An affinity map was made to define the needs and behaviors of our users and outline the potential solutions to crafting a web data scraper.</p>
-
-                    <img class="drop" src="../../images/chevron-images/chevron-affinity.jpg" alt="">
-                </section>
-            </div>
-        </section>
-
-
-        <!-- DEFINE SECTION -->
-        <section class="project-section" data-aos="fade-up" >
-            <section class="project-section-title">
-                <p class="subheading">DEFINE</p>
-                <h2>Determining the Scope</h2>
+                <ul>
+                    <li>projects</li>
+                    <li><a href="../../projects/goodnotes/goodnotes.html">goodnotes</a></li>
+                    <li><a href="../../projects/chevron/chevron.html">chevron</a></li>
+                    <li><a href="../../projects/safely/safely.html">safely</a></li>
+                </ul>
             </section>
-
-            <div class="project-section-main">
-                <section class="project-content">
-                    <p>To finalize all of our research methods, I determined the three key goals to help guide our design process. <span>Accuracy</span>, <span>Collaboration</span>, and <span>Simplicity</span> were some of the most requested and discussed topics throughout our research, indicating our priorities.</p>
-
-                    <img src="../../images/chevron-images/chevron-scope.png" alt="">
-                </section>
-            </div>
-            
-        </section>
-        
-
-        <!-- IDEATE SECTION -->
-        <section class="project-section" data-aos="fade-up" >
-            <section class="project-section-title">
-                <p class="subheading">IDEATE</p>
-                <h2>Brainstorming Solutions</h2>
-
-
-                <div class="sectionBtn-container">
-                    <button id="lowfi" class="section-button selected-button">
-                        <svg class="arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M18.7504 6V15.75C18.7504 15.9489 18.6714 16.1397 18.5307 16.2803C18.3901 16.421 18.1993 16.5 18.0004 16.5C17.8015 16.5 17.6107 16.421 17.4701 16.2803C17.3294 16.1397 17.2504 15.9489 17.2504 15.75V7.81031L6.53104 18.5306C6.39031 18.6714 6.19944 18.7504 6.00042 18.7504C5.80139 18.7504 5.61052 18.6714 5.46979 18.5306C5.32906 18.3899 5.25 18.199 5.25 18C5.25 17.801 5.32906 17.6101 5.46979 17.4694L16.1901 6.75H8.25042C8.0515 6.75 7.86074 6.67098 7.72009 6.53033C7.57943 6.38968 7.50042 6.19891 7.50042 6C7.50042 5.80109 7.57943 5.61032 7.72009 5.46967C7.86074 5.32902 8.0515 5.25 8.25042 5.25H18.0004C18.1993 5.25 18.3901 5.32902 18.5307 5.46967C18.6714 5.61032 18.7504 5.80109 18.7504 6Z" fill="#E58684"/>
-                        </svg>
-                        Low-fi Sketches
-                    </button>
-
-                    <button id="midfi" class="section-button">
-                        <svg class="arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M18.7504 6V15.75C18.7504 15.9489 18.6714 16.1397 18.5307 16.2803C18.3901 16.421 18.1993 16.5 18.0004 16.5C17.8015 16.5 17.6107 16.421 17.4701 16.2803C17.3294 16.1397 17.2504 15.9489 17.2504 15.75V7.81031L6.53104 18.5306C6.39031 18.6714 6.19944 18.7504 6.00042 18.7504C5.80139 18.7504 5.61052 18.6714 5.46979 18.5306C5.32906 18.3899 5.25 18.199 5.25 18C5.25 17.801 5.32906 17.6101 5.46979 17.4694L16.1901 6.75H8.25042C8.0515 6.75 7.86074 6.67098 7.72009 6.53033C7.57943 6.38968 7.50042 6.19891 7.50042 6C7.50042 5.80109 7.57943 5.61032 7.72009 5.46967C7.86074 5.32902 8.0515 5.25 8.25042 5.25H18.0004C18.1993 5.25 18.3901 5.32902 18.5307 5.46967C18.6714 5.61032 18.7504 5.80109 18.7504 6Z" fill="#E58684"/>
-                        </svg>
-                        Mid-fi Wireframes
-                    </button>
-                </div>
-            </section>
-
-            <div class="project-section-main">
-                <section id="lowfi-content">
-                    <h3>Sketching the Initial Ideas</h3>
-                    <p>I began brainstorming potential solutions for all of the pages in the scraper: home, search, data preview, history, and favorites. Within each sketch I tackle various layouts, tools, features, and arrangements to create designs that were not only efficient but simplistic. </p>
-
-                    <img class="drop" src="../../images/chevron-images/chevron-lofi.jpg" alt="">
-                </section>
-
-                <section class="no-display" id="midfi-content">
-                    <h3>Digitalizing the Ideas</h3>
-                    <p>Honing into the home, history, and favorites page, I iterated multiple designs to find the optimal arrangement for the user’s needs. I used wire frames to map out the different screens for better overall cohesion and paid close attention to reusable components for a simple design.</p>
-
-                    <img src="../../images/chevron-images/chevron-midfi.jpg" alt="">
-
-                    <p>During this phase, I received valuable feedback from the client about how well my ideas met their needs. I learned that most members on the client’s team had smaller screen sizes, meaning my designs had to adapt to those restrictions.</p>
-
-                    <p>And from our developers, the feasibility of certain features such as a word search or specific time stamps were not in the scope of our timeline, which meant brainstorming new alternatives.</p>
-                </section>
-            </div>
-        </section>
-
-
-        <!-- PROTOTYPE SECTION -->
-        <section class="project-section" data-aos="fade-up" >
-            <section class="project-section-title">
-                <p class="subheading">PROTOTYPE</p>
-                <h2>Bringing it all Together</h2>
-            </section>
-
-            <div class="project-section-main">
-                <section class="project-content">
-                    <h3>Typography, Colors, and Components!</h3>
-                    <p>Moving further into higher fidelity, we solidified a clear design system that aligned with Chevron’s brand identity while maintaining a clean, minimalist design optimized for data display and viewing.</p>
-
-                    <img class="drop" src="../../images/chevron-images/chevron-designSystem.png" alt="">
-
-                    <p>We adhered to industry design standards to give a more professional feel that was familiar to the original scraper the Chevron team was used to. This choice was necessary in order to create a product the team could jump right into and use, opposed to a more experimental or fresh design that could take longer to learn how to use.</p>
-                </section> 
-            </div>
-            
-        </section>
-
-        <!-- FINAL PROTOTYPE SECTION -->
-        <section class="project-section" data-aos="fade-up" >
-            <section class="project-section-title">
-                <p class="subheading">FINAL PROTOTYPE</p>
-                <h2>The Solutions</h2>
-
-                 <div class="sectionBtn-container">
-                    <button id="dashboard" class="section-button selected-button">
-                        <svg class="arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M18.7504 6V15.75C18.7504 15.9489 18.6714 16.1397 18.5307 16.2803C18.3901 16.421 18.1993 16.5 18.0004 16.5C17.8015 16.5 17.6107 16.421 17.4701 16.2803C17.3294 16.1397 17.2504 15.9489 17.2504 15.75V7.81031L6.53104 18.5306C6.39031 18.6714 6.19944 18.7504 6.00042 18.7504C5.80139 18.7504 5.61052 18.6714 5.46979 18.5306C5.32906 18.3899 5.25 18.199 5.25 18C5.25 17.801 5.32906 17.6101 5.46979 17.4694L16.1901 6.75H8.25042C8.0515 6.75 7.86074 6.67098 7.72009 6.53033C7.57943 6.38968 7.50042 6.19891 7.50042 6C7.50042 5.80109 7.57943 5.61032 7.72009 5.46967C7.86074 5.32902 8.0515 5.25 8.25042 5.25H18.0004C18.1993 5.25 18.3901 5.32902 18.5307 5.46967C18.6714 5.61032 18.7504 5.80109 18.7504 6Z" fill="#E58684"/>
-                        </svg>
-                        Dashboard
-                    </button>
-
-                    <button id="search" class="section-button">
-                        <svg class="arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M18.7504 6V15.75C18.7504 15.9489 18.6714 16.1397 18.5307 16.2803C18.3901 16.421 18.1993 16.5 18.0004 16.5C17.8015 16.5 17.6107 16.421 17.4701 16.2803C17.3294 16.1397 17.2504 15.9489 17.2504 15.75V7.81031L6.53104 18.5306C6.39031 18.6714 6.19944 18.7504 6.00042 18.7504C5.80139 18.7504 5.61052 18.6714 5.46979 18.5306C5.32906 18.3899 5.25 18.199 5.25 18C5.25 17.801 5.32906 17.6101 5.46979 17.4694L16.1901 6.75H8.25042C8.0515 6.75 7.86074 6.67098 7.72009 6.53033C7.57943 6.38968 7.50042 6.19891 7.50042 6C7.50042 5.80109 7.57943 5.61032 7.72009 5.46967C7.86074 5.32902 8.0515 5.25 8.25042 5.25H18.0004C18.1993 5.25 18.3901 5.32902 18.5307 5.46967C18.6714 5.61032 18.7504 5.80109 18.7504 6Z" fill="#E58684"/>
-                        </svg>
-                        Search
-                    </button>
-
-                    <button id="run" class="section-button">
-                        <svg class="arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M18.7504 6V15.75C18.7504 15.9489 18.6714 16.1397 18.5307 16.2803C18.3901 16.421 18.1993 16.5 18.0004 16.5C17.8015 16.5 17.6107 16.421 17.4701 16.2803C17.3294 16.1397 17.2504 15.9489 17.2504 15.75V7.81031L6.53104 18.5306C6.39031 18.6714 6.19944 18.7504 6.00042 18.7504C5.80139 18.7504 5.61052 18.6714 5.46979 18.5306C5.32906 18.3899 5.25 18.199 5.25 18C5.25 17.801 5.32906 17.6101 5.46979 17.4694L16.1901 6.75H8.25042C8.0515 6.75 7.86074 6.67098 7.72009 6.53033C7.57943 6.38968 7.50042 6.19891 7.50042 6C7.50042 5.80109 7.57943 5.61032 7.72009 5.46967C7.86074 5.32902 8.0515 5.25 8.25042 5.25H18.0004C18.1993 5.25 18.3901 5.32902 18.5307 5.46967C18.6714 5.61032 18.7504 5.80109 18.7504 6Z" fill="#E58684"/>
-                        </svg>
-                        Run Status
-                    </button>
-
-                    <button id="preview" class="section-button">
-                        <svg class="arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M18.7504 6V15.75C18.7504 15.9489 18.6714 16.1397 18.5307 16.2803C18.3901 16.421 18.1993 16.5 18.0004 16.5C17.8015 16.5 17.6107 16.421 17.4701 16.2803C17.3294 16.1397 17.2504 15.9489 17.2504 15.75V7.81031L6.53104 18.5306C6.39031 18.6714 6.19944 18.7504 6.00042 18.7504C5.80139 18.7504 5.61052 18.6714 5.46979 18.5306C5.32906 18.3899 5.25 18.199 5.25 18C5.25 17.801 5.32906 17.6101 5.46979 17.4694L16.1901 6.75H8.25042C8.0515 6.75 7.86074 6.67098 7.72009 6.53033C7.57943 6.38968 7.50042 6.19891 7.50042 6C7.50042 5.80109 7.57943 5.61032 7.72009 5.46967C7.86074 5.32902 8.0515 5.25 8.25042 5.25H18.0004C18.1993 5.25 18.3901 5.32902 18.5307 5.46967C18.6714 5.61032 18.7504 5.80109 18.7504 6Z" fill="#E58684"/>
-                        </svg>
-                        Data Preview
-                    </button>
-
-                    <button id="history" class="section-button">
-                        <svg class="arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M18.7504 6V15.75C18.7504 15.9489 18.6714 16.1397 18.5307 16.2803C18.3901 16.421 18.1993 16.5 18.0004 16.5C17.8015 16.5 17.6107 16.421 17.4701 16.2803C17.3294 16.1397 17.2504 15.9489 17.2504 15.75V7.81031L6.53104 18.5306C6.39031 18.6714 6.19944 18.7504 6.00042 18.7504C5.80139 18.7504 5.61052 18.6714 5.46979 18.5306C5.32906 18.3899 5.25 18.199 5.25 18C5.25 17.801 5.32906 17.6101 5.46979 17.4694L16.1901 6.75H8.25042C8.0515 6.75 7.86074 6.67098 7.72009 6.53033C7.57943 6.38968 7.50042 6.19891 7.50042 6C7.50042 5.80109 7.57943 5.61032 7.72009 5.46967C7.86074 5.32902 8.0515 5.25 8.25042 5.25H18.0004C18.1993 5.25 18.3901 5.32902 18.5307 5.46967C18.6714 5.61032 18.7504 5.80109 18.7504 6Z" fill="#E58684"/>
-                        </svg>
-                        History
-                    </button>
-                </div>
-            </section>
-
-            <div class="project-section-main">
-
-                <!-- DASHBOARD SECTION -->
-                <section id="dashboard-content">
-                    <h3>A Centralized Dashboard</h3>
-
-                    <div class="solutions-content">
-                        <!-- <p>add some dashboard pitch and an explaination of how this acheives our goals. add some dashboard pitch and an explaination of how this acheives our goals. add some dashboard pitch and an explaination of how this acheives our goals</p> -->
-
-                        <img src="../../images/chevron-images/chevron-homeMockup.png" alt="">
-                        <img src="../../images/chevron-images/chevron-homeMarkup.jpg" alt="">
-                    </div>
-                </section> 
-
-                <!-- SEARCH SECTION -->
-                <section class="no-display" id="search-content">
-                    <h3>Search the Web to Scrape</h3>
-
-                    <div class="solutions-content">
-                        <!-- <p>add some dashboard pitch and an explaination of how this acheives our goals. add some dashboard pitch and an explaination of how this acheives our goals. add some dashboard pitch and an explaination of how this acheives our goals</p> -->
-
-                        <img src="../../images/chevron-images/chevron-searchMockup.png" alt="">
-                        <img src="../../images/chevron-images/chevron-searchMarkup.png" alt="">
-                    </div>
-                </section> 
-
-                <!-- RUN SECTION -->
-                <section class="no-display" id="run-content">
-                    <h3>See Your Run Status</h3>
-
-                    <div class="solutions-content">
-                        <!-- <p>add some dashboard pitch and an explaination of how this acheives our goals. add some dashboard pitch and an explaination of how this acheives our goals. add some dashboard pitch and an explaination of how this acheives our goals</p> -->
-
-                        <!-- <img src="../../images/chevron-images/chevron-runMockup.png" alt=""> -->
-                        <img src="../../images/chevron-images/chevron-runMarkup.jpg" alt="">
-                    </div>
-                </section> 
-
-                <!-- PREVIEW SECTION -->
-                <section class="no-display" id="preview-content">
-                    <h3>Preview Your Data to Export</h3>
-
-                    <div class="solutions-content">
-                        <!-- <p>add some dashboard pitch and an explaination of how this acheives our goals. add some dashboard pitch and an explaination of how this acheives our goals. add some dashboard pitch and an explaination of how this acheives our goals</p> -->
-
-                        <img src="../../images/chevron-images/chevron-previewMockup.png" alt="">
-                        <img src="../../images/chevron-images/chevron-previousMarkup.jpg" alt="">
-                    </div>
-                </section> 
-
-                <!-- HISTORY SECTION -->
-                <section class="no-display" id="history-content">
-                    <h3>Access Your Past and Favorite Scrapes</h3>
-
-                    <div class="solutions-content">
-                        <!-- <p>add some dashboard pitch and an explaination of how this acheives our goals. add some dashboard pitch and an explaination of how this acheives our goals. add some dashboard pitch and an explaination of how this acheives our goals</p> -->
-
-                        <img src="../../images/chevron-images/chevron-historyMockup.png" alt="">
-                        <img src="../../images/chevron-images/chevron-historyMarkup.jpg" alt="">
-                    </div>
-                </section> 
-                
-            </div>
-            
-        </section>
-
-
-        <!-- TAKEAWAYS SECTION -->
-        <section class="project-section" data-aos="fade-up" >
-            <section class="project-section-title">
-                <p class="subheading">TAKEAWAYS</p>
-                <h2>What I Gained as a Designer</h2>
-            </section>
-
-            <div class="project-section-main">
-                <section class="takeaway-card">
-                    <h3><span>01</span> Empathize with the audience.</h3>
-                    <p>This product was initiated due to poor experience with another web scraper, making it crucial that our product address the pain points our users felt. Doing so required many meetings, lots of questions and research, and a ton of iterating to fully empathize with our client and meet their needs.</p>
-                </section> 
-
-                <section class="takeaway-card">
-                    <h3><span>02</span> Feasibility is important.</h3>
-                    <p>Discussing with our devs revealed holes within our design ideas due to feasibility issues. So although our minds were running wild, we had to find a middle ground -  we need to respect the time of our developers but also understand the abilities and circumstances of the client. This helped me pin point exactly what was to be implemented, and what ideas to archive.</p>
-                </section> 
-
-                <section class="takeaway-card">
-                    <h3><span>03</span> Know what you’re building.</h3>
-                    <p>Before joining this team I had never used a web scraper at all. To fully understand what our client was asking for and to build a successful product, I needed to do additional research. Browsing on the internet, talking to our developers, and conducting competitive analysis were all ways I better prepared myself for this design challenge.</p>
-                </section> 
-            </div>
-            
-        </section>
-
-        <!--group picture-->
-        <img class="picture drop" src="../../images/chevron-images/chevrongroup.jpg" alt="A group of female and male college students stand together in three roles." data-aos="fade-up">
-
-    </div>
-
-    <footer>
-        <div id="footer-container">
-            <section class="footer-main">
-                <div id="footer-socials">
-                    <p id="footer-CTA">Let's keep in touch!</p>
-                    
-                    <div id="footer-buttons">
-                        <p><a id="special-button" class="button" href="mailto:&#099;&#097;&#116;&#101;&#108;&#121;&#110;&#046;&#098;&#117;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;" target="_blank">&#099;&#097;&#116;&#101;&#108;&#121;&#110;&#046;&#098;&#117;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;</a></p>
-                        <p><a id="special-button" class="button" href="https://www.linkedin.com/in/catelynbu/" target="_blank">linkedin</a></p>
-                    </div>
-                </div>
-    
-                <div id="footer-links">
-                    <ul>
-                        <li><a href="../../index.html">work</a></li>
-                        <li><a href="../../studio/studio.html">studio</a></li>
-                        <li><a href="../../about/about.html">about</a></li>
-                        <li><a href="https://drive.google.com/file/d/1QHEptJbZ5Z-rSnkVMw-N27SdC8lljr6w/view?usp=sharing" target="_blank">resume</a></li>
-                    </ul>
-                </div>
-            </section>
-    
-            <aside>
-                <img id="footer-logo" src="../../images/logo-DMG-SM.png" alt="Logo.">
-                <p>©2025 | Designed and developed by Catelyn with love <i class="far fa-heart" style="font-size: .8em;"></i></p>
-            </aside>
         </div>
+
+
+        <aside>
+            <img id="footer-logo" src="../../images/logo-DMG-SM.png" alt="Logo.">
+            <p>©2026 | Designed and developed by Catelyn with love <i class="far fa-heart" style="font-size: .8em;"></i></p>
+        </aside>
         
+
+
     </footer>
+
+
 </body>
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

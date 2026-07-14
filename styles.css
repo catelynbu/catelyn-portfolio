@@ -1,220 +1,190 @@
 /*---------------- HOME TYPOGRAPHY ----------------*/
 h1{
-    font-size: 16vw;
-    color: #4D433B;
+    font-size: 64px;
+    color: #1D1D1D;
 
-    font-family: "Instrument Serif", serif;
-    font-weight: 400;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 300;
     font-style: normal;
-    
+
+    letter-spacing: 8%;
 }
 
 h2{
-    font-size: 2em;
-    line-height: 80px;
-    color: #4D433B;
-    text-align: center;
-    font-weight: 500;
+    font-size: 40px;
+    font-weight: 300;
+    font-style: italic;
+    letter-spacing: 2%;
+
+    
 }
+
+
 
 h3{
-    font-size: 2em;
-    line-height: 50px;
-    font-weight: 400;
+    font-size: 1.5em;
+    font-weight: 300;
+    line-height: 36px;
 }
 
-.home{
-    font-family: "Instrument Serif", serif;
-    font-size: 1.2em;
-    font-style: italic;
-    font-weight: 400;
-    color: #5D524A;
+
+
+/*---------------- LINKS ----------------*/
+
+#cards-container a{
+    border: none;
+}
+
+#cards-container a:hover{
+    border: none;
+    
 }
 
 
 
 /*---------------- HEADER ----------------*/
-#names{
-    display: flex;
-    align-items: start;
-    gap: 12px;
-}
-
-#names p{
-    font-family: "Long Cang", cursive;
-    font-weight: 400;
-    font-style: normal;
-    writing-mode: vertical-lr;
-    text-orientation: upright;
-    font-size: 5vw;
-    color: #4D433B;
-}
-
-#headerText{
+header{
+    text-align: center;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F4F4F4;
+    padding: 24px 0;
+    height: 550px;
 
-    padding: 100px 0;
-    margin: auto;
-
-    justify-content: center;
-    text-align: left;
-    gap: 20px;
 }
 
-#homeRoles{
+
+#name-titles{
     display: flex;
-    justify-content: left;
+    flex-direction: column;
+    gap: 18px;
+}
+
+
+#home-roles{
+    display: flex;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     gap: 4px 24px;
+}
+
+header > img{
+    margin-top: 42px;
+}
+
+header > p{
+    font-style: italic;
 }
 
 
 
 
 /*---------------- FEATURED WORKS/PROJECT CARDS ----------------*/
+#home-container{
+    padding-top: 72px;
 
-/* container that holds all project cards */
-#cards-container{
     display: flex;
     flex-direction: column;
-    gap: 72px;
-    padding-bottom: 72px;
+    gap: 32px;
 
+    justify-content: center;
 }
 
 
-/* holds img + card text */
-.project-card{
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
 
-}
-
+/* project cards */
 article{
-    transition: opacity .3s ease;
-
-}
-
-
-/* holds titles, tags, details, and button */
-.card-text{
     display: flex;
     flex-direction: column;
+    
+    border: 1px solid #E7E7E7;
+    border-radius: 8px;
+
+    max-width: 700px;
+}
+
+.article-text{
+    padding: 12px 20px;
+}
+
+article ul{
+    padding: 0;
+    display: flex;
+    flex-direction: row;
     gap: 24px;
-}
 
-
-/* holds title and details (company + tags) */
-.card-titles{
-    display: flex;
-    gap: 12px;
-    flex-direction: column;
-}
-
-.card-details{
-    display: flex;
     align-items: center;
-    gap: 24px;
-    flex-wrap: wrap;
+}
+
+article ul li{
+    list-style: none;
 }
 
 .tags{
+    list-style: none;
+
     display: flex;
+    flex-direction: row;
     gap: 12px;
 }
 
-.tag{
+.tags li{
+    background-color: #DAEAFF;
     padding: 4px 12px;
-    border-radius: 100px;
-    background-color: #f5e3c298;
+    border-radius: 8px;
+    font-size: .9em;
+}
+
+/* holds all project cards */
+#cards-container{
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* holds chevron and safely project cards */
+.left-column{
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
 }
 
 
 
+.left-column, .right-column{
+    width: fit-content;
+}
+
+
+
+
+
+/* img zoom hover mechanic */
 .img-container{
     max-width: 100%;
-    max-height: 50vh;
+    /* max-height: 50vh; */
     overflow: hidden;
-    border-radius: 4px;
+    border-radius: 4px 4px 0 0;
 }
 
-.homeImg{
+.img-zoom{
     margin: auto;
     object-fit: contain;
+    border-radius: 4px 4px 0 0;
 
     transition: transform .8s;
 }
 
-.homeImg:hover{
+.img-zoom:hover{
     transform: scale(1.07);
 }
 
-
-#homeContainer{
-    display: flex;
-    flex-direction: column;
-    gap: 36px;
-    /* background-color: rgb(255, 255, 255, 0.3); */
-    border-radius: 20px 20px 0 0;
-    backdrop-filter: blur(1.5px);
-
-    margin: auto;
-}
-
-
-/* might wanna add this to global css */
-/* .card:hover, .takeawayCard:hover, #nextProject:hover{
-    transform: scale(1.05);
-    box-shadow: 0px 0px 9px 5px rgba(0,0,0,0.10);
-} */
-
-/* .card{
-    padding: 10%;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    box-shadow: 0px 0px 9px 5px rgba(0, 0, 0, 0.03);
-    transition: transform 0.8s;
-    border-radius: 10px;
-    background-color: white;
-    height: fit-content;
-}
-
-.card2{
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    box-shadow: 0px 0px 9px 5px rgba(0, 0, 0, 0.03);
-    transition: transform 0.8s;
-    border-radius: 25px;
-    background-color: white;
-    height: fit-content;
-
-} */
-
-#homeContainer a{
-    display: flex;
-}
-
-
-/* HOT LINKS */
-#asideGrid ul{
-    display: flex;
-    flex-direction: column;
-    list-style-type: none;
-    gap: 80px;
-}
-
-#asideGrid ul li a{
-    display: flex;
-    gap: 24px;
-    font-size: 1.3em;
-    align-items: center;
-    transition-duration: 700ms;
-}
 
 
 
@@ -224,120 +194,18 @@ article{
 
 /* -------- 650 PX - MOBILE SIZE -------- */
 @media only screen and (min-width: 640px){
-    #names{
-        gap: 24px;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #names p{
-        font-size: 4vw;
-    }
-
-    #headerText{
-        text-align: center;
-    }
-
-    #homeRoles{
-        justify-content: center;
-    }
 
 
-    /* --------------- WIGGLES --------------- */
-    #wiggle1{
-        bottom: 250px;
-        left: -150px;
-    }
-
-    #wiggle2{
-        top: 120px;
-        right: -300px;
-    }
-
-    #wiggle3{
-        bottom: 150px;
-        right: -350px;
-    }
-
-    #wiggle4{
-        top: 120px;
-        left: -200px;
-    }
 
 }
 
 
 /* -------- 992 PX - TABLET SIZE --------*/
 @media only screen and (min-width: 992px){
-    h1{
-        font-size: 14vw;
-    }
-
-    #names p{
-        font-size: 4vw;
-    }
-
-    #headerText{
-        text-align: center;
-    }
-
-    #headerText p{
-        font-size: 1.2em;
-    }
-
-    #homeRoles{
-        justify-content: center;
-    }
-
-    .img-container{
-        width: 45%;
-        height: 100%;
-        overflow: hidden;
-    }
-
-    .project-card{
-        flex-direction: row-reverse;
-    }
-
-    .card-text{
-        gap: 24px;
-        width: 50%;
-    }
-
-    h2{
-        font-size: 2.4em;
-        line-height: 140px;
-    }
-
 
     #cards-container{
-        display: flex;
-        flex-direction: column;
-        gap: 100px;
-    }
-
-
-    /* --------------- WIGGLES --------------- */
-
-    #wiggle1{
-        bottom: 150px;
-        left: -90px;
-
-    }
-
-    #wiggle2{
-        top: 120px;
-        right: -200px;
-    }
-
-    #wiggle3{
-        bottom: 100px;
-        right: -200px;
-    }
-
-    #wiggle4{
-        top: 150px;
-        left: -120px;
+        flex-direction: row-reverse;
+        gap: 28px;
     }
 
 }
@@ -345,101 +213,27 @@ article{
 
 /* -------- 1200 PX - LAPTOP SIZE --------*/
 @media only screen and (min-width: 1200px){
-    h1{
-        font-size: 12vw;
+    article{
+        max-width: 900px;
     }
 
-    #names p{
-        font-size: 3vw;
+    #cards-container, .left-column{
+        gap: 72px;
     }
-
-    #headerText{
-        gap: 42px;
-    }
-
-    #headerText p{
-        font-size: 1.3em;
-    }
-
-    .role{
-        font-size: 2em;
-        letter-spacing: .2em;
-        line-height: 1.5em;
-    }
-    
-    #homeContainer{
-        gap: 72px 72px;
-    }
-
-    .project-card{
-        gap: 36px;
-    }
-
-
     
 }
 
 
 /* -------- 1440 PX - DESKTOP SIZE --------*/
 @media only screen and (min-width: 1440px){
-    h1{
-        font-size: 10vw;
-    }
-
-    #names p{
-        font-size: 2vw;
-    }
-
-    h3{
-        font-size: 2.2em;
-    }
-
-    .project-card{
-        gap: 56px;
-        justify-content: space-between;
-    }
-
-    .img-container{
-        width: 45%;
-    }
-
-    .card-text{
-        width: 45%;
-    }
 
 
-    /* --------------- WIGGLES --------------- */
-    #wiggle1{
-        bottom: 100px;
-        left: -20px;
-    }
 
-    #wiggle2{
-        top: 120px;
-        right: -50px;
-    }
-
-    #wiggle3{
-        bottom: 100px;
-        right: -50px;
-    }
-
-    #wiggle4{
-        top: 170px;
-        left: -15px;
-    }
 
 }
 
 
 @media only screen and (min-width: 1600px){
-    #wiggle1, #wiggle2, #wiggle3, #wiggle4{
-        scale: 1.3;
-    }
 
-    #wiggle4{
-        top: 200px;
-        left: -15px;
-    }
 }
 

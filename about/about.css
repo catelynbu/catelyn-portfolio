@@ -5,12 +5,13 @@
 }
 
 
-/* --------------- WIGGLES -------------- */
-#wiggle3{
-    bottom: 300px;
-    right: -270px;
+/* -------------------- HEADER -------------------- */
+header{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 72px 0;
 }
-
 
 
 /* ABOUT PAGE */
@@ -27,26 +28,19 @@
     object-fit: cover;
 }
 
-.icon-title{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 16px;
-}
-
 
 
 /* --------------- BIOGRAPHY SECTION --------------- */
 #biography-text{
     display: flex;
     flex-direction: column;
-    gap: 56px;
+    gap: 72px;
 }
 
 #biography-text section, #experience{
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 24px;
 }
 
 .biography-caption{
@@ -165,16 +159,7 @@ aside h3{
 
 /* --------------- 640 PX - MOBILE SIZE --------------- */
 @media only screen and (min-width: 640px){
-    /* --------------- WIGGLES --------------- */
-    #wiggle3{
-        bottom: 300px;
-        right: -250px;
-    }
 
-    #wiggle4{
-        top: 120px;
-        left: -170px;
-    }
 
 }
 
@@ -187,30 +172,7 @@ aside h3{
     }
 
 
-    /* .slide-link-flex{
-        flex-direction: row;
-        justify-content: space-between;
-    }
 
-    aside ul{
-        padding: 5% 0 10%;
-    }
-
-    .slide-link-container{
-        max-width: 500px;
-    } */
-
-    
-    /* --------------- WIGGLES --------------- */
-    #wiggle3{
-        bottom: 300px;
-        right: -150px;
-    }
-
-    #wiggle4{
-        top: 170px;
-        left: -120px;
-    }
 
 }
 
@@ -223,19 +185,9 @@ aside h3{
         width: 65%;
     }
 
-    /* --------------- WIGGLES --------------- */
-    #wiggle3{
-        bottom: 300px;
-        right: -50px;}
-    #wiggle4{
-        top: 170px;
-        left: -15px;}
+
 }
 
 @media only screen and (min-width: 1600px){
-    #wiggle3, #wiggle4{
-        scale: 1.3;}
-    #wiggle4{
-        top: 200px;
-        left: -15px;}
+
 }

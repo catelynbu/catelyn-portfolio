@@ -7,9 +7,6 @@
     <!-- normalize css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"> 
 
-    <!-- font awesone icons -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-
     <!-- css files -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="../../global.css" rel="stylesheet">
@@ -18,14 +15,14 @@
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Instrument+Serif:ital@0;1&family=Long+Cang&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
 
     <!-- JS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="safely.js" defer></script>
     <script src="../../script.js" defer></script>
+    <script src="../project.js" defer></script>
 
-    <title>Safely Mobile App | Catelyn Bu Portfolio</title>
+    <title>Safely | Catelyn Bu Portfolio</title>
  
     <!-- Favicon Links -->
     <link rel="apple-touch-icon" sizes="180x180" href="../../images/favicon/apple-touch-icon.png">
@@ -34,6 +31,7 @@
     <link rel="manifest" href="../../images/favicon/site.webmanifest">
 
 </head>
+
 <body>
     <div id="full-header-container">
         <div id="nav-container" data-aos="fade-up">
@@ -46,12 +44,11 @@
                             <li><a href="../../index.html">work</a></li></li>
                             <li><a href="../../studio/studio.html">studio</a></li>
                             <li><a href="../../about/about.html">about</a></li>
+                            <li><a href="https://drive.google.com/file/d/1QHEptJbZ5Z-rSnkVMw-N27SdC8lljr6w/view?usp=sharing" target="_blank">resume</a></li>
                         </ul>
                     </li>
-                    
-                    <li class="hidden" id="menu-icon"><img id="icon-svg" src="../../images/menu.svg" alt="Menu icon." width="25" height="25"></li>
 
-                    <li id="resume-link"><a class="button" id="special-button" href="https://drive.google.com/file/d/1QHEptJbZ5Z-rSnkVMw-N27SdC8lljr6w/view?usp=sharing" target="_blank">resume</a></li>
+                    <li class="hidden" id="menu-icon"><img id="icon-svg" src="../../images/menu.svg" alt="Menu icon." width="25" height="25"></li>
                 </ul>
 
                 <ul class="hidden hidden2 mobile-menu">
@@ -64,389 +61,421 @@
 
             </nav>
         </div>
+
+        <hr  data-aos="fade-up">
     
-        <header>
-            <div id="header-projects" data-aos="fade-up">
-                <div id="header-projects-text">
-                    <h1>Safely Mobile App</h1>
-                    <p>Reimagining personal safety through independent navigational tools</p>
-                </div>
+        <header  data-aos="fade-up">
+            <div id="header-text">
+                <div class="text-border" id="header-logo-title">
 
-                <img id="header-project-img" src="../../images/safely-images/safely-mockupNoBG.png" alt="Two phones showing screens of Safely's interface">
-            </div>
-            
+                    <div id="header-title">
+                        <h1>Safely</h1>
 
-            <div class="absolute">
-                <div class="relative inset-0 justify-center">
-                    <div class="bg-shape1 bg-blue opacity-50 bg-blur"></div>
-                    <div class="bg-shape2 bg-purple opacity-50 bg-blur"></div>
-                    <div class="bg-shape3 bg-magenta opacity-50 bg-blur"></div>
+                        <p>Concept Personal Safety App</p>
+                    </div>
                 </div>
+    
+                <p>Reimagining personal safety through independent navigational tools</p>
+
+
             </div>
+           
+
+            <img src="../../images/safely-images/safely-banner1.jpg" alt="Mockups of the Safely mobile app showing a navigation map with highlighted danger zones, a danger alert overlay, and a voice recognition screen for managing personalized safewords." width="100%" height="auto">
+
+
         </header>
     </div>
 
 
-    <a href="#full-header-container"><p class="backtotop"><i class="fas fa-arrow-up fa-lg" style="color: #ffffff;"></i></p></a>
+    <a href="#full-header-container" class="back-to-top">
+        <svg class="arrow" width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18.7504 6V15.75C18.7504 15.9489 18.6714 16.1397 18.5307 16.2803C18.3901 16.421 18.1993 16.5 18.0004 16.5C17.8015 16.5 17.6107 16.421 17.4701 16.2803C17.3294 16.1397 17.2504 15.9489 17.2504 15.75V7.81031L6.53104 18.5306C6.39031 18.6714 6.19944 18.7504 6.00042 18.7504C5.80139 18.7504 5.61052 18.6714 5.46979 18.5306C5.32906 18.3899 5.25 18.199 5.25 18C5.25 17.801 5.32906 17.6101 5.46979 17.4694L16.1901 6.75H8.25042C8.0515 6.75 7.86074 6.67098 7.72009 6.53033C7.57943 6.38968 7.50042 6.19891 7.50042 6C7.50042 5.80109 7.57943 5.61032 7.72009 5.46967C7.86074 5.32902 8.0515 5.25 8.25042 5.25H18.0004C18.1993 5.25 18.3901 5.32902 18.5307 5.46967C18.6714 5.61032 18.7504 5.80109 18.7504 6Z" fill="#FFFFFF"/>
+        </svg>
+    </a>
 
 
-    <div class="container">
-        <!-- OVERVIEW SECTION -->
-        <section id="overview" data-aos="fade-up">
-            <h2 class="test">Overview</h2>
+    <main class="container">
+        <nav id="projects-navigation"  data-aos="fade-right">
+            <ul>
+                <li>
+                    <a href="#overview" class="section-button">
+                        <ul>
+                            <li><svg class="arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18.7504 6V15.75C18.7504 15.9489 18.6714 16.1397 18.5307 16.2803C18.3901 16.421 18.1993 16.5 18.0004 16.5C17.8015 16.5 17.6107 16.421 17.4701 16.2803C17.3294 16.1397 17.2504 15.9489 17.2504 15.75V7.81031L6.53104 18.5306C6.39031 18.6714 6.19944 18.7504 6.00042 18.7504C5.80139 18.7504 5.61052 18.6714 5.46979 18.5306C5.32906 18.3899 5.25 18.199 5.25 18C5.25 17.801 5.32906 17.6101 5.46979 17.4694L16.1901 6.75H8.25042C8.0515 6.75 7.86074 6.67098 7.72009 6.53033C7.57943 6.38968 7.50042 6.19891 7.50042 6C7.50042 5.80109 7.57943 5.61032 7.72009 5.46967C7.86074 5.32902 8.0515 5.25 8.25042 5.25H18.0004C18.1993 5.25 18.3901 5.32902 18.5307 5.46967C18.6714 5.61032 18.7504 5.80109 18.7504 6Z" fill="#2D7BE1"/>
+                                </svg>
+                            </li>
+                            <li>overview</li>
+                        </ul>
+                    </a>
+                </li>
 
-            <div id="overview-main">
-                <section id="my-role">
-                    <h3 class="subheading">MY ROLE</h3>
-        
-                    <p>This was a solo UX project I took on during a 3-week period. I was responsible for covering all parts of the entire design process and went through multiple rounds of research, user testing, and rigorous design iterations. </p>
-                </section>
-        
-        
-                <section id="the-problem">
-                    <h3 class="subheading">THE PROBLEM</h3>
-        
-                    <p>Women often feel unsafe in public due to fears of dangerous encounters, crime, or being alone. Personal safety apps are a common tool to address these needs, but many are flawed, offering solutions that don’t align with users’ needs, requiring too many steps that can create confusion during high-stress situations, or have features that may attract unwanted attention.</p>
-                </section>
-
-                <div id="buttons">
-                    <p>
-                        <a href="https://www.figma.com/proto/ib7WVaBRfdHV2K8eFhTVjq/Bu_Catelyn_DES112_P2?page-id=84%3A1484&node-id=323-6761&p=f&viewport=695%2C380%2C0.08&t=FcJ5ss0vbYWAfwOY-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=323%3A6761" target="_blank" class="button">Safely Prototype
-                        
-                        <img id="safely-button-img" src="../../images/ArrowRight.svg" alt="Right Arrow icon" width="20" height="20"></a>
-                    </p>
-                </div>
+                <li>
+                    <a href="#research" class="section-button">
+                        <ul>
+                            <li><svg class="arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18.7504 6V15.75C18.7504 15.9489 18.6714 16.1397 18.5307 16.2803C18.3901 16.421 18.1993 16.5 18.0004 16.5C17.8015 16.5 17.6107 16.421 17.4701 16.2803C17.3294 16.1397 17.2504 15.9489 17.2504 15.75V7.81031L6.53104 18.5306C6.39031 18.6714 6.19944 18.7504 6.00042 18.7504C5.80139 18.7504 5.61052 18.6714 5.46979 18.5306C5.32906 18.3899 5.25 18.199 5.25 18C5.25 17.801 5.32906 17.6101 5.46979 17.4694L16.1901 6.75H8.25042C8.0515 6.75 7.86074 6.67098 7.72009 6.53033C7.57943 6.38968 7.50042 6.19891 7.50042 6C7.50042 5.80109 7.57943 5.61032 7.72009 5.46967C7.86074 5.32902 8.0515 5.25 8.25042 5.25H18.0004C18.1993 5.25 18.3901 5.32902 18.5307 5.46967C18.6714 5.61032 18.7504 5.80109 18.7504 6Z" fill="#2D7BE1"/>
+                                </svg>
+                            </li>
+                            <li>research</li>
+                        </ul>
+                    </a>
+                    
+                </li>
                 
-            </div>
-    
-            <aside data-aos="fade-left" id="overview-aside">
+                <li>
+                    <a href="#define" class="section-button">
+                        <ul>
+                            <li><svg class="arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18.7504 6V15.75C18.7504 15.9489 18.6714 16.1397 18.5307 16.2803C18.3901 16.421 18.1993 16.5 18.0004 16.5C17.8015 16.5 17.6107 16.421 17.4701 16.2803C17.3294 16.1397 17.2504 15.9489 17.2504 15.75V7.81031L6.53104 18.5306C6.39031 18.6714 6.19944 18.7504 6.00042 18.7504C5.80139 18.7504 5.61052 18.6714 5.46979 18.5306C5.32906 18.3899 5.25 18.199 5.25 18C5.25 17.801 5.32906 17.6101 5.46979 17.4694L16.1901 6.75H8.25042C8.0515 6.75 7.86074 6.67098 7.72009 6.53033C7.57943 6.38968 7.50042 6.19891 7.50042 6C7.50042 5.80109 7.57943 5.61032 7.72009 5.46967C7.86074 5.32902 8.0515 5.25 8.25042 5.25H18.0004C18.1993 5.25 18.3901 5.32902 18.5307 5.46967C18.6714 5.61032 18.7504 5.80109 18.7504 6Z" fill="#2D7BE1"/>
+                                </svg>
+                            </li>
+                            <li>define</li>
+                        </ul>
+                    </a>
+                    
+                </li>
+
+                <li>
+                    <a href="#ideation" class="section-button">
+                        <ul>
+                            <li><svg class="arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18.7504 6V15.75C18.7504 15.9489 18.6714 16.1397 18.5307 16.2803C18.3901 16.421 18.1993 16.5 18.0004 16.5C17.8015 16.5 17.6107 16.421 17.4701 16.2803C17.3294 16.1397 17.2504 15.9489 17.2504 15.75V7.81031L6.53104 18.5306C6.39031 18.6714 6.19944 18.7504 6.00042 18.7504C5.80139 18.7504 5.61052 18.6714 5.46979 18.5306C5.32906 18.3899 5.25 18.199 5.25 18C5.25 17.801 5.32906 17.6101 5.46979 17.4694L16.1901 6.75H8.25042C8.0515 6.75 7.86074 6.67098 7.72009 6.53033C7.57943 6.38968 7.50042 6.19891 7.50042 6C7.50042 5.80109 7.57943 5.61032 7.72009 5.46967C7.86074 5.32902 8.0515 5.25 8.25042 5.25H18.0004C18.1993 5.25 18.3901 5.32902 18.5307 5.46967C18.6714 5.61032 18.7504 5.80109 18.7504 6Z" fill="#2D7BE1"/>
+                                </svg>
+                            </li>
+                            <li>ideation</li>
+                        </ul>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#design-system" class="section-button">
+                        <ul>
+                            <li><svg class="arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18.7504 6V15.75C18.7504 15.9489 18.6714 16.1397 18.5307 16.2803C18.3901 16.421 18.1993 16.5 18.0004 16.5C17.8015 16.5 17.6107 16.421 17.4701 16.2803C17.3294 16.1397 17.2504 15.9489 17.2504 15.75V7.81031L6.53104 18.5306C6.39031 18.6714 6.19944 18.7504 6.00042 18.7504C5.80139 18.7504 5.61052 18.6714 5.46979 18.5306C5.32906 18.3899 5.25 18.199 5.25 18C5.25 17.801 5.32906 17.6101 5.46979 17.4694L16.1901 6.75H8.25042C8.0515 6.75 7.86074 6.67098 7.72009 6.53033C7.57943 6.38968 7.50042 6.19891 7.50042 6C7.50042 5.80109 7.57943 5.61032 7.72009 5.46967C7.86074 5.32902 8.0515 5.25 8.25042 5.25H18.0004C18.1993 5.25 18.3901 5.32902 18.5307 5.46967C18.6714 5.61032 18.7504 5.80109 18.7504 6Z" fill="#2D7BE1"/>
+                                </svg>
+                            </li>
+                            <li>design system</li>
+                        </ul>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#solution" class="section-button">
+                        <ul>
+                            <li><svg class="arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18.7504 6V15.75C18.7504 15.9489 18.6714 16.1397 18.5307 16.2803C18.3901 16.421 18.1993 16.5 18.0004 16.5C17.8015 16.5 17.6107 16.421 17.4701 16.2803C17.3294 16.1397 17.2504 15.9489 17.2504 15.75V7.81031L6.53104 18.5306C6.39031 18.6714 6.19944 18.7504 6.00042 18.7504C5.80139 18.7504 5.61052 18.6714 5.46979 18.5306C5.32906 18.3899 5.25 18.199 5.25 18C5.25 17.801 5.32906 17.6101 5.46979 17.4694L16.1901 6.75H8.25042C8.0515 6.75 7.86074 6.67098 7.72009 6.53033C7.57943 6.38968 7.50042 6.19891 7.50042 6C7.50042 5.80109 7.57943 5.61032 7.72009 5.46967C7.86074 5.32902 8.0515 5.25 8.25042 5.25H18.0004C18.1993 5.25 18.3901 5.32902 18.5307 5.46967C18.6714 5.61032 18.7504 5.80109 18.7504 6Z" fill="#2D7BE1"/>
+                                </svg>
+                            </li>
+                            <li>solution</li>
+                        </ul>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#reflection" class="section-button">
+                        <ul>
+                            <li><svg class="arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18.7504 6V15.75C18.7504 15.9489 18.6714 16.1397 18.5307 16.2803C18.3901 16.421 18.1993 16.5 18.0004 16.5C17.8015 16.5 17.6107 16.421 17.4701 16.2803C17.3294 16.1397 17.2504 15.9489 17.2504 15.75V7.81031L6.53104 18.5306C6.39031 18.6714 6.19944 18.7504 6.00042 18.7504C5.80139 18.7504 5.61052 18.6714 5.46979 18.5306C5.32906 18.3899 5.25 18.199 5.25 18C5.25 17.801 5.32906 17.6101 5.46979 17.4694L16.1901 6.75H8.25042C8.0515 6.75 7.86074 6.67098 7.72009 6.53033C7.57943 6.38968 7.50042 6.19891 7.50042 6C7.50042 5.80109 7.57943 5.61032 7.72009 5.46967C7.86074 5.32902 8.0515 5.25 8.25042 5.25H18.0004C18.1993 5.25 18.3901 5.32902 18.5307 5.46967C18.6714 5.61032 18.7504 5.80109 18.7504 6Z" fill="#2D7BE1"/>
+                                </svg>
+                            </li>
+                            <li>reflection</li>
+                        </ul>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div id="casestudy-container">
+            <!-- OVERVIEW SECTION -->
+            <section id="overview" data-aos="fade-up">
+
+                <div id="overview-main">
+                    <h2 class="text-border">Overview</h2>
+
+                    <section>
+                        <h3 class="subheading">the problem</h3>
+
+                        <p>Women often feel unsafe in public due to fears of dangerous encounters, crime, or being alone. Personal safety apps are a common tool to address these needs, but many are flawed, offering solutions that don’t align with users’ needs, requiring too many steps that can create confusion during high-stress situations, or have features that may attract unwanted attention.</p>
+                    </section>
+
+                    <section>
+                        <h3 class="subheading">context</h3>
+                        
+                        <p>This was a solo UX project I took on during a 5-week period. I was responsible for covering all parts of the entire design process and went through multiple rounds of research, user testing, and rigorous design iterations.</p>
+                    </section>
+                </div>
+
+                <aside id="overview-aside" data-aos="fade-left">
+                    <ul>
+                        <li><h3 class="subheading">timeline</h3>
+                            <ul>
+                                <li>Oct 2024 - Dec 2024</li>
+                            </ul>
+                        </li>
+
+                        <li><h3 class="subheading">tags</h3>
+                            <ul class="tags">
+                                <li>UX/UI</li>
+                                <li>User Research</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </aside>
+
+
+
+            </section>
+
+
+            <!-- RESEARCH SECTION -->
+             <section id="research" class="full-project-section">
+                <section class="project-section" data-aos="fade-up">
+                    <div class="project-section-title">
+                        <div class="diamond-subheading">
+                            <img src="../../images/diamond.svg" alt="Diamond icon" width="15" height="15">
+                            <p class="subheading">research</p>
+                        </div>
+                    
+                        <h2 class="text-border">Women want to feel safe independently, not just connected</h2>
+                    </div>
+
+                    <p>Women reported feeling most unsafe at night and in unfamiliar areas, making them especially cautious about solo travel. While communication tools like live location sharing were valued, many users felt dependent on others to feel safe. This pointed to a need for independent tools, like a map router that factors in street lighting, reported crime, proximity to public spaces, and travel time to generate the safest possible route.</p>
+
+                    <img class="text-diagram" src="../../images/safely-images/safely-data.png" alt="Research findings graphic highlighting three key user needs, accompanied by survey and interview counts and representative participant quotes." width="100%" height="auto">
+                    
+                </section>
+
+                <section class="project-section" data-aos="fade-up">
+
+                    <h2 class="text-border">Competitors have the tools, but lack in usability and discretion</h2>
+
+                    <p>I examined three popular safety apps, Im Safe, Life360, and Noonlight, to identify their strengths and where they fell short. While communication and navigation tools were covered across all three, ease of use and discrete UI were largely missing.</p>
+
+                    <p>Both gaps matter most in high stress situations. Confusing navigation costs users precious time when they need to act fast, and cluttered or bright interfaces can elevate stress levels and draw unwanted attention. This pointed to an opportunity to build a product that treats usability and discretion as core to the safety experience.</p>
+
+                    <img class="text-diagram" src="../../images/safely-images/safely-compAnalysis.jpg" alt="Competitive analysis comparing safety apps across location tools, communication features, ease of use, and discreet interface design." width="100%" height="auto">
+                    
+                </section>
+             </section>
+
+
+            <!-- DEFINE SECTION -->
+             <section id="define" class="full-project-section">
+                <section class="project-section" data-aos="fade-up">
+                    <div class="project-section-title">
+                        <div class="diamond-subheading">
+                            <img src="../../images/diamond.svg" alt="Diamond icon" width="15" height="15">
+                            <p class="subheading">define</p>
+                        </div>
+                    
+                        <h2 class="text-border">Discreteness, autonomy, and communication lead the design </h2>
+                    </div>
+
+                    <p>After research I determined these three themes: discreetness, autonomy, and communication. Discreteness in visuals can prevent unwanted attention and lower stress. Concerns on privacy with the constant location tracking and voice sensing leads to giving the user autonomy or the choice to use those tools at their discretion. And, communication is a backbone of safety, many individuals feel safe when they are in communication with another person.</p>
+
+                    <img class="text-diagram" src="../../images/safely-images/safely-define.png" alt="Research synthesis identifying three core design principles—discreteness, autonomy, and communication—alongside a How Might We statement that guided the product design." width="100%" height="auto">
+                    
+                </section>
+             </section>
+
+             
+            <!-- IDEATION SECTION -->
+             <section id="ideation" class="full-project-section">
+                <section class="project-section" data-aos="fade-up">
+                    <div class="project-section-title">
+                        <div class="diamond-subheading">
+                            <img src="../../images/diamond.svg" alt="Diamond icon" width="15" height="15">
+                            <p class="subheading">ideation</p>
+                        </div>
+                    
+                        <h2 class="text-border">Users needed danger zone access on their own terms</h2>
+                    </div>
+
+                    <p>During usability testing, I found that not all users follow suggested routes step by step. Some generated routes purely to preview the safest path, then cancelled to navigate independently. Burying the danger zone tool inside the routing flow meant those users lost access to it the moment they cancelled.</p>
+
+                    <p>Adding the tool to the homepage map ensured danger zones were always visible, supporting the core design principle of independence. And if the homepage map is too cluttered, users can easily toggle it off.</p>
+
+                    <img class="img-diagram" src="../../images/safely-images/safely-ideation1.jpg" alt="Before-and-after design comparison showing the danger zone feature moved from the route navigation flow to the home map, making it independently accessible." width="100%" height="auto">
+                    
+                </section>
+
+                <section class="project-section" data-aos="fade-up">
+
+                    <h2 class="text-border">Densely packed modal screens were uncomfortable to use</h2>
+
+                    <p>While modals worked well for simple confirmation and error screens, the safeword setup screen had too many interactable elements to fit comfortably within one. Users reported the condensed layout was difficult to read and interact with during testing.</p>
+
+                    <p>Expanding the screen to a full screen design gave each element room to breathe, improving both readability and usability while keeping the modal pattern intact for screens where it made sense.</p>
+
+                    <img class="img-diagram" src="../../images/safely-images/safely-ideation2.jpg" alt="Before-and-after redesign comparison showing the voice recognition safeword setup expanded from a compact modal to a full-screen interface for improved readability and usability." width="100%" height="auto">
+                    
+                </section>
+             </section>
+
+            <!-- DESIGN SYSTEM SECTION -->
+             <section id="design-system" class="full-project-section">
+                <section class="project-section" data-aos="fade-up">
+                    <div class="project-section-title">
+                        <div class="diamond-subheading">
+                            <img src="../../images/diamond.svg" alt="Diamond icon" width="15" height="15">
+                            <p class="subheading">design system</p>
+                        </div>
+                    
+                        <h2 class="text-border">Curating a calming brand for personal safety</h2>
+                    </div>
+
+                    <p>For my design system, I opted for a dark mode UI to create a more discrete interface. This would be ideal in dark or low light settings so that the glow of a bright, white screen wouldn’t attract unwanted attention.</p>
+
+                    <p>I used green and yellow in subtle gradients and lower saturation shades to employ a smoothing feeling. These colors and application methods are more calming to reduce stress during potentially high-risk situations.</p>
+
+                    <img class="img-diagram" src="../../images/safely-images/safely-designsystem.png" alt="Design system showcasing the Safely app's visual identity, including dark mode interface, typography, color palette, icons, and button styles that emphasize a calm, discreet experience." width="100%" height="auto">
+                    
+                </section>
+             </section>
+
+
+            <!-- SOLUTION SECTION -->
+             <section id="solution" class="full-project-section">
+                <section class="project-section" data-aos="fade-up">
+                    <div class="project-section-title">
+                        <div class="diamond-subheading">
+                            <img src="../../images/diamond.svg" alt="Diamond icon" width="15" height="15">
+                            <p class="subheading">solution</p>
+                        </div>
+                    
+                        <h2 class="text-border">Homepage map for instant access to safer naviation</h2>
+                    </div>
+
+                    <p>The homepage map gives users immediate visibility into their surroundings, with a toggleable danger zone overlay that highlights areas flagged for a variety of safety concerns. Tapping a danger zone surfaces a quick alert with details, so users can make informed decisions about their route before they start moving.</p>
+
+                    <img class="img-diagram" src="../../images/safely-images/safely-solution1.jpg" alt="Homepage map showing three states: danger zones visible on the map, danger zones hidden with the toggle off, and a danger alert providing details about nearby safety concerns." width="100%" height="auto">
+                    
+                </section>
+
+                <section class="project-section" data-aos="fade-up">
+
+                    <h2 class="text-border">Share your location with trusted contacts for extra security</h2>
+
+                    <p>Users can share their location with trusted contacts through two options: a quick share that instantly sends live location tracking, or a detailed share that includes a start point, end point, and a message to give contacts full context of what to expect.</p>
+
+                    <img class="img-diagram" src="../../images/safely-images/safely-solution2.jpg" alt="Location sharing flow showing contact selection, an optional detailed sharing screen with trip information and a message, and a confirmation screen indicating the selected contacts have received the user's location." width="100%" height="auto">
+                    
+                </section>
+
+
+                <section class="project-section" data-aos="fade-up">
+
+                    <h2 class="text-border">Find your safest pathway based on safety levels and danger zones</h2>
+
+                    <p>The route suggestion tool generates pathway options ranked by safety, factoring in elements like street lighting, proximity to public spaces, and danger zones. Each route is tagged with key attributes so users can weigh their options and choose the path that best fits their needs.</p>
+
+                    <img class="img-diagram" src="../../images/safely-images/safely-solution3.jpg" alt="Route planning flow showing destination entry, multiple route options ranked by safety with labeled attributes, and turn-by-turn navigation highlighting the selected path." width="100%" height="auto">
+                    
+                </section>
+
+                <section class="project-section" data-aos="fade-up">
+
+                    <h2 class="text-border">Use voice recognition to contact someone instantly</h2>
+
+                    <p>Users can set up custom safewords tied to specific contacts and actions, like calling 911 or texting a contact, that trigger instantly when detected. Voice recognition is activated and deactivated on the user's terms, keeping the app from passively listening and giving users full control over when they are being monitored.</p>
+
+                    <img class="img-diagram" src="../../images/safely-images/safely-solution4.jpg" alt="Voice recognition workflow showing saved safewords, safeword setup with linked actions, and confirmation that voice detection has been activated." width="100%" height="auto">
+                    
+                </section>
+
+                <section class="project-section" data-aos="fade-up">
+
+                    <h2 class="text-border">Add your closest contacts to streamline safety</h2>
+
+                    <p>Users can add trusted contacts to streamline their safety network. Periodic prompts ask users to confirm they still trust their listed contacts, ensuring the people they share their location with are always up to date and intentional.</p>
+
+                    <img class="img-diagram" src="../../images/safely-images/safely-solution5.jpg" alt="Contacts management flow showing a list of trusted contacts, a prompt to review and confirm existing contacts, and a form for adding a new trusted contact with relationship details." width="100%" height="auto">
+                    
+                </section>
+             </section>
+
+
+            <!-- REFLECTION SECTION -->
+             <section id="reflection" class="full-project-section">
+                <section class="project-section" data-aos="fade-up">
+                    <div class="project-section-title">
+                        <div class="diamond-subheading">
+                            <img src="../../images/diamond.svg" alt="Diamond icon" width="15" height="15">
+                            <p class="subheading">reflection</p>
+                        </div>
+                    
+                        <h2 class="text-border">01 Empathize with the audience</h2>
+                    </div>
+
+                    <p>For this project I conducted 5 usability tests which provided beneficial insight on how I could further improve my product. It gave me the opportunity to talk to my target audience and get more in-depth, detailed responses on how they felt about my designs. With that feedback I made the appropriate changes to fit the needs of my users.</p>
+
+                </section>
+
+                <section class="project-section" data-aos="fade-up">
+                    
+                    <h2 class="text-border">02 Research drives the direction</h2>
+
+                    <p>The Safely project required substantial research to create a successful design. I learned how to compare my work to market competitors and how to conduct and write unbiased surveys. Gathering this data informed my design process and supplied me with information about my target audience, which led to a massive change in trajectory in order to design a app that answers what people actually want.</p>
+                    
+                </section>
+             </section>
+
+        </div>
+
+    </main>
+
+
+
+    <hr data-aos="fade-up" id="bottom-hr">
+
+    <footer data-aos="fade-up">
+        <div id="footer-main">
+            <section id="footer-socials">
+                <h2 class="text-border">let's get in touch ~</h2>
+
                 <ul>
-                    <li><h3 class="subheading">TOOLS</h3>
+                    <li>
                         <ul>
-                            <li>Figma</li>
+                            <li><img src="../../images/email-icon.png" alt="Email icon" width="24" height="24"></li>
+                            <li><a href="mailto:&#099;&#097;&#116;&#101;&#108;&#121;&#110;&#046;&#098;&#117;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;" target="_blank">&#099;&#097;&#116;&#101;&#108;&#121;&#110;&#046;&#098;&#117;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;</a></li>
                         </ul>
                     </li>
-                    <li><h3 class="subheading">DURATION</h3>
+
+                    <li>
                         <ul>
-                            <li>October 2024 - December 2024</li>
-                        </ul>
-                    </li>
-                    <li><h3 class="subheading">PROJECT TYPE</h3>
-                        <ul>
-                            <li>Mobile app design</li>
+                            <li><img src="../../images/linkedin-icon.png" alt="Linkedin icon" width="24" height="24"></li>
+                            <li><a href="https://www.linkedin.com/in/catelynbu/" target="_blank">linkedin.com/in/catelynbu</a></li>
                         </ul>
                     </li>
                 </ul>
-            </aside>
-        </section>
-    </div>
-
-        <div id="safely" data-aos="fade-up" class="banner"></div>
-
-    <div class="container">
-        <!-- RESEARCH SECTION -->
-        <section class="project-section" data-aos="fade-up">
-            <section class="project-section-title">
-                <p class="subheading">RESEARCH</p>
-                <h2>Understanding the Problem</h2>
-
-                <div class="sectionBtn-container">
-                    <button id="goal" class="section-button selected-button">
-                        <svg class="arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M18.7504 6V15.75C18.7504 15.9489 18.6714 16.1397 18.5307 16.2803C18.3901 16.421 18.1993 16.5 18.0004 16.5C17.8015 16.5 17.6107 16.421 17.4701 16.2803C17.3294 16.1397 17.2504 15.9489 17.2504 15.75V7.81031L6.53104 18.5306C6.39031 18.6714 6.19944 18.7504 6.00042 18.7504C5.80139 18.7504 5.61052 18.6714 5.46979 18.5306C5.32906 18.3899 5.25 18.199 5.25 18C5.25 17.801 5.32906 17.6101 5.46979 17.4694L16.1901 6.75H8.25042C8.0515 6.75 7.86074 6.67098 7.72009 6.53033C7.57943 6.38968 7.50042 6.19891 7.50042 6C7.50042 5.80109 7.57943 5.61032 7.72009 5.46967C7.86074 5.32902 8.0515 5.25 8.25042 5.25H18.0004C18.1993 5.25 18.3901 5.32902 18.5307 5.46967C18.6714 5.61032 18.7504 5.80109 18.7504 6Z" fill="#E58684"/>
-                        </svg>
-                        Goals
-                    </button>
-
-                    <button id="survey" class="section-button">
-                        <svg class="arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M18.7504 6V15.75C18.7504 15.9489 18.6714 16.1397 18.5307 16.2803C18.3901 16.421 18.1993 16.5 18.0004 16.5C17.8015 16.5 17.6107 16.421 17.4701 16.2803C17.3294 16.1397 17.2504 15.9489 17.2504 15.75V7.81031L6.53104 18.5306C6.39031 18.6714 6.19944 18.7504 6.00042 18.7504C5.80139 18.7504 5.61052 18.6714 5.46979 18.5306C5.32906 18.3899 5.25 18.199 5.25 18C5.25 17.801 5.32906 17.6101 5.46979 17.4694L16.1901 6.75H8.25042C8.0515 6.75 7.86074 6.67098 7.72009 6.53033C7.57943 6.38968 7.50042 6.19891 7.50042 6C7.50042 5.80109 7.57943 5.61032 7.72009 5.46967C7.86074 5.32902 8.0515 5.25 8.25042 5.25H18.0004C18.1993 5.25 18.3901 5.32902 18.5307 5.46967C18.6714 5.61032 18.7504 5.80109 18.7504 6Z" fill="#E58684"/>
-                        </svg>
-                        User Surveys
-                    </button>
-                   
-
-                    <button id="competitive" class="section-button">
-                        <svg class="arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M18.7504 6V15.75C18.7504 15.9489 18.6714 16.1397 18.5307 16.2803C18.3901 16.421 18.1993 16.5 18.0004 16.5C17.8015 16.5 17.6107 16.421 17.4701 16.2803C17.3294 16.1397 17.2504 15.9489 17.2504 15.75V7.81031L6.53104 18.5306C6.39031 18.6714 6.19944 18.7504 6.00042 18.7504C5.80139 18.7504 5.61052 18.6714 5.46979 18.5306C5.32906 18.3899 5.25 18.199 5.25 18C5.25 17.801 5.32906 17.6101 5.46979 17.4694L16.1901 6.75H8.25042C8.0515 6.75 7.86074 6.67098 7.72009 6.53033C7.57943 6.38968 7.50042 6.19891 7.50042 6C7.50042 5.80109 7.57943 5.61032 7.72009 5.46967C7.86074 5.32902 8.0515 5.25 8.25042 5.25H18.0004C18.1993 5.25 18.3901 5.32902 18.5307 5.46967C18.6714 5.61032 18.7504 5.80109 18.7504 6Z" fill="#E58684"/>
-                        </svg>
-                        Competitive Analysis
-                    </button>
-                    <!-- <button id="literature" class="section-button">Literature Review</button> -->
-                </div>
             </section>
 
-            <div class="project-section-main">
-                <section id="goal-content">
-                    <h3>Outling the Goals</h3>
-                    <p>Before designing the product I needed to better understand this sensitive topic and learn about how women feel about general safety. These are the goals I generated to direct my research.</p>
+            <section id="footer-menu">
+                <ul>
+                    <li>menu</li>
+                    <li><a href="../../index.html">work</a></li>
+                    <li><a href="../../studio/studio.html">studio</a></li>
+                    <li><a href="../../about/about.html">about</a></li>
+                    <li><a href="https://drive.google.com/file/d/1QHEptJbZ5Z-rSnkVMw-N27SdC8lljr6w/view">resume</a></li>
+                </ul>
 
-                    <img src="../../images/safely-images/safely-goals.png" alt="">
-                </section>
-
-                <!-- <section class="no-display" id="literature-content">
-                    <h3>Comparing Market Competitors</h3>
-                    <p>I conducted a <span>competitive analysis</span> on Chevron’s current web scraper and two other web extension scrapers. I used the <span>S.W.O.T method</span> and also took a closer look specifically at how each program handled <span>task creation</span>, <span>task status</span>, <span>results presentation</span>, and <span>history</span> along with recording general pain points throughout the process.</p>
-
-                    <img src="../../images/chevron-images/chevron-competitiveAnalysis.png" alt="">
-                </section> -->
-
-                <section class="no-display" id="survey-content">
-                    <h3>Connecting with the Users</h3>
-                    <p>I created a <span>user survey</span> that gathered <span>18 responses</span>, aimed to collect qualitative and quantitative data. The goal was to reach out to the target audience to understand their feelings about personal safety and tools they would like to see in an app.</p>
-
-                    <img src="../../images/safely-images/safely-survey1.jpg" alt="">
-
-                    <p>From this survey I found that many people, mainly women, feel unsafe in public, especially at night. Most respondents preferred <span>location-based tools</span> and some testimonials specifically requested a tool that integrated <span>location</span>, <span>marked areas</span>, and <span>maps</span>. Respondents also wanted a method of contacting or notifying trusted contacts.</p>
-
-                    <img src="../../images/safely-images/safely-survey2.png" alt="">
-                </section>
-
-                <section class="no-display" id="competitive-content">
-                    <h3>Looking at Market Competitors</h3>
-                    <p>I conducted a <span>competitive analysis</span> on three popular competing safety apps: Im Safe, Life 360, and Noonlight to analyze their strengths, weaknesses, and how I could leverage this information to optimize my product. I took a closer look specifically at what types of tools apps focused on: <span>location based</span> or <span>communication based</span>, how <span>discrete</span> their UI was, and <span>navigation intuitiveness</span>. </p>
-
-                    <img src="../../images/safely-images/safely-competitive.png" alt="">
-                </section>
-            </div>
-        </section>
-
-
-        <!-- DEFINE SECTION -->
-        <section class="project-section" data-aos="fade-up">
-            <section class="project-section-title">
-                <p class="subheading">DEFINE</p>
-                <h2>Determining the Scope</h2>
+                <ul>
+                    <li>projects</li>
+                    <li><a href="../../projects/goodnotes/goodnotes.html">goodnotes</a></li>
+                    <li><a href="../../projects/chevron/chevron.html">chevron</a></li>
+                    <li><a href="../../projects/safely/safely.html">safely</a></li>
+                </ul>
             </section>
-
-            <div class="project-section-main">
-                <section class="project-content">
-                    <p>After research I determined these three themes: communication, discreetness, and autonomy. Communication is a backbone of safety - many individuals feel safe when they are in communication with another person. Discreteness in visuals can prevent unwanted attention and lower stress. Concerns on privacy with the constant location tracking and voice sensing leads to giving the user autonomy or the choice to use those tools at their discretion. Knowing this, I formulated my problem statement to drive the project.</p>
-
-                    <img src="../../images/safely-images/safely-define.png" alt="">
-                </section>
-            </div>
-            
-        </section>
-
-
-        <!-- IDEATE SECTION -->
-        <section class="project-section" data-aos="fade-up">
-            <section class="project-section-title">
-                <p class="subheading">IDEATE</p>
-                <h2>Brainstorming Solutions</h2>
-
-                <div class="sectionBtn-container">
-                    <button id="lowfi" class="section-button selected-button">
-                            <svg class="arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M18.7504 6V15.75C18.7504 15.9489 18.6714 16.1397 18.5307 16.2803C18.3901 16.421 18.1993 16.5 18.0004 16.5C17.8015 16.5 17.6107 16.421 17.4701 16.2803C17.3294 16.1397 17.2504 15.9489 17.2504 15.75V7.81031L6.53104 18.5306C6.39031 18.6714 6.19944 18.7504 6.00042 18.7504C5.80139 18.7504 5.61052 18.6714 5.46979 18.5306C5.32906 18.3899 5.25 18.199 5.25 18C5.25 17.801 5.32906 17.6101 5.46979 17.4694L16.1901 6.75H8.25042C8.0515 6.75 7.86074 6.67098 7.72009 6.53033C7.57943 6.38968 7.50042 6.19891 7.50042 6C7.50042 5.80109 7.57943 5.61032 7.72009 5.46967C7.86074 5.32902 8.0515 5.25 8.25042 5.25H18.0004C18.1993 5.25 18.3901 5.32902 18.5307 5.46967C18.6714 5.61032 18.7504 5.80109 18.7504 6Z" fill="#E58684"/>
-                        </svg>
-                            Low-fi Sketches
-                    </button>
-                    
-                    <button id="midfi" class="section-button">
-                            <svg class="arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M18.7504 6V15.75C18.7504 15.9489 18.6714 16.1397 18.5307 16.2803C18.3901 16.421 18.1993 16.5 18.0004 16.5C17.8015 16.5 17.6107 16.421 17.4701 16.2803C17.3294 16.1397 17.2504 15.9489 17.2504 15.75V7.81031L6.53104 18.5306C6.39031 18.6714 6.19944 18.7504 6.00042 18.7504C5.80139 18.7504 5.61052 18.6714 5.46979 18.5306C5.32906 18.3899 5.25 18.199 5.25 18C5.25 17.801 5.32906 17.6101 5.46979 17.4694L16.1901 6.75H8.25042C8.0515 6.75 7.86074 6.67098 7.72009 6.53033C7.57943 6.38968 7.50042 6.19891 7.50042 6C7.50042 5.80109 7.57943 5.61032 7.72009 5.46967C7.86074 5.32902 8.0515 5.25 8.25042 5.25H18.0004C18.1993 5.25 18.3901 5.32902 18.5307 5.46967C18.6714 5.61032 18.7504 5.80109 18.7504 6Z" fill="#E58684"/>
-                        </svg>
-                        
-                        Mid-fi Wireframes
-                    </button>
-                </div>
-            </section>
-
-            <div class="project-section-main">
-
-                <section id="lowfi-content">
-                    <h3>Sketching the Initial Ideas</h3>
-                    <p>My low-fidelity sketches captured the main static screens of the four different tools, but also were created to be a wireflow. From these sketches I was able to understand the flow of navigating through different tools and steps, visualize the interface and how elements harmonize with each other, and flesh out the mechanics and details of tools.</p>
-
-                    <img class="drop" src="../../images/safely-images/safely-lowfi.jpg" alt="">
-                </section>
-
-                <section class="no-display" id="midfi-content">
-                    <h3>Digitalizing the Ideas</h3>
-                    <p>After developing the low-fidelity designs, I took my sketches and digitalized them as mid-fidelity wireflows in Figma. This was a fully functional prototype with multiple safety tools and a simple UI design. I experimented with white space and sizing to reduce cognitive load.</p>
-
-                    <p>Creating a wireflow strengthened my understanding of how different elements interact with one another in addition to how a user would navigate through the app’s tools.</p>
-
-                    <img class="drop" src="../../images/safely-images/safely-midfi.jpg" alt="">
-                </section>
-            </div>
-        </section>
-
-
-        <!-- PROTOTYPE SECTION -->
-        <section class="project-section" data-aos="fade-up">
-            <section class="project-section-title">
-                <p class="subheading">PROTOTYPE</p>
-                <h2>Bringing it all Together</h2>
-
-                <div class="sectionBtn-container">
-                    <button id="system" class="section-button selected-button">
-                            <svg class="arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M18.7504 6V15.75C18.7504 15.9489 18.6714 16.1397 18.5307 16.2803C18.3901 16.421 18.1993 16.5 18.0004 16.5C17.8015 16.5 17.6107 16.421 17.4701 16.2803C17.3294 16.1397 17.2504 15.9489 17.2504 15.75V7.81031L6.53104 18.5306C6.39031 18.6714 6.19944 18.7504 6.00042 18.7504C5.80139 18.7504 5.61052 18.6714 5.46979 18.5306C5.32906 18.3899 5.25 18.199 5.25 18C5.25 17.801 5.32906 17.6101 5.46979 17.4694L16.1901 6.75H8.25042C8.0515 6.75 7.86074 6.67098 7.72009 6.53033C7.57943 6.38968 7.50042 6.19891 7.50042 6C7.50042 5.80109 7.57943 5.61032 7.72009 5.46967C7.86074 5.32902 8.0515 5.25 8.25042 5.25H18.0004C18.1993 5.25 18.3901 5.32902 18.5307 5.46967C18.6714 5.61032 18.7504 5.80109 18.7504 6Z" fill="#E58684"/>
-                        </svg>
-                        
-                        Design System
-                    </button>
-
-                    <button id="hifi" class="section-button">
-                            <svg class="arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M18.7504 6V15.75C18.7504 15.9489 18.6714 16.1397 18.5307 16.2803C18.3901 16.421 18.1993 16.5 18.0004 16.5C17.8015 16.5 17.6107 16.421 17.4701 16.2803C17.3294 16.1397 17.2504 15.9489 17.2504 15.75V7.81031L6.53104 18.5306C6.39031 18.6714 6.19944 18.7504 6.00042 18.7504C5.80139 18.7504 5.61052 18.6714 5.46979 18.5306C5.32906 18.3899 5.25 18.199 5.25 18C5.25 17.801 5.32906 17.6101 5.46979 17.4694L16.1901 6.75H8.25042C8.0515 6.75 7.86074 6.67098 7.72009 6.53033C7.57943 6.38968 7.50042 6.19891 7.50042 6C7.50042 5.80109 7.57943 5.61032 7.72009 5.46967C7.86074 5.32902 8.0515 5.25 8.25042 5.25H18.0004C18.1993 5.25 18.3901 5.32902 18.5307 5.46967C18.6714 5.61032 18.7504 5.80109 18.7504 6Z" fill="#E58684"/>
-                        </svg>
-                    
-                        High-Fi V1
-                    
-                    </button>
-
-                    <button id="test" class="section-button">
-                            <svg class="arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M18.7504 6V15.75C18.7504 15.9489 18.6714 16.1397 18.5307 16.2803C18.3901 16.421 18.1993 16.5 18.0004 16.5C17.8015 16.5 17.6107 16.421 17.4701 16.2803C17.3294 16.1397 17.2504 15.9489 17.2504 15.75V7.81031L6.53104 18.5306C6.39031 18.6714 6.19944 18.7504 6.00042 18.7504C5.80139 18.7504 5.61052 18.6714 5.46979 18.5306C5.32906 18.3899 5.25 18.199 5.25 18C5.25 17.801 5.32906 17.6101 5.46979 17.4694L16.1901 6.75H8.25042C8.0515 6.75 7.86074 6.67098 7.72009 6.53033C7.57943 6.38968 7.50042 6.19891 7.50042 6C7.50042 5.80109 7.57943 5.61032 7.72009 5.46967C7.86074 5.32902 8.0515 5.25 8.25042 5.25H18.0004C18.1993 5.25 18.3901 5.32902 18.5307 5.46967C18.6714 5.61032 18.7504 5.80109 18.7504 6Z" fill="#E58684"/>
-                        </svg>
-                        Usability Testing
-                    
-                    </button>
-                </div>
-            </section>
-
-            <div class="project-section-main">
-                <section id="system-content">
-                    <h3>Design System</h3>
-                    <p>For my <span>design system</span>, I opted for a <span>dark mode UI</span> to create a more <span>discrete</span> interface. This would be ideal in dark or low light settings so that the glow of a bright, white screen wouldn’t attract unwanted attention.</p>
-
-                    <p>I used <span>green</span> and <span>yellow</span> in subtle gradients and lower saturation shades to employ a <span>smoothing</span> feeling. These colors and application methods are more <span>calming</span> to <span>reduce stress</span> during potentially high-risk situations.</p>
-
-                    <img class="drop" src="../../images/safely-images/safely-designSystem.jpg" alt="">
-                </section> 
-            </div>
-
-            <div class="project-section-main">
-                <section class="no-display" id="hifi-content">
-                    <h3>High-Fidelity Version 1</h3>
-                    <p>My first <span>high-fidelity</span> iteration integrated the design system and focused on refining the visual design and functions of the tools.  I carefully considered the visual presentation to optimize <span>readability</span> and <span>cohesion</span> for the purposes of a future usability test.</p>
-
-                    <p>Main features include a <span>minimalistic</span>, <span>modern</span> design to reduce distractions and unnecessary content, user activation buttons to empower users and protect their <span>privacy</span>, <span>simple tasks</span> with short steps, and tool <span>customization</span> to fit the user’s needs.</p>
-
-                    <img class="drop" src="../../images/safely-images/safely-hifiv1.jpg" alt="">
-                </section> 
-            </div>
-
-            <div class="project-section-main">
-                <section class="no-display" id="test-content">
-                    <h3>Usability Testing</h3>
-                    <p>I conducted <span>5 user tests</span> with users between the ages of 20 - 22 to identify areas of improvement. These users were all UC Davis students, three of which being female, two being male. I asked them to complete the main functions of the app: <span>share your location</span>, <span>find a suggested route</span>, <span>activate voice recognition and create a safeword</span>, and <span>add a contact</span>.</p>
-
-                    <p>This usability test revealed unnoticed design issues and allowed me to gather new ideas while engaging with my target audience. Key takeaways included the suggestion to <span>integrate</span> the danger alert function into the main map, making actions like adding a safeword or contact more <span>accessible</span>, and improving the overall <span>readability</span> of colors and text.</p>
-
-                    <img class="drop" src="../../images/safely-images/safely-userTest.jpg" alt="">
-                </section> 
-            </div>
-            
-        </section>
-
-
-
-        <!-- FINAL DESIGNS SECTION -->
-        <section class="project-section" data-aos="fade-up">
-            <section class="project-section-title">
-                <p class="subheading">FINAL DESIGNS</p>
-                <h2>The Solutions</h2>
-
-                <!-- <div class="sectionBtn-container">
-                    <button id="dashboard" class="section-button selected-button">Dashboard</button>
-                    <button id="search" class="section-button">Search</button>
-                    <button id="run" class="section-button">Run Status</button>
-                    <button id="preview" class="section-button">Data Preview</button>
-                    <button id="history" class="section-button">History</button>
-                </div> -->
-            </section>
-
-            <div class="project-section-main">
-                <section id="dashboard-content">
-                    <h3>Final Designs</h3>
-
-                    <div class="solutions-content">
-                        <p>After a 5-week research and design process, the Safely prototype was complete. The final design features four core tools: live-location sharing, route suggestions, voice recognition, and a contacts list. The visual design is a modern and sleek look. It uses a dark visual palette to reduce brightness during dark settings and uses calming green and yellow tones for accents.</p>
-
-                        <div id="buttons">
-                            <p>
-                                <a href="https://www.figma.com/proto/ib7WVaBRfdHV2K8eFhTVjq/Bu_Catelyn_DES112_P2?page-id=84%3A1484&node-id=323-6761&p=f&viewport=695%2C380%2C0.08&t=FcJ5ss0vbYWAfwOY-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=323%3A6761" target="_blank" class="button">Safely Prototype
-                                
-                                <img id="safely-button-img" src="../../images/ArrowRight.svg" alt="Right Arrow icon" width="20" height="20"></a>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="safelyFinalDesigns">
-                        <div class="safelyGif">
-                            <img src="../../images/safely-images/finalDesigns-img/safelyDemo-1.gif" alt="Animated gif showing the home page, location sharing, and route suggestion tools ">
-                            <img src="../../images/safely-images/finalDesigns-img/safelyDemo-2.gif" alt="Animated gif showing the voice recognition tool and the contacts list">
-                        </div>
-                       
-        
-                        <img class="safelyImg" src="../../images/safely-images/safely-final.png" alt="">
-                    </div>
-                </section> 
-            </div>
-            
-        </section>
-
-
-        <!-- TAKEAWAYS SECTION -->
-        <section class="project-section" data-aos="fade-up">
-            <section class="project-section-title">
-                <p class="subheading">TAKEAWAYS</p>
-                <h2>What I Gained as a Designer</h2>
-            </section>
-
-            <div class="project-section-main">
-                <section class="takeaway-card">
-                    <h3><span>01</span> Empathize with the audience.</h3>
-                    <p>For this project I conducted 5 usability tests which provided beneficial insight on how I could further improve my product. It gave me the opportunity to talk to my target audience and get more in-depth, detailed responses on how they felt about my designs. With that feedback I made the appropriate changes to fit the needs of my users.</p>
-                </section> 
-
-                <section class="takeaway-card">
-                    <h3><span>02</span> Conduct in-depth research.</h3>
-                    <p>The Safely project required substantial research to create a successful design. I learned how to compare my work to market competitors and how to conduct and write unbiased surveys. Gathering this data informed my design process and supplied me with information about my target audience.</p>
-                </section> 
-
-                <section class="takeaway-card">
-                    <h3><span>03</span> The power of prototyping.</h3>
-                    <p>The Safely project was created to be  a fully functioning prototype in Figma. I quickly picked up the importance of components and a clearly defined design system. Using these tools allowed for greater efficiency and  consistency. Utilizing components and a design system is a crucial tool that will help me in the future.</p>
-                </section> 
-            </div>
-            
-        </section>
-    </div>
-    
-
-    <footer>
-        <div id="footer-container">
-            <section class="footer-main">
-                <div id="footer-socials">
-                    <p id="footer-CTA">Let's keep in touch!</p>
-                    
-                    <div id="footer-buttons">
-                        <p><a id="special-button" class="button" href="mailto:&#099;&#097;&#116;&#101;&#108;&#121;&#110;&#046;&#098;&#117;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;" target="_blank">&#099;&#097;&#116;&#101;&#108;&#121;&#110;&#046;&#098;&#117;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;</a></p>
-                        <p><a id="special-button" class="button" href="https://www.linkedin.com/in/catelynbu/" target="_blank">linkedin</a></p>
-                    </div>
-                </div>
-    
-                <div id="footer-links">
-                    <ul>
-                        <li><a href="../../index.html">work</a></li>
-                        <li><a href="../../studio/studio.html">studio</a></li>
-                        <li><a href="../../about/about.html">about</a></li>
-                        <li><a href="https://drive.google.com/file/d/1QHEptJbZ5Z-rSnkVMw-N27SdC8lljr6w/view?usp=sharing" target="_blank">resume</a></li>
-                    </ul>
-                </div>
-            </section>
-    
-            <aside>
-                <img id="footer-logo" src="../../images/logo-DMG-SM.png" alt="Logo.">
-                <p>©2025 | Designed and developed by Catelyn with love <i class="far fa-heart" style="font-size: .8em;"></i></p>
-            </aside>
         </div>
+
+
+        <aside>
+            <img id="footer-logo" src="../../images/logo-DMG-SM.png" alt="Logo.">
+            <p>©2026 | Designed and developed by Catelyn with love <i class="far fa-heart" style="font-size: .8em;"></i></p>
+        </aside>
+        
+
+
     </footer>
 
 </body>

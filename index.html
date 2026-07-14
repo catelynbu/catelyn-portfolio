@@ -6,10 +6,7 @@
 
     <!-- normalize css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"> 
-
-    <!-- font awesone icons -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-
+    
     <!-- CSS Files -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="global.css" rel="stylesheet">
@@ -18,7 +15,7 @@
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Instrument+Serif:ital@0;1&family=Long+Cang&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
 
     <!-- JS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -27,10 +24,10 @@
     <title>Home | Catelyn Bu Portfolio</title>
 
     <!-- Favicon Links -->
-    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
-    <link rel="manifest" href="images/favicon/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
 
 </head>
 
@@ -46,14 +43,11 @@
                             <li><a href="index.html">work</a></li></li>
                             <li><a href="studio/studio.html">studio</a></li>
                             <li><a href="about/about.html">about</a></li>
+                            <li><a href="https://drive.google.com/file/d/1QHEptJbZ5Z-rSnkVMw-N27SdC8lljr6w/view?usp=sharing" target="_blank">resume</a></li>
                         </ul>
                     </li>
-                    
-                    <!-- <li class="hidden" id="menu-icon"><i class="fas fa-bars fa-lg"></i></li> -->
 
                     <li class="hidden" id="menu-icon"><img id="icon-svg" src="images/menu.svg" alt="Menu icon." width="25" height="25"></li>
-
-                    <li id="resume-link"><a class="button" id="special-button" href="https://drive.google.com/file/d/1QHEptJbZ5Z-rSnkVMw-N27SdC8lljr6w/view?usp=sharing" target="_blank">resume</a></li>
                 </ul>
 
                 <ul class="hidden hidden2 mobile-menu">
@@ -66,341 +60,175 @@
 
             </nav>
         </div>
+
+        <hr data-aos="fade-up">
     
-        <header>
-            <div id="headerText" data-aos="fade-up">
-                <div id="names">
+        <header data-aos="fade-up">
+            <img src="images/mochi-graphic.png" alt="" width="168px" height="auto">
+
+            <div id="name-titles">
+
+                <div id="typewriter">
                     <h1>catelyn bu</h1>
-                    <p>胡幼疯</p>
                 </div>
 
+                
 
-                <div id="homeRoles">
+                <div id="home-roles">
                     <p>product design</p>
                     <img src="images/diamond.svg" alt="Diamond icon" width="15" height="15">
                     <p>ux/ui design</p>
-                    <img src="images/diamond.svg" alt="Diamond icon" width="15" height="15">
-                    <p>front-end development</p>
                 </div>
-
-                <p>prev. designed for <span class="home">goodnotes</span> & <span class="home">chevron</span></p>
             </div>
+
+            <p>prev. designed for goodnotes & chevron</p>
             
-
-            <div class="absolute">
-                <div class="relative inset-0 justify-center">
-                    <div class="bg-shape1 bg-blue opacity-50 bg-blur"></div>
-                    <div class="bg-shape2 bg-purple opacity-50 bg-blur"></div>
-                    <div class="bg-shape3 bg-magenta opacity-50 bg-blur"></div>
-                </div>
-
-                <div id="wiggle-wrapper">
-                    <div id="wiggle1"></div>
-                    <div id="wiggle2"></div>
-                    <div id="wiggle3"></div>
-                    <div id="wiggle4"></div>
-                </div>
-            </div>
+            
         </header>
     </div>
     
+    <a href="#full-header-container" class="back-to-top">
+        <svg class="arrow" width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18.7504 6V15.75C18.7504 15.9489 18.6714 16.1397 18.5307 16.2803C18.3901 16.421 18.1993 16.5 18.0004 16.5C17.8015 16.5 17.6107 16.421 17.4701 16.2803C17.3294 16.1397 17.2504 15.9489 17.2504 15.75V7.81031L6.53104 18.5306C6.39031 18.6714 6.19944 18.7504 6.00042 18.7504C5.80139 18.7504 5.61052 18.6714 5.46979 18.5306C5.32906 18.3899 5.25 18.199 5.25 18C5.25 17.801 5.32906 17.6101 5.46979 17.4694L16.1901 6.75H8.25042C8.0515 6.75 7.86074 6.67098 7.72009 6.53033C7.57943 6.38968 7.50042 6.19891 7.50042 6C7.50042 5.80109 7.57943 5.61032 7.72009 5.46967C7.86074 5.32902 8.0515 5.25 8.25042 5.25H18.0004C18.1993 5.25 18.3901 5.32902 18.5307 5.46967C18.6714 5.61032 18.7504 5.80109 18.7504 6Z" fill="#FFFFFF"/>
+        </svg>
+    </a>
 
-    <a href="#full-header-container"><p class="backtotop"><i class="fas fa-arrow-up fa-lg" style="color: #ffffff;"></i></p></a>
-
-    <section id="homeContainer">
-            
-        <h2>Featured Works</h2>
+    <section id="home-container">
+        <h2 data-aos="fade-up" class="text-border">featured work</h2>
 
         <div id="cards-container">
-            <article data-aos="fade-up" class="project-card">
-                <div class="img-container">
-                    <img class="homeImg" src="images/goodnotes-images/goodnotes-mockup.png" alt="" width="100%" height="auto">
-                </div>
-
-                <div class="card-text">
-                    <div class="card-titles">
-                        <h3>Streamlining notetaking  through generative AI diagrams</h3>
-
-                        <div class="card-details">
-                            <p style="font-style: italic;">Goodnotes</p>
-
-                            <img src="images/diamond.svg" alt="Diamond icon" width="15" height="15">
-
-                            <div class="tags">
-                                <p class="tag">AI</p>
-                                <p class="tag">B2C</p>
-                                <p class="tag">Product</p>
-                            </div>
+            
+            <div class="right-column" data-aos="fade-left">
+                <a href="projects/goodnotes/goodnotes.html">
+                    <article>
+                        <div class="img-container">
+                            <img class="img-zoom" src="images/goodnotes-images/goodnotes-home.jpg" alt="" width="100%" height="auto">
                         </div>
-                    </div>
 
-                    <p>Understanding key pain points in modern note taking to discover new ways to use AI to efficiently create diagrams.</p>
+                        <div class="article-text">
+                            <h3>Streamlining notetaking through generative AI diagrams</h3>
 
-                    <p><a class="button" href="projects/goodnotes/goodnotes.html">read case study
-
-                        <img src="images/ArrowRight.svg" alt="Diamond icon" width="20" height="20">
-                    </a></p>
-                </div>
-
-
-            </article>
-
-            <article data-aos="fade-up" class="project-card">
-                <div class="img-container">
-                    <img class="homeImg" src="images/chevron-images/chevron-mockup.png" alt="" width="100%" height="auto">
-                </div>
-
-                <div class="card-text">
-                    <div class="card-titles">
-                        <h3>Boosting work productivity through efficient data extraction</h3>
-
-                        <div class="card-details">
-                            <p style="font-style: italic;">Chevron</p>
-
-                            <img src="images/diamond.svg" alt="Diamond icon" width="15" height="15">
-
-                            <div class="tags">
-                                <p class="tag">B2B</p>
-                                <p class="tag">Product</p>
-                            </div>
+                            <ul>
+                                <li>Goodnotes</li>
+                                <li><img src="images/diamond.svg" alt="Diamond icon" width="15" height="15"></li>
+                                <li>
+                                    <ul class="tags">
+                                        <li>AI</li>
+                                        <li>B2C</li>
+                                        <li>Product</li>
+                                    </ul>
+                                </li>
+                            </ul>
                         </div>
-                    </div>
 
-                    <p>Improving geo-spatial data collection and analysis workflows for enterprise teams through an efficient web-scraping platform.</p>
+                    </article>
+                </a>
+            </div>
 
-                    <p><a class="button" href="projects/chevron/chevron.html">read case study
-                    
-                        <img src="images/ArrowRight.svg" alt="Diamond icon" width="20" height="20">
-
-                    </a></p>
-
-                </div>
-                
-
-            </article>
-
-            <article data-aos="fade-up" class="project-card">
-                <div class="img-container">
-                    <img class="homeImg" src="images/safely-images/safely-mockup.png" alt="" width="100%" height="auto">
-                </div>
-
-                <div class="card-text">
-                    <div class="card-titles">
-                        <h3>Reimagining personal safety through independent navigational tools</h3>
-
-                        <div class="card-details">
-                            <p style="font-style: italic;">Concept Design</p>
-
-                            <img src="images/diamond.svg" alt="Diamond icon" width="15" height="15">
-
-                            <div class="tags">
-                                <p class="tag">UX/UI</p>
-                                <p class="tag">User Research</p>
-                            </div>
+            <div class="left-column" data-aos="fade-right">
+                <a href="projects/chevron/chevron.html">
+                    <article>
+                        <div class="img-container">
+                            <img class="img-zoom" src="images/chevron-images/chevron-home.jpg" alt="" width="100%" height="auto">
                         </div>
-                    </div>
 
-                    <p>Addressing the unique challenges faced by solo travelers in urban environments through a mobile navigation app.</p>
+                        <div class="article-text">
+                            <h3>Boosting work productivity through efficient data extraction</h3>
 
-                    <p><a class="button" href="projects/safely/safely.html">read case study
-
-                        <img src="images/ArrowRight.svg" alt="Diamond icon" width="20" height="20">
-
-                    </a></p>
-                    </div>
-            </article>
-
-            <p id="more" class="show2 view-button">View More</p>
-
-            <article class="hidden hidden2" id="hidden">
-                <div class="img-container">
-                    <img class="homeImg" src="images/bestBuddies-images/bestBuddies-mainMockup.png" alt="" width="100%" height="auto">
-                </div>
-
-                <div class="card-text">
-                    <div class="card-titles">
-                        <h3>Refining web accessibility to improve usability and encourage user engagement</h3>
-
-                        <div class="card-details">
-                            <p style="font-style: italic;">Best Buddies</p>
-
-                            <img src="images/diamond.svg" alt="Diamond icon" width="15" height="15">
-
-                            <div class="tags">
-                                <p class="tag">Development</p>
-                            </div>
+                            <ul>
+                                <li>Chevron</li>
+                                <li><img src="images/diamond.svg" alt="Diamond icon" width="15" height="15"></li>
+                                <li>
+                                    <ul class="tags">
+                                        <li>B2B</li>
+                                        <li>Product</li>
+                                    </ul>
+                                </li>
+                            </ul>
                         </div>
-                    </div>
 
-                    <p>Delivering a responsive website for a non-profit organization to provide essential resources and support membership growth</p>
+                    </article>
+                </a>
 
-                    <p><a class="button" href="projects/bestBuddies.html">read case study
+                <a href="projects/safely/safely.html">
+                    <article>
+                        <div class="img-container">
+                            <img class="img-zoom" src="images/safely-images/safely-home.jpg" alt="" width="100%" height="auto">
+                        </div>
 
-                        <img src="images/ArrowRight.svg" alt="Diamond icon" width="20" height="20">
+                        <div class="article-text">
+                            <h3>Reimagining personal safety through independent navigational tools</h3>
 
-                    </a></p>
-                    </div>
-            </article>
+                            <ul>
+                                <li>Concept Design</li>
+                                <li><img src="images/diamond.svg" alt="Diamond icon" width="15" height="15"></li>
+                                <li>
+                                    <ul class="tags">
+                                        <li>UX/UI</li>
+                                        <li>User Research</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
 
-            <p id="less" class="view-button hidden hidden2">View Less</p>
+                    </article>
+                </a>
+            </div>
+
+
+        </div>
+    </section>
+    
+    <hr data-aos="fade-up" id="bottom-hr">
+
+    <footer data-aos="fade-up">
+        <div id="footer-main">
+            <section id="footer-socials">
+                <h2 class="text-border">let's get in touch ~</h2>
+
+                <ul>
+                    <li>
+                        <ul>
+                            <li><img src="images/email-icon.png" alt="Email icon" width="24" height="24"></li>
+                            <li><a href="mailto:&#099;&#097;&#116;&#101;&#108;&#121;&#110;&#046;&#098;&#117;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;" target="_blank">&#099;&#097;&#116;&#101;&#108;&#121;&#110;&#046;&#098;&#117;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <ul>
+                            <li><img src="images/linkedin-icon.png" alt="Linkedin icon" width="24" height="24"></li>
+                            <li><a href="https://www.linkedin.com/in/catelynbu/" target="_blank">linkedin.com/in/catelynbu</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="footer-menu">
+                <ul>
+                    <li>menu</li>
+                    <li><a href="index.html">work</a></li>
+                    <li><a href="studio/studio.html">studio</a></li>
+                    <li><a href="about/about.html">about</a></li>
+                    <li><a href="https://drive.google.com/file/d/1QHEptJbZ5Z-rSnkVMw-N27SdC8lljr6w/view">resume</a></li>
+                </ul>
+
+                <ul>
+                    <li>projects</li>
+                    <li><a href="projects/goodnotes/goodnotes.html">goodnotes</a></li>
+                    <li><a href="projects/chevron/chevron.html">chevron</a></li>
+                    <li><a href="projects/safely/safely.html">safely</a></li>
+                </ul>
+            </section>
         </div>
 
 
-
-            <!-- 
-            <h2 data-aos="fade-up">FEATURED WORK</h2></div>
-
-            <a id="chevron" href="projects/chevron/chevron.html"><article class="card2" data-aos="fade-up">
-                <div class="img-container">
-                    <img class="homeImg" src="images/chevron-images/chevron-mockup.png" alt="" width="100%" height="auto">
-                </div>
-
-
-                <div class="text">
-                    <h3>Geo-Spatial Web Scraper</h3>
-                    <ul class="label-container">
-                        <li>Chevron</li>
-                        <li class="development">product</li>
-                        <li class="development">ui/ux</li>
-                    </ul>
-                </div>
-
-            </article></a>
-
-            <a id="bestBuddies" href="projects/bestBuddies.html"><article class="card2" data-aos="fade-up">
-                <div class="img-container">
-                <img class="homeImg" src="images/bestBuddies-images/bestBuddies-mainMockup.png" alt="A laptop and phone showing screens of the Best Buddies' website interface" width="100%" height="auto">
-                </div>
-
-
-                <div class="text">
-                    <h3>Mobile + Desktop Client Website</h3>
-                    <ul class="label-container">
-                        <li>Best Buddies</li>
-                        <li class="development">development</li>
-                    </ul>
-                </div>
-
-            </article></a>
-
-            <a id="goodnotes" href="projects/goodnotes/goodnotes.html"><article class="card2" data-aos="fade-up" id="test">
-                <div class="img-container">
-                <img class="homeImg" src="images/goodnotes-images/goodnotes-mockup.png" alt="" width="100%" height="auto">
-                </div>
-
-
-                <div class="text">
-                    <h3>AI-Powered Diagraming</h3>
-                    <ul class="label-container">
-                        <li>Goodnotes</li>
-                        <li class="development">product</li>
-                        <li class="development">ai/ml</li>
-                        <li class="development">user research</li>
-                    </ul>
-                </div>
-
-            </article></a> -->
-
-            <!-- <a href="projects/classmates.html"><article class="card2" data-aos="fade-up">
-                <div class="img-container">
-                <img class="homeImg" src="images/classmates-images/classmates-mockup.png" alt="" width="100%" height="auto">
-                </div>
-
-
-                <div class="text">
-                    <h3>AI Course Recommender</h3>
-                    <ul class="label-container">
-                        <li>Classmates</li>
-                        <li class="development">ui/ux</li>
-                        <li class="development">ai/ml</li>
-                        <li class="development">development</li>
-                    </ul>
-                </div>
-
-            </article></a> -->
-
-
-            <!-- <a id="safely" href="projects/safely/safely.html"><article class="card2" data-aos="fade-up">
-                <div class="img-container">
-                    <img class="homeImg" src="images/safely-images/safely-mockup.png" alt="" width="100%" height="auto">
-                </div>
-
-
-                <div class="text">
-                    <h3>Personal Safety App</h3>
-                    <ul class="label-container">
-                        <li>Personal Project</li>
-                        <li class="development">ui/ux</li>
-                        <li class="development">user research</li>
-                    </ul>
-                </div>
-
-            </article></a> -->
-
-            <!-- <a href="projects/blog.html"><article class="card2" data-aos="fade-up">
-                <div class="img-container">
-                    <img class="homeImg" src="images/blog-images/mockups/multi-mockup.png" alt="A laptop, a tablet, and a phone showing screens of the Responsive Blog site's website interface" width="100%" height="auto">
-                </div>
-
-
-                <div class="text">
-                    <h3>Responsive Blog Site</h3>
-                    <ul class="label-container">
-                        <li>Personal Project</li>
-                        <li class="development">ui/ux</li>
-                        <li class="development">development</li>
-                    </ul>
-                </div>
-
-            </article></a> -->
-
-
-
-
-            
-            <!-- <aside id="asideGrid" data-aos="fade-up">
-                <ul>
-                    <li><a href="#">view more projects<i class="fas fa-arrow-right"></i></a></li>
-                    <li><a href="about/about.html">learn more about me<i class="fas fa-arrow-right"></i></a></li>
-                    <li><a href="studio/studio.html">other design work<i class="fas fa-arrow-right"></i></a></li>
-                </ul>
-            </aside> -->
-
-    </section>
-
-    <div id="footer-bg2">
-        <footer>
-            <div id="footer-container">
-                
-                <section class="footer-main">
-                    <div id="footer-socials">
-                        <p id="footer-CTA">Let's keep in touch!</p>
-                        
-                        <div id="footer-buttons">
-                            <p><a class="button" id="special-button" href="mailto:&#099;&#097;&#116;&#101;&#108;&#121;&#110;&#046;&#098;&#117;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;" target="_blank">&#099;&#097;&#116;&#101;&#108;&#121;&#110;&#046;&#098;&#117;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;</a></p>
-                            <p><a class="button" id="special-button" href="https://www.linkedin.com/in/catelynbu/" target="_blank">linkedin</a></p>
-                        </div>
-                    </div>
+        <aside>
+            <img id="footer-logo" src="images/logo-DMG-SM.png" alt="Logo.">
+            <p>©2026 | Designed and developed by Catelyn with love <i class="far fa-heart" style="font-size: .8em;"></i></p>
+        </aside>
         
-                    <div id="footer-links">
-                        <ul>
-                            <li><a href="index.html">work</a></li>
-                            <li><a href="studio/studio.html">studio</a></li>
-                            <li><a href="about/about.html">about</a></li>
-                            <li><a href="https://drive.google.com/file/d/1QHEptJbZ5Z-rSnkVMw-N27SdC8lljr6w/view?usp=sharing" target="_blank">resume</a></li>
-                        </ul>
-                    </div>
-                </section>
-        
-                <aside>
-                    <img id="footer-logo" src="images/logo-DMG-SM.png" alt="Logo.">
-                    <p>©2026 | Designed and developed by Catelyn with love <i class="far fa-heart" style="font-size: .8em;"></i></p>
-                </aside>
-            </div>
-        </footer>
-    </div>
 
 
+    </footer>
 
 
 

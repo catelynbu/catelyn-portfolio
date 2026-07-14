@@ -1,148 +1,107 @@
-.container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 42px;
+/* -------------------- TYPOGRAPHY -------------------- */
 
-    margin-bottom: 100px;
-}
-
-/* --------------- WIGGLES -------------- */
-#wiggle3{
-    bottom: 300px;
-    right: -270px;
-}
-
-
-section section{
-    max-width: 390px;
-}
-
-h2{
+h2 {
     transition: 0.3s;
 }
 
-section a:hover h2{
-    font-weight: 500;
-    color: #E58684;
-}
-
-.picture{
-    width: 380px;
-    height: 380px;
-    background-color: #ffffff56;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    overflow: hidden;
-
-    /* border: 1px rgb(235, 235, 235) solid; */
-    box-shadow: 0px 0px 15px 1px rgba(235, 235, 235, 0.582);
-}
-
-.vertical{
-    box-sizing: border-box;
-    width: auto;
-    height: 100%;
-
-    padding: 10px;
-    
-
-    transition: transform .8s;
-}
-
-.horizontal{
-    box-sizing: border-box;
-    width: 100%;
-    height: auto;
-
-    padding: 10px;
-    
-
-    transition: transform .8s;
-}
-
-.horizontal:hover, .vertical:hover{
-    transform: scale(1.2);
-}
-
-
-h2{
-    font-family: "DM Sans", sans-serif;
-    font-size: 1.4em;
-    line-height: 32px; 
-    margin: 24px 0 0 0;
-    font-weight: 400;
-    color: #4D433B; 
-}
-
-section section p{
+section section p {
     font-size: 1em;
     color: #6B6B6B;
 }
 
-/* --------------- 640 PX - MOBILE SIZE --------------- */
-@media only screen and (min-width: 640px){
-    .container{
-        padding: 6% 10vw;
-    }
-
-    /* --------------- WIGGLES --------------- */
-    #wiggle3{
-        bottom: 300px;
-        right: -250px;
-    }
-
-    #wiggle4{
-        top: 120px;
-        left: -170px;
-    }
+.container h2 {
+    font-size: 1.5em;
+    width: fit-content;
 }
 
-@media only screen and (min-width: 992px){
-    .container{
-        padding: 6% 8vw;
+section a:hover h2 {
+    font-weight: 500;
+    border-bottom: 1px solid #2D7BE1;
+    padding-bottom: 4px;
+}
+
+/* -------------------- HEADER -------------------- */
+header{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 72px 0;
+}
+
+#description{
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* #description p{
+    width: fit-content;
+} */
+
+
+/* -------------------- MAIN CONTAINER -------------------- */
+
+.container {
+    /* padding: 144px 0; */
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 42px;
+}
+
+/* -------------------- SECTION CONTAINER -------------------- */
+section section, section section a{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    border: none;
+}
+
+section section a:hover{
+    border: none;
+}
+
+
+/* -------------------- IMAGE CARDS -------------------- */
+
+.img-container {
+    aspect-ratio: 1 / 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #ffffff;
+    border: 1px solid #E7E7E7;
+    border-radius: 8px;
+
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.img-container img {
+    max-width: 100%;
+    max-height: 100%;
+
+    object-fit: contain;
+
+    padding: 10px;
+    box-sizing: border-box;
+
+    transition: transform .8s;
+}
+
+.img-container img:hover {
+    transform: scale(1.15);
+}
+
+
+/* -------------------- RESPONSIVE -------------------- */
+
+@media only screen and (min-width: 992px) {
+    .container {
         gap: 100px 42px;
     }
-
-
-    /* --------------- WIGGLES --------------- */
-    #wiggle3{
-        bottom: 300px;
-        right: -150px;
-    }
-
-    #wiggle4{
-        top: 170px;
-        left: -120px;
-    }
-}
-
-
-@media only screen and (min-width: 1440px){
-    /* --------------- WIGGLES --------------- */
-    #wiggle3{
-        bottom: 300px;
-        right: -50px;}
-    #wiggle4{
-        top: 170px;
-        left: -15px;}
-}
-
-
-@media only screen and (min-width: 1500px){
-    .container, footer{
-        padding: 4% 10vw;
-        justify-content: space-between;
-    }
-}
-
-@media only screen and (min-width: 1600px){
-    #wiggle3, #wiggle4{
-        scale: 1.3;}
-    #wiggle4{
-        top: 200px;
-        left: -15px;}
 }

@@ -7,9 +7,6 @@
     <!-- normalize css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"> 
 
-    <!-- font awesone icons -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-
     <!-- css files -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="../../global.css" rel="stylesheet">
@@ -18,14 +15,14 @@
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Instrument+Serif:ital@0;1&family=Long+Cang&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
 
     <!-- JS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="../../script.js" defer></script>
-    <script src="goodnotes.js" defer></script>
+    <script src="../project.js" defer></script>
 
-    <title>Goodnotes Draw | Catelyn Bu Portfolio</title>
+    <title>Goodnotes | Catelyn Bu Portfolio</title>
  
     <!-- Favicon Links -->
     <link rel="apple-touch-icon" sizes="180x180" href="../../images/favicon/apple-touch-icon.png">
@@ -38,7 +35,7 @@
 
 <body>
     <div id="full-header-container">
-        <div id="nav-container"  data-aos="fade-up">
+        <div id="nav-container" data-aos="fade-up">
             <nav class="closed">
                 <ul>
                     <li><a href="../../index.html"><img src="../../images/logo-DMG-SM.png" class="logoAnimate" alt="logo"></a></li>
@@ -48,12 +45,11 @@
                             <li><a href="../../index.html">work</a></li></li>
                             <li><a href="../../studio/studio.html">studio</a></li>
                             <li><a href="../../about/about.html">about</a></li>
+                            <li><a href="https://drive.google.com/file/d/1QHEptJbZ5Z-rSnkVMw-N27SdC8lljr6w/view?usp=sharing" target="_blank">resume</a></li>
                         </ul>
                     </li>
-                    
-                    <li class="hidden" id="menu-icon"><img id="icon-svg" src="../../images/menu.svg" alt="Menu icon." width="25" height="25"></li>
 
-                    <li id="resume-link"><a class="button" id="special-button" href="https://drive.google.com/file/d/1QHEptJbZ5Z-rSnkVMw-N27SdC8lljr6w/view?usp=sharing" target="_blank">resume</a></li>
+                    <li class="hidden" id="menu-icon"><img id="icon-svg" src="../../images/menu.svg" alt="Menu icon." width="25" height="25"></li>
                 </ul>
 
                 <ul class="hidden hidden2 mobile-menu">
@@ -66,360 +62,438 @@
 
             </nav>
         </div>
+
+        <hr data-aos="fade-up">
     
-        <header>
-            <div id="header-projects"  data-aos="fade-up">
-                <div id="header-projects-text">
-                    <h1>Goodnotes Draw</h1>
-                    <p>Streamlining notetaking through generative AI diagrams</p>
+        <header  data-aos="fade-up">
+            <div id="header-text">
+                <div class="text-border" id="header-logo-title">
+                    <img src="../../images/goodnotes-images/goodnotes-logo.png" alt="Chevron logo" width="64px" height="64px">
+
+                    <div id="header-title">
+                        <h1>Goodnotes</h1>
+
+                        <p>AI Diagram Canvas Agent</p>
+                    </div>
                 </div>
+    
+                <p>Streamlining notetaking through generative AI diagrams</p>
 
-                <img id="header-project-img" src="../../images/goodnotes-images/goodnotes-mockupnobg.png" alt="">
+
             </div>
+           
+
+            <img src="../../images/goodnotes-images/goodnotes-banner1.jpg" alt="A large banner that depicts the main canvas design along with the chatbot and tool bar in front of a pastel blue and yellow gradient background" width="100%" height="auto">
 
 
-            
-
-            <div class="absolute">
-                <div class="relative inset-0 justify-center">
-                    <div class="bg-shape1 bg-blue opacity-50 bg-blur"></div>
-                    <div class="bg-shape2 bg-purple opacity-50 bg-blur"></div>
-                    <div class="bg-shape3 bg-magenta opacity-50 bg-blur"></div>
-                </div>
-            </div>
         </header>
     </div>
     
+    <a href="#full-header-container" class="back-to-top">
+        <svg class="arrow" width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18.7504 6V15.75C18.7504 15.9489 18.6714 16.1397 18.5307 16.2803C18.3901 16.421 18.1993 16.5 18.0004 16.5C17.8015 16.5 17.6107 16.421 17.4701 16.2803C17.3294 16.1397 17.2504 15.9489 17.2504 15.75V7.81031L6.53104 18.5306C6.39031 18.6714 6.19944 18.7504 6.00042 18.7504C5.80139 18.7504 5.61052 18.6714 5.46979 18.5306C5.32906 18.3899 5.25 18.199 5.25 18C5.25 17.801 5.32906 17.6101 5.46979 17.4694L16.1901 6.75H8.25042C8.0515 6.75 7.86074 6.67098 7.72009 6.53033C7.57943 6.38968 7.50042 6.19891 7.50042 6C7.50042 5.80109 7.57943 5.61032 7.72009 5.46967C7.86074 5.32902 8.0515 5.25 8.25042 5.25H18.0004C18.1993 5.25 18.3901 5.32902 18.5307 5.46967C18.6714 5.61032 18.7504 5.80109 18.7504 6Z" fill="#FFFFFF"/>
+        </svg>
+    </a>    
 
-    <a href="#full-header-container"><p class="backtotop"><i class="fas fa-arrow-up fa-lg" style="color: #ffffff;"></i></p></a>    
+    <main class="container">
+        <nav id="projects-navigation"  data-aos="fade-right">
+            <ul>
+                <li>
+                    <a href="#overview" class="section-button">
+                        <ul>
+                            <li><svg class="arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18.7504 6V15.75C18.7504 15.9489 18.6714 16.1397 18.5307 16.2803C18.3901 16.421 18.1993 16.5 18.0004 16.5C17.8015 16.5 17.6107 16.421 17.4701 16.2803C17.3294 16.1397 17.2504 15.9489 17.2504 15.75V7.81031L6.53104 18.5306C6.39031 18.6714 6.19944 18.7504 6.00042 18.7504C5.80139 18.7504 5.61052 18.6714 5.46979 18.5306C5.32906 18.3899 5.25 18.199 5.25 18C5.25 17.801 5.32906 17.6101 5.46979 17.4694L16.1901 6.75H8.25042C8.0515 6.75 7.86074 6.67098 7.72009 6.53033C7.57943 6.38968 7.50042 6.19891 7.50042 6C7.50042 5.80109 7.57943 5.61032 7.72009 5.46967C7.86074 5.32902 8.0515 5.25 8.25042 5.25H18.0004C18.1993 5.25 18.3901 5.32902 18.5307 5.46967C18.6714 5.61032 18.7504 5.80109 18.7504 6Z" fill="#2D7BE1"/>
+                                </svg>
+                            </li>
+                            <li>overview</li>
+                        </ul>
+                    </a>
+                </li>
 
-    <div class="container">
-        <!-- OVERVIEW SECTION -->
-        <section id="overview"  data-aos="fade-up">
-            <h2 class="test">Overview</h2>
-
-            <div id="overview-main">
-
-                <section id="the-problem">
-                    <h3 class="subheading">THE PROBLEM</h3>
-        
-                    <p>Students today spend hundreds of hours polishing their notes and hand-drawing diagrams. This is slow and tedious and prevents students from being more efficient in their learning process.</p>
-                </section>
+                <li>
+                    <a href="#research" class="section-button">
+                        <ul>
+                            <li><svg class="arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18.7504 6V15.75C18.7504 15.9489 18.6714 16.1397 18.5307 16.2803C18.3901 16.421 18.1993 16.5 18.0004 16.5C17.8015 16.5 17.6107 16.421 17.4701 16.2803C17.3294 16.1397 17.2504 15.9489 17.2504 15.75V7.81031L6.53104 18.5306C6.39031 18.6714 6.19944 18.7504 6.00042 18.7504C5.80139 18.7504 5.61052 18.6714 5.46979 18.5306C5.32906 18.3899 5.25 18.199 5.25 18C5.25 17.801 5.32906 17.6101 5.46979 17.4694L16.1901 6.75H8.25042C8.0515 6.75 7.86074 6.67098 7.72009 6.53033C7.57943 6.38968 7.50042 6.19891 7.50042 6C7.50042 5.80109 7.57943 5.61032 7.72009 5.46967C7.86074 5.32902 8.0515 5.25 8.25042 5.25H18.0004C18.1993 5.25 18.3901 5.32902 18.5307 5.46967C18.6714 5.61032 18.7504 5.80109 18.7504 6Z" fill="#2D7BE1"/>
+                                </svg>
+                            </li>
+                            <li>research</li>
+                        </ul>
+                    </a>
+                    
+                </li>
                 
-                <section id="the-client">
-                    <h3 class="subheading">THE CLIENT</h3>
-        
-                    <p>Goodnotes is a leading digital note-taking app designed to transform handwritten notes into powerful, searchable documents.  Popular among students, educators, and professionals, Goodnotes bridges the gap between analog and digital productivity.</p>
+                <li>
+                    <a href="#define" class="section-button">
+                        <ul>
+                            <li><svg class="arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18.7504 6V15.75C18.7504 15.9489 18.6714 16.1397 18.5307 16.2803C18.3901 16.421 18.1993 16.5 18.0004 16.5C17.8015 16.5 17.6107 16.421 17.4701 16.2803C17.3294 16.1397 17.2504 15.9489 17.2504 15.75V7.81031L6.53104 18.5306C6.39031 18.6714 6.19944 18.7504 6.00042 18.7504C5.80139 18.7504 5.61052 18.6714 5.46979 18.5306C5.32906 18.3899 5.25 18.199 5.25 18C5.25 17.801 5.32906 17.6101 5.46979 17.4694L16.1901 6.75H8.25042C8.0515 6.75 7.86074 6.67098 7.72009 6.53033C7.57943 6.38968 7.50042 6.19891 7.50042 6C7.50042 5.80109 7.57943 5.61032 7.72009 5.46967C7.86074 5.32902 8.0515 5.25 8.25042 5.25H18.0004C18.1993 5.25 18.3901 5.32902 18.5307 5.46967C18.6714 5.61032 18.7504 5.80109 18.7504 6Z" fill="#2D7BE1"/>
+                                </svg>
+                            </li>
+                            <li>define</li>
+                        </ul>
+                    </a>
+                    
+                </li>
+
+                <li>
+                    <a href="#ideation" class="section-button">
+                        <ul>
+                            <li><svg class="arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18.7504 6V15.75C18.7504 15.9489 18.6714 16.1397 18.5307 16.2803C18.3901 16.421 18.1993 16.5 18.0004 16.5C17.8015 16.5 17.6107 16.421 17.4701 16.2803C17.3294 16.1397 17.2504 15.9489 17.2504 15.75V7.81031L6.53104 18.5306C6.39031 18.6714 6.19944 18.7504 6.00042 18.7504C5.80139 18.7504 5.61052 18.6714 5.46979 18.5306C5.32906 18.3899 5.25 18.199 5.25 18C5.25 17.801 5.32906 17.6101 5.46979 17.4694L16.1901 6.75H8.25042C8.0515 6.75 7.86074 6.67098 7.72009 6.53033C7.57943 6.38968 7.50042 6.19891 7.50042 6C7.50042 5.80109 7.57943 5.61032 7.72009 5.46967C7.86074 5.32902 8.0515 5.25 8.25042 5.25H18.0004C18.1993 5.25 18.3901 5.32902 18.5307 5.46967C18.6714 5.61032 18.7504 5.80109 18.7504 6Z" fill="#2D7BE1"/>
+                                </svg>
+                            </li>
+                            <li>ideation</li>
+                        </ul>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#solution" class="section-button">
+                        <ul>
+                            <li><svg class="arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18.7504 6V15.75C18.7504 15.9489 18.6714 16.1397 18.5307 16.2803C18.3901 16.421 18.1993 16.5 18.0004 16.5C17.8015 16.5 17.6107 16.421 17.4701 16.2803C17.3294 16.1397 17.2504 15.9489 17.2504 15.75V7.81031L6.53104 18.5306C6.39031 18.6714 6.19944 18.7504 6.00042 18.7504C5.80139 18.7504 5.61052 18.6714 5.46979 18.5306C5.32906 18.3899 5.25 18.199 5.25 18C5.25 17.801 5.32906 17.6101 5.46979 17.4694L16.1901 6.75H8.25042C8.0515 6.75 7.86074 6.67098 7.72009 6.53033C7.57943 6.38968 7.50042 6.19891 7.50042 6C7.50042 5.80109 7.57943 5.61032 7.72009 5.46967C7.86074 5.32902 8.0515 5.25 8.25042 5.25H18.0004C18.1993 5.25 18.3901 5.32902 18.5307 5.46967C18.6714 5.61032 18.7504 5.80109 18.7504 6Z" fill="#2D7BE1"/>
+                                </svg>
+                            </li>
+                            <li>solution</li>
+                        </ul>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#reflection" class="section-button">
+                        <ul>
+                            <li><svg class="arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18.7504 6V15.75C18.7504 15.9489 18.6714 16.1397 18.5307 16.2803C18.3901 16.421 18.1993 16.5 18.0004 16.5C17.8015 16.5 17.6107 16.421 17.4701 16.2803C17.3294 16.1397 17.2504 15.9489 17.2504 15.75V7.81031L6.53104 18.5306C6.39031 18.6714 6.19944 18.7504 6.00042 18.7504C5.80139 18.7504 5.61052 18.6714 5.46979 18.5306C5.32906 18.3899 5.25 18.199 5.25 18C5.25 17.801 5.32906 17.6101 5.46979 17.4694L16.1901 6.75H8.25042C8.0515 6.75 7.86074 6.67098 7.72009 6.53033C7.57943 6.38968 7.50042 6.19891 7.50042 6C7.50042 5.80109 7.57943 5.61032 7.72009 5.46967C7.86074 5.32902 8.0515 5.25 8.25042 5.25H18.0004C18.1993 5.25 18.3901 5.32902 18.5307 5.46967C18.6714 5.61032 18.7504 5.80109 18.7504 6Z" fill="#2D7BE1"/>
+                                </svg>
+                            </li>
+                            <li>reflection</li>
+                        </ul>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div id="casestudy-container">
+            <!-- OVERVIEW SECTION -->
+            <section id="overview" data-aos="fade-up">
+
+                <div id="overview-main">
+                    <h2 class="text-border">Overview</h2>
+
+                    <section>
+                        <h3 class="subheading">the problem</h3>
+
+                        <p>Students today spend hundreds of hours polishing their notes and hand-drawing diagrams. This is slow and tedious and prevents students from being more efficient in their learning process.</p>
+                    </section>
+
+                    <section>
+                        <h3 class="subheading">the client</h3>
+                        
+                        <p>Goodnotes is a leading digital note-taking app designed to transform handwritten notes into powerful, searchable documents.  Popular among students, educators, and professionals, Goodnotes bridges the gap between analog and digital productivity.</p>
+                    </section>
+
+                    <section>
+                        <h3 class="subheading">my impact</h3>
+                        
+                        <p>I designed various chatbot interactions and interfaces, following industry-standard AI design patterns, to create a AI-powered diagram generator. Based off of user research and client feedback, I reduced average time-on-task by 75% for diagram creation.</p>
+                    </section>
+                </div>
+
+                <aside id="overview-aside" data-aos="fade-left">
+                    <ul>
+                        <li><h3 class="subheading">timeline</h3>
+                            <ul>
+                                <li>April 2025 - June 2025</li>
+                            </ul>
+                        </li>
+
+                        <li><h3 class="subheading">tags</h3>
+                            <ul class="tags">
+                                <li>AI</li>
+                                <li>B2C</li>
+                                <li>Product</li>
+                            </ul>
+                        </li>
+
+                        <li><h3 class="subheading">team</h3>
+                            <ul>
+                                <li>1 Project Manager</li>
+                                <li>3 Designers</li>
+                                <li>6 Developers</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </aside>
+
+                
+
+            </section>
+
+
+            <!-- <div  data-aos="fade-up" id="goodnotes" class="banner"></div> -->
+
+            <!-- RESEARCH SECTION -->
+             <section id="research" class="full-project-section">
+                <section class="project-section" data-aos="fade-up">
+                    <div class="project-section-title">
+                        <div class="diamond-subheading">
+                            <img src="../../images/diamond.svg" alt="Diamond icon" width="15" height="15">
+                            <p class="subheading">research</p>
+                        </div>
+                    
+                        <h2 class="text-border">Students find diagramming slow and rigid</h2>
+                    </div>
+
+                    <p>Goodnotes’ platform is primarily used for studying and note-taking. making our user demographic college students and everyday note-takers. I analyzed findings from 40 survey responses and 3 user-interviews to understand how users take their notes, create diagrams, and their behaviors and interactions with AI-powered tools.  From this, I outlined three main ideas:</p>
+
+                    <img class="text-diagram" src="../../images/goodnotes-images/goodnotes-data.png" alt="UX research summary presenting findings from surveys, interviews, and affinity mapping that informed the design of an AI-assisted diagram creation experience." width="100%" height="auto">
+                    
                 </section>
 
-                <section id="my-role">
-                    <h3 class="subheading">MY ROLE</h3>
-        
-                    <p>I designed various chatbot interactions and interfaces, following industry-standard AI design patterns, to create a AI-powered diagram generator. Based off of user research and client feedback, I reduced average time-on-task by 75% for diagram creation.</p>
-                </section>
-        
-        
+                <section class="project-section" data-aos="fade-up">
 
-            </div>
-    
-            <aside id="overview-aside" data-aos="fade-left">
+                    <h2 class="text-border">Competitors succeed at simplicity, but fall short on flexibility</h2>
+
+                    <p>We examined five AI diagram applications to identify qualities our users were asking for. Most competitors handled a non-intrusive AI presence well, but gaps quickly appeared. No tool offered canvas flexibility, and few supported both post-creation editability and AI chatbot feedback.</p>
+
+                    <p>This pointed to a clear opportunity: build a solution that doesn't just generate diagrams, but lets users shape and refine them with ease.</p>
+
+                    <img class="text-diagram" src="../../images/goodnotes-images/goodnotes-compAnalysis.jpg" alt="Feature comparison of AI-powered diagram tools showing support for non-intrusive AI, editable diagrams, templates, hand-drawn styling, chatbot feedback, and canvas flexibility." width="100%" height="auto">
+                    
+                </section>
+             </section>
+
+
+            <!-- DEFINE SECTION -->
+             <section id="define" class="full-project-section">
+                <section class="project-section" data-aos="fade-up">
+                    <div class="project-section-title">
+                        <div class="diamond-subheading">
+                            <img src="../../images/diamond.svg" alt="Diamond icon" width="15" height="15">
+                            <p class="subheading">define</p>
+                        </div>
+                    
+                        <h2 class="text-border">Control, flexibility, and feedback lead the design direction</h2>
+                    </div>
+
+                    <p>Through research, Control, Flexibility, and Feedback stood out as the most consistently requested themes. Students didn't just want AI to generate diagrams, they wanted to guide the process, adjust the output, and understand what the AI was doing. These three goals shaped our problem statement and set the direction for our design process.</p>
+
+                    <img class="text-diagram" src="../../images/goodnotes-images/goodnotes-define1.png" alt="Research synthesis identifying three key design priorities: control, flexibility, and feedback, followed by a 'How Might We' statement guiding the design of an AI-assisted diagram creation experience." width="100%" height="auto">
+                    
+                    <p>To further define the scope of this product, I mapped out a user flow to trace the decision points, screens, and actions a user takes when generating a diagram. The most telling finding was how frequently users move back and forth between the canvas and the chatbot to make small adjustments. This back-and-forth is the core interaction pattern, which made designing those transitions and touchpoints a clear priority.</p>
+
+                    <img class="text-diagram" src="../../images/goodnotes-images/goodnotres-define2.png" alt="Data preview redesign comparison showing the transition from a cluttered interface to a simplified layout with streamlined fields, clearer labels, and pagination for faster data access." width="100%" height="auto">
+
+                </section>
+
+             </section>
+
+             
+            <!-- IDEATION SECTION -->
+             <section id="ideation" class="full-project-section">
+                <section class="project-section" data-aos="fade-up">
+                    <div class="project-section-title">
+                        <div class="diamond-subheading">
+                            <img src="../../images/diamond.svg" alt="Diamond icon" width="15" height="15">
+                            <p class="subheading">ideation</p>
+                        </div>
+                    
+                        <h2 class="text-border">Users want their interactions with AI to be straightforward</h2>
+                    </div>
+
+                    <p>Users were wary of AI overstepping during note-taking, such as receiving unsolicited suggestions or having their diagrams automatically modified. A conversational AI felt unnecessary in the diagram-making process since users preferred working independently, without an AI personality guiding each step.</p>
+
+                    <p>To solve this issue, I suggested swapping from a conversational chat to an instructional chat. This way, users were able to skip the fluff and jump straight into shaping their desired diagrams with full control.</p>
+
+                    <img class="img-diagram" src="../../images/goodnotes-images/goodnotes-ideate1.jpg" alt="Before-and-after comparison of AI interactions. The redesign replaces an open-ended conversational chat with an instructional chat that provides guided prompts and keeps users in control of the diagram creation process." width="100%" height="auto">
+                    
+                </section>
+
+                <section class="project-section" data-aos="fade-up">
+
+                    <h2 class="text-border">Users need the option to accept or reject what AI generates</h2>
+
+                    <p>Giving users the ability to accept or reject AI-generated content was central to the goal of control. The design went through multiple iterations, starting with a more verbose interface before being stripped back to clear iconography that kept the interaction lightweight and familiar. </p>
+
+                    <p>Instructions in the message box was added in a later iteration to provide additional context, ensuring the feature remained intuitive without crowding the canvas.</p>
+
+                    <img class="img-diagram" src="../../images/goodnotes-images/goodnotes-ideate2.jpg" alt="Design iterations of the AI accept and reject workflow, illustrating how multiple interface concepts evolved into a streamlined final design with clear confirmation actions." width="100%" height="auto">
+                    
+                </section>
+
+
+                <section class="project-section" data-aos="fade-up">
+
+                    <h2 class="text-border">Canvas space is adaptable to user preferences</h2>
+
+                    <p>Users needed full ownership of their workspace, both in how they interact with the AI and how much of the canvas they can see at once.</p>
+
+                    <p>To address this, the chat interface was designed in two modes: an expanded view for longer, more involved AI interactions, and a condensed view that pulls back to give users more room to focus on their diagram. Both modes can be freely repositioned across the canvas, so the interface never gets in the way of the work.</p>
+
+                    <img class="img-diagram" src="../../images/goodnotes-images/goodnotes-ideate3.jpg" alt="Interaction redesign comparison showing the transition from an expanded chat interface to a condensed chat that increases canvas space while keeping AI tools easily accessible." width="100%" height="auto">
+                    
+                </section>
+             </section>
+
+
+            <!-- SOLUTION SECTION -->
+             <section id="solution" class="full-project-section">
+                <section class="project-section" data-aos="fade-up">
+                    <div class="project-section-title">
+                        <div class="diamond-subheading">
+                            <img src="../../images/diamond.svg" alt="Diamond icon" width="15" height="15">
+                            <p class="subheading">solution</p>
+                        </div>
+                    
+                        <h2 class="text-border">Arrange your workspace in a way that make sense to you</h2>
+                    </div>
+
+                    <p>Users can freely move the sidebar chatbot to fit their workspace needs, in addition to minimizing and condensing to allot for greater canvas real estate. There are several diagram presets to chose from and a drop-down menu to navigate to any previously generated diagram.</p>
+
+                    <img class="img-diagram" src="../../images/goodnotes-images/goodnotes-solution1.gif" alt="Animated demonstration of the flexible AI chatbot interface, showing how users can move, minimize, and expand the assistant to maintain focus while creating diagrams." width="100%" height="auto">
+                    
+                </section>
+
+                <section class="project-section" data-aos="fade-up">
+
+                    <h2 class="text-border">Prompt the AI and efficiently create follow-up edits </h2>
+
+                    <p>By using the sidebar chatbot, users can communicate to the AI the parameters of their desired diagram.</p>
+
+                    <p>To make further edits to a generated diagram, users can send follow-up messages to get the perfect diagram for their notes, even after the diagram has been accepted.</p>
+
+                    <div id="goodnotes-double-img">
+                        <div>
+                            <p>Chatbot Prompt Flow</p>
+                            <img class="img-diagram" src="../../images/goodnotes-images/goodnotes-solution2.1.gif" alt="" width="100%" height="auto">
+                        </div>
+                        
+                        <div>
+                            <p>Follow-Up Flow</p>
+                            <img class="img-diagram" src="../../images/goodnotes-images/goodnotes-solution2.2.gif" alt="" width="100%" height="auto">
+                        </div>
+                    </div>
+
+                    
+                    
+                </section>
+
+
+                <section class="project-section" data-aos="fade-up">
+
+                    <h2 class="text-border">Accept or reject AI generated content to stay in control</h2>
+
+                    <p>Users can accept or reject the AI’s work with a click of a button to keep them in control of the diagram-making process. The chatbot will keep records of the user’s decision in the chat.</p>
+
+                    <img class="img-diagram" src="../../images/goodnotes-images/goodnotes-solution3.jpg" alt="Interaction designs showing two ways users can review, accept, or reject AI-generated diagrams, either through the chatbot or directly on the generated diagram." width="100%" height="auto">
+                    
+                </section>
+
+                <section class="project-section" data-aos="fade-up">
+
+                    <h2 class="text-border">Make quick edits outside the main chat</h2>
+
+                    <p>Users can use the Quick Edit tool to swiftly modify specific elements within a diagram without having to restart their work by creating a new diagram.</p>
+
+                    <img class="img-diagram" src="../../images/goodnotes-images/goodnotes-solution4.gif" alt="GIF showing a user selecting a diagram node and editing it directly on the canvas using the Quick Edit tool." width="100%" height="auto">
+                    
+                </section>
+
+                <section class="project-section" data-aos="fade-up">
+
+                    <h2 class="text-border">Ask AI for suggestions when you’re stuck</h2>
+
+                    <p>Users can access AI Suggestions through a button click to see a list of prompts to guide their diagram-making. It is optional way to help users make quick decisions while being completely non-invasive.</p>
+
+                    <img class="img-diagram" src="../../images/goodnotes-images/goodnotes-solution5.gif" alt="GIF showing the AI Suggestions panel opening to display a list of diagram prompts that users can select." width="100%" height="auto">
+                    
+                </section>
+             </section>
+
+
+            <!-- REFLECTION SECTION -->
+             <section id="reflection" class="full-project-section">
+                <section class="project-section" data-aos="fade-up">
+                    <div class="project-section-title">
+                        <div class="diamond-subheading">
+                            <img src="../../images/diamond.svg" alt="Diamond icon" width="15" height="15">
+                            <p class="subheading">reflection</p>
+                        </div>
+                    
+                        <h2 class="text-border">01 Micro interactions matter</h2>
+                    </div>
+
+                    <p>In a product that requires minimal screens, but an emphasis on user input, micro interactions are massively important. I had to carefully interview Goodnotes users and everyday notetakers to understand how they would want to interact with the canvas and the AI chatbot. </p>
+
+                </section>
+
+                <section class="project-section" data-aos="fade-up">
+                    
+                    <h2 class="text-border">02 Keep asking questions</h2>
+
+                    <p>Since this product relied heavily on understanding user behaviors, it was crucial that I kept asking questions to users to ensure I’d be designing based off of their preferences, not just my own. Because although it may be intuitive to me, that doesn’t mean that Goodnotes users would agree with me.`</p>
+
+                    <img class="img-diagram" src="../../images/goodnotes-images/goodnotes-group.jpg" alt="A 12 person group photo of the Chevron team." width="100%" height="auto">
+                    
+                </section>
+             </section>
+
+        </div>
+
+    </main>
+
+
+    <hr data-aos="fade-up" id="bottom-hr">
+
+    <footer data-aos="fade-up">
+        <div id="footer-main">
+            <section id="footer-socials">
+                <h2 class="text-border">let's get in touch ~</h2>
+
                 <ul>
-                    <li><h3 class="subheading">TOOLS</h3>
+                    <li>
                         <ul>
-                            <li>Figma, Figjam</li>
+                            <li><img src="../../images/email-icon.png" alt="Email icon" width="24" height="24"></li>
+                            <li><a href="mailto:&#099;&#097;&#116;&#101;&#108;&#121;&#110;&#046;&#098;&#117;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;" target="_blank">&#099;&#097;&#116;&#101;&#108;&#121;&#110;&#046;&#098;&#117;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;</a></li>
                         </ul>
                     </li>
-                    <li><h3 class="subheading">DURATION</h3>
+
+                    <li>
                         <ul>
-                            <li>April 2025 - June 2025</li>
-                        </ul>
-                    </li>
-                    <li><h3 class="subheading">PROJECT TYPE</h3>
-                        <ul>
-                            <li>Desktop web app</li>
-                        </ul>
-                    </li>
-                    <li><h3 class="subheading">TEAM</h3>
-                        <ul>
-                            <li>1 Project Manager</li>
-                            <li>3 Designers</li>
-                            <li>6 Developers</li>
+                            <li><img src="../../images/linkedin-icon.png" alt="Linkedin icon" width="24" height="24"></li>
+                            <li><a href="https://www.linkedin.com/in/catelynbu/" target="_blank">linkedin.com/in/catelynbu</a></li>
                         </ul>
                     </li>
                 </ul>
-            </aside>
-        </section>
-    </div>
-
-    <div  data-aos="fade-up" id="goodnotes" class="banner"></div>
-    
-    <div class="container">
-        <!-- RESEARCH SECTION -->
-        <section class="project-section" data-aos="fade-up">
-            <section class="project-section-title">
-                <p class="subheading">RESEARCH</p>
-                <h2>Understanding the Problem</h2>
             </section>
 
-            <div class="project-section-main">
+            <section id="footer-menu">
+                <ul>
+                    <li>menu</li>
+                    <li><a href="../../index.html">work</a></li>
+                    <li><a href="../../studio/studio.html">studio</a></li>
+                    <li><a href="../../about/about.html">about</a></li>
+                    <li><a href="https://drive.google.com/file/d/1QHEptJbZ5Z-rSnkVMw-N27SdC8lljr6w/view">resume</a></li>
+                </ul>
 
-                <section  id="competitive-content">
-                    <h3>Students find diagramming slow and rigid</h3>
-                    <p>Goodnotes’ platform is primarily used for studying and note-taking. making our user demographic <span>college students and everyday note-takers</span>. I analyzed findings from <span>40 survey responses</span> and <span>3 user-interviews</span> to understand how users take their notes, create diagrams, and their behaviors and interactions with AI-powered tools.  From this, I outlined three main ideas:</p>
-
-                    <img src="../../images/goodnotes-images/goodnotes-data.png" alt="">
-                </section>
-
-                <section  id="interview-content">
-                    <h3>Competitor AI-powered diagram creation </h3> 
-                
-                    <p>We examined other AI diagram applications to see if their products had qualities that our users were asking for. We discovered that most competitors were successful in creating a non-invasive experience, but struggled with feedback and flexibility.</p>
-
-                    <img src="../../images/goodnotes-images/goodnotes-compAnalysis.png" alt="">
-                </section>
-            </div>
-        </section>
-
-
-        <!-- DEFINE SECTION -->
-        <section class="project-section" data-aos="fade-up">
-            <section class="project-section-title">
-                <p class="subheading">DEFINE</p>
-                <h2>Determining the Scope</h2>
+                <ul>
+                    <li>projects</li>
+                    <li><a href="../../projects/goodnotes/goodnotes.html">goodnotes</a></li>
+                    <li><a href="../../projects/chevron/chevron.html">chevron</a></li>
+                    <li><a href="../../projects/safely/safely.html">safely</a></li>
+                </ul>
             </section>
-
-            <div class="project-section-main">
-                <section class="project-content">
-                    <p>I determined the three key goals to help guide our design process. <span>Control</span>, <span>Flexibility</span>, and <span>Feedback</span> were some of the most requested and discussed topics throughout our research. I used these goals to determine our problem statement.</p>
-
-                    <img src="../../images/goodnotes-images/goodnotes-define1.png" alt="">
-
-                    <p>To further define the scope of this product, I mapped out a user flow to see the decision points, screens, and actions a user might take in the diagram generating process.</p>
-
-                    <img src="../../images/goodnotes-images/goodnotres-define2.png" alt="">
-                </section>
-            </div>
-            
-        </section>
-        
-
-        <!-- IDEATE SECTION -->
-        <section class="project-section" data-aos="fade-up">
-            <section class="project-section-title">
-                <p class="subheading">IDEATE</p>
-                <h2>Design Iterations</h2>
-            </section>
-
-            <div class="project-section-main">
-                <section>
-                    <h3>Conversational Versus Instructional Chatting</h3>
-                    <p>From our research, users were weary of the AI overstepping it’s boundaries while they took notes. Users felt that a conversational AI was unnecessary in the diagram-making process, since users wanted to work <span>independently</span>, without the presence of an AI personality. </p>
-
-                    <img src="../../images/goodnotes-images/goodnotes-ideate1.png" alt="">
-                </section>
-
-                <section>
-                    <h3>Accepting and Rejecting Generated Content</h3>
-                    <p>Our client requested an accept and reject function where users are able to chose to keep content generated by AI. Our solution took multiple iterations where I created a minimalistic design using key iconography. For additional affordance, the message box provides instructions.</p>
-
-                    <img src="../../images/goodnotes-images/goodnotes-ideate2.png" alt="">
-                </section>
-
-                <section>
-                    <h3>Expanded and Condensed Interface</h3>
-                    <p>Users want to be in control of their work and fully flexibility of their workspace. To solve this, we opted for both expanded and condensed chat interfaces that can be freely moved across the canvas. </p>
-
-                    <img src="../../images/goodnotes-images/goodnotes-ideate3.png" alt="">
-                </section>
-            </div>
-        </section>
-        
-
-
-        <!-- FINAL PROTOTYPE SECTION -->
-        <section class="project-section" data-aos="fade-up">
-            <section class="project-section-title">
-                <p class="subheading">FINAL PROTOTYPE</p>
-                <h2>The Solutions</h2>
-
-                <div class="sectionBtn-container">
-                    <button id="canvas" class="section-button selected-button">
-                        <svg class="arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M18.7504 6V15.75C18.7504 15.9489 18.6714 16.1397 18.5307 16.2803C18.3901 16.421 18.1993 16.5 18.0004 16.5C17.8015 16.5 17.6107 16.421 17.4701 16.2803C17.3294 16.1397 17.2504 15.9489 17.2504 15.75V7.81031L6.53104 18.5306C6.39031 18.6714 6.19944 18.7504 6.00042 18.7504C5.80139 18.7504 5.61052 18.6714 5.46979 18.5306C5.32906 18.3899 5.25 18.199 5.25 18C5.25 17.801 5.32906 17.6101 5.46979 17.4694L16.1901 6.75H8.25042C8.0515 6.75 7.86074 6.67098 7.72009 6.53033C7.57943 6.38968 7.50042 6.19891 7.50042 6C7.50042 5.80109 7.57943 5.61032 7.72009 5.46967C7.86074 5.32902 8.0515 5.25 8.25042 5.25H18.0004C18.1993 5.25 18.3901 5.32902 18.5307 5.46967C18.6714 5.61032 18.7504 5.80109 18.7504 6Z" fill="#E58684"/>
-                        </svg>
-                        Canvas Flexibility
-                    </button>
-
-                    <button id="prompt" class="section-button">
-                        <svg class="arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M18.7504 6V15.75C18.7504 15.9489 18.6714 16.1397 18.5307 16.2803C18.3901 16.421 18.1993 16.5 18.0004 16.5C17.8015 16.5 17.6107 16.421 17.4701 16.2803C17.3294 16.1397 17.2504 15.9489 17.2504 15.75V7.81031L6.53104 18.5306C6.39031 18.6714 6.19944 18.7504 6.00042 18.7504C5.80139 18.7504 5.61052 18.6714 5.46979 18.5306C5.32906 18.3899 5.25 18.199 5.25 18C5.25 17.801 5.32906 17.6101 5.46979 17.4694L16.1901 6.75H8.25042C8.0515 6.75 7.86074 6.67098 7.72009 6.53033C7.57943 6.38968 7.50042 6.19891 7.50042 6C7.50042 5.80109 7.57943 5.61032 7.72009 5.46967C7.86074 5.32902 8.0515 5.25 8.25042 5.25H18.0004C18.1993 5.25 18.3901 5.32902 18.5307 5.46967C18.6714 5.61032 18.7504 5.80109 18.7504 6Z" fill="#E58684"/>
-                        </svg>
-                        Prompt Creation & Follow-Ups
-                    </button>
-
-                    <button id="accept" class="section-button">
-                        <svg class="arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M18.7504 6V15.75C18.7504 15.9489 18.6714 16.1397 18.5307 16.2803C18.3901 16.421 18.1993 16.5 18.0004 16.5C17.8015 16.5 17.6107 16.421 17.4701 16.2803C17.3294 16.1397 17.2504 15.9489 17.2504 15.75V7.81031L6.53104 18.5306C6.39031 18.6714 6.19944 18.7504 6.00042 18.7504C5.80139 18.7504 5.61052 18.6714 5.46979 18.5306C5.32906 18.3899 5.25 18.199 5.25 18C5.25 17.801 5.32906 17.6101 5.46979 17.4694L16.1901 6.75H8.25042C8.0515 6.75 7.86074 6.67098 7.72009 6.53033C7.57943 6.38968 7.50042 6.19891 7.50042 6C7.50042 5.80109 7.57943 5.61032 7.72009 5.46967C7.86074 5.32902 8.0515 5.25 8.25042 5.25H18.0004C18.1993 5.25 18.3901 5.32902 18.5307 5.46967C18.6714 5.61032 18.7504 5.80109 18.7504 6Z" fill="#E58684"/>
-                        </svg>
-                        Accepting & Rejecting
-                    </button>
-
-                    <button id="quick" class="section-button">
-                        <svg class="arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M18.7504 6V15.75C18.7504 15.9489 18.6714 16.1397 18.5307 16.2803C18.3901 16.421 18.1993 16.5 18.0004 16.5C17.8015 16.5 17.6107 16.421 17.4701 16.2803C17.3294 16.1397 17.2504 15.9489 17.2504 15.75V7.81031L6.53104 18.5306C6.39031 18.6714 6.19944 18.7504 6.00042 18.7504C5.80139 18.7504 5.61052 18.6714 5.46979 18.5306C5.32906 18.3899 5.25 18.199 5.25 18C5.25 17.801 5.32906 17.6101 5.46979 17.4694L16.1901 6.75H8.25042C8.0515 6.75 7.86074 6.67098 7.72009 6.53033C7.57943 6.38968 7.50042 6.19891 7.50042 6C7.50042 5.80109 7.57943 5.61032 7.72009 5.46967C7.86074 5.32902 8.0515 5.25 8.25042 5.25H18.0004C18.1993 5.25 18.3901 5.32902 18.5307 5.46967C18.6714 5.61032 18.7504 5.80109 18.7504 6Z" fill="#E58684"/>
-                        </svg>
-                        Quick Edits
-                    </button>
-
-                    <button id="suggestions" class="section-button">
-                        <svg class="arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M18.7504 6V15.75C18.7504 15.9489 18.6714 16.1397 18.5307 16.2803C18.3901 16.421 18.1993 16.5 18.0004 16.5C17.8015 16.5 17.6107 16.421 17.4701 16.2803C17.3294 16.1397 17.2504 15.9489 17.2504 15.75V7.81031L6.53104 18.5306C6.39031 18.6714 6.19944 18.7504 6.00042 18.7504C5.80139 18.7504 5.61052 18.6714 5.46979 18.5306C5.32906 18.3899 5.25 18.199 5.25 18C5.25 17.801 5.32906 17.6101 5.46979 17.4694L16.1901 6.75H8.25042C8.0515 6.75 7.86074 6.67098 7.72009 6.53033C7.57943 6.38968 7.50042 6.19891 7.50042 6C7.50042 5.80109 7.57943 5.61032 7.72009 5.46967C7.86074 5.32902 8.0515 5.25 8.25042 5.25H18.0004C18.1993 5.25 18.3901 5.32902 18.5307 5.46967C18.6714 5.61032 18.7504 5.80109 18.7504 6Z" fill="#CD7F75"/>
-                        </svg>
-                        AI Suggestions
-                    </button>
-                </div>
-            </section>
-
-            <div class="project-section-main">
-
-                <!-- CANVAS SECTION -->
-                <section id="canvas-content">
-                    <h3>Canvas Flexibility</h3>
-
-                    <div class="solutions-content">
-                        <p>Users can <span>freely move</span> the sidebar chatbot to fit their workspace needs, in addition to minimizing and condensing to allot for <span>greater canvas real estate</span>. There are several diagram presets to chose from and a drop-down menu to navigate to any previously generated diagram.</p>
-
-                        <div class="prototype-img-container">
-                            <img src="../../images/goodnotes-images/prototype/flexibility1.gif" alt="">
-                            <img src="../../images/goodnotes-images/prototype/flexibility2.png" alt="">
-                        </div>
-
-                    </div>
-                </section> 
-
-                <!-- PROMPT SECTION -->
-                <section class="no-display" id="prompt-content">
-                    <h3>Prompt Creation & Follow-Ups</h3>
-
-                    <div class="solutions-content">
-                        <p>By using the sidebar chatbot, users can communicate to the AI the parameters of their desired diagram.</p>
-
-                        <p>To make further edits to a generated diagram, users can <span>send follow-up messages</span> to get the perfect diagram for their notes, even after the diagram has been accepted.</p>
-
-                        <div class="prototype-img-container2">
-                            <div>
-                                <p>Standard Prompt Flow</p>
-                                <img src="../../images/goodnotes-images/prototype/prompt1.gif" alt="">
-                            </div>
-                            
-                            <div>
-                                <p>Follow-Up Flow</p>
-                                <img src="../../images/goodnotes-images/prototype/prompt2.gif" alt="">
-                            </div>
-                            
-                        </div>
-                    </div>
-                </section> 
-
-                <!-- ACCEPT SECTION -->
-                <section class="no-display" id="accept-content">
-                    <h3>Accepting & Rejecting</h3>
-
-                    <div class="solutions-content">
-                        <p>Users can accept or reject the AI’s work with a click of a button to keep them in <span>control</span> of the diagram-making process. The chatbot will keep records of the user’s decision in the chat.</p>
-
-                        <img src="../../images/goodnotes-images/prototype/accept1.png" alt="">
-                    </div>
-                </section> 
-
-                <!-- QUICK SECTION -->
-                <section class="no-display" id="quick-content">
-                    <h3>Quick Edits</h3>
-
-                    <div class="solutions-content">
-                        <p>Users can use the Quick Edit tool to <span>swiftly modify specific elements</span> within a diagram without having to restart their work by creating a new diagram.</p>
-
-                        <div class="prototype-img-container">
-                            <img src="../../images/goodnotes-images/prototype/quick1.gif" alt="">
-                            <img src="../../images/goodnotes-images/prototype/quick2.png" alt="">
-                        </div>
-                    </div>
-                </section> 
-
-                <!-- SUGGESTIONS SECTION -->
-                <section class="no-display" id="suggestions-content">
-                    <h3>AI Suggestions</h3>
-
-                    <div class="solutions-content">
-                        <p>Users can access AI Suggestions through a button click to see a list of <span>prompts to guide</span> their diagram-making. It is <span>optional</span> way to help users make quick decisions while being completely <span>non-invasive</span>.</p>
-
-                        <div class="prototype-img-container">
-                            <img src="../../images/goodnotes-images/prototype/suggestions1.gif" alt="">
-                            <img src="../../images/goodnotes-images/prototype/suggestions2.png" alt="">
-                        </div>
-                    </div>
-                </section> 
-            </div>
-            
-        </section>
-
-
-        <!-- TAKEAWAYS SECTION -->
-        <section class="project-section" data-aos="fade-up">
-            <section class="project-section-title">
-                <p class="subheading">TAKEAWAYS</p>
-                <h2>What I Gained as a Designer</h2>
-            </section>
-
-            <div class="project-section-main">
-                <section class="takeaway-card">
-                    <h3><span>01</span> Micro interactions matter.</h3>
-                    <p>This product was initiated due to poor experience with another web scraper, making it crucial that our product address the pain points our users felt. Doing so required many meetings, lots of questions and research, and a ton of iterating to fully empathize with our client and meet their needs.</p>
-                </section> 
-
-                <section class="takeaway-card">
-                    <h3><span>02</span> Keep asking questions.</h3>
-                    <p>Since this product relied heavily on understanding user behaviors, it was crucial that I kept asking questions to users to ensure I’d be designing based off of their preferences, not just my own. Because although it may be intuitive to me, that doesn’t mean that Goodnotes users would agree with me.</p>
-                </section> 
-            </div>
-            
-        </section>
-
-        
-        <!-- <img class="picture drop" src="../../images/chevron-images/chevrongroup.jpg" alt=""> -->
-
-    </div>
-
-    <footer>
-        <div id="footer-container">
-            <section class="footer-main">
-                <div id="footer-socials">
-                    <p id="footer-CTA">Let's keep in touch!</p>
-                    
-                    <div id="footer-buttons">
-                        <p><a id="special-button" class="button" href="mailto:&#099;&#097;&#116;&#101;&#108;&#121;&#110;&#046;&#098;&#117;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;" target="_blank">&#099;&#097;&#116;&#101;&#108;&#121;&#110;&#046;&#098;&#117;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;</a></p>
-                        <p><a id="special-button" class="button" href="https://www.linkedin.com/in/catelynbu/" target="_blank">linkedin</a></p>
-                    </div>
-                </div>
-    
-                <div id="footer-links">
-                    <ul>
-                        <li><a href="../../index.html">work</a></li>
-                        <li><a href="../../studio/studio.html">studio</a></li>
-                        <li><a href="../../about/about.html">about</a></li>
-                        <li><a href="https://drive.google.com/file/d/1QHEptJbZ5Z-rSnkVMw-N27SdC8lljr6w/view?usp=sharing" target="_blank">resume</a></li>
-                    </ul>
-                </div>
-            </section>
-    
-            <aside>
-                <img id="footer-logo" src="../../images/logo-DMG-SM.png" alt="Logo.">
-                <p>©2025 | Designed and developed by Catelyn with love <i class="far fa-heart" style="font-size: .8em;"></i></p>
-            </aside>
         </div>
-        
-    </footer>
 
+
+        <aside>
+            <img id="footer-logo" src="../../images/logo-DMG-SM.png" alt="Logo.">
+            <p>©2026 | Designed and developed by Catelyn with love <i class="far fa-heart" style="font-size: .8em;"></i></p>
+        </aside>
+        
+
+
+    </footer>
 
 </body>
 
