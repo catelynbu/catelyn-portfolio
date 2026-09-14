@@ -19,6 +19,7 @@
 
     <!-- JS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="studio.js" defer></script>
     <script src="../script.js" defer></script>
 
     <title>Studio | Catelyn Bu Portfolio</title>
@@ -67,8 +68,40 @@
             <div id="typewriter">
                 <h1>studio</h1>
             </div>
-
+            
             <div id="description">
+                <button class="filter active" data-filter="all">
+                    <img src="../images/diamond.svg" alt="" width="15" height="15">
+                    <span>all</span>
+                </button>
+
+                <button class="filter" data-filter="ui">
+                    <img src="../images/diamond.svg" alt="" width="15" height="15">
+                    <span>ui</span>
+                </button>
+
+                <button class="filter" data-filter="graphic">
+                    <img src="../images/diamond.svg" alt="" width="15" height="15">
+                    <span>graphic</span>
+                </button>
+
+                <button class="filter" data-filter="photo">
+                    <img src="../images/diamond.svg" alt="" width="15" height="15">
+                    <span>photo manipulation</span>
+                </button>
+
+                <button class="filter" data-filter="web-dev">
+                    <img src="../images/diamond.svg" alt="" width="15" height="15">
+                    <span>web dev</span>
+                </button>
+
+                <button class="filter" data-filter="art">
+                    <img src="../images/diamond.svg" alt="" width="15" height="15">
+                    <span>art</span>
+                </button>
+            </div>
+
+            <!-- <div id="description">
                 <p>ui</p>
 
                 <img src="../images/diamond.svg" alt="Diamond icon" width="15" height="15">
@@ -86,7 +119,7 @@
                 <img src="../images/diamond.svg" alt="Diamond icon" width="15" height="15">
 
                 <p>fine art</p>
-            </div>
+            </div> -->
         </header>
     </div>
 
@@ -97,25 +130,34 @@
 
     <section class="container">
 
-        <section data-aos="fade-up">
+        <section class="project" data-category="ui" data-aos="fade-up">
+            <div class="img-container">
+                <img src="../images/studio-images/ahmf.png" alt="">
+            </div>
+
+            <h2>Non-Profit Home Page</h2>
+            <p>Figma</p>
+        </section>
+
+        <section class="project" data-category="web-dev art" data-aos="fade-up">
             <div class="img-container">
                 <img src="../images/studio-images/litter.gif" alt="">
             </div>
 
             <h2>Litter Cleaners Game</h2>
-            <p>Processing (Java), ibis paint, Adobe Illustrator</p>
+            <p>Processing (Java), ibisPaint, Adobe Illustrator</p>
         </section>
 
-        <section data-aos="fade-up">
+        <section class="project" data-category="graphic" data-aos="fade-up">
             <div class="img-container">
-                <img src="../images/studio-images/color.jpg" alt="">
+                <img src="../images/studio-images/program.png" alt="">
             </div>
 
-            <h2>Color and Perspective Study</h2>
-            <p>Adobe Illustrator</p>
+            <h2>Funeral Program</h2>
+            <p>Figma</p>
         </section>
 
-        <section data-aos="fade-up">
+        <section class="project" data-category="ui" data-aos="fade-up">
             <div class="img-container">
                 <img src="../images/studio-images/flow.png" alt="">
             </div>
@@ -124,77 +166,17 @@
             <p>Figma</p>
         </section>
 
-
-
-        <section data-aos="fade-up">
+        <section class="project" data-category="graphic photo" data-aos="fade-up">
             <div class="img-container">
-                <img src="../images/studio-images/type.jpg" alt="">
+                <img src="../images/studio-images/flyer.png" alt="">
             </div>
 
-            <h2>Typography Graphic Poster</h2>
-            <p>Adobe Illustrator</p>
+            <h2>Graduation Invitation Flyers</h2>
+            <p>Adobe Photoshop, Adobe Illustrator, Figma</p>
         </section>
 
 
-        <section data-aos="fade-up">
-            <div class="img-container">
-                <img src="../images/studio-images/parse.gif" alt="">
-            </div>
-
-            <h2>News Aggregator App</h2>
-            <p>Figma</p>
-        </section>
-
-        <section data-aos="fade-up">
-            <div class="img-container">
-                <img src="../images/studio-images/info.jpg" alt="">
-            </div>
-
-            <h2>Information Design Poster</h2>
-            <p>Figma</p>
-        </section>
-
-
-
-
-
-        <section data-aos="fade-up">
-            <a href="https://catelynbu.github.io/des157a/game/final/index.html">
-                <div class="img-container">
-                    <img src="../images/studio-images/clicker.gif" alt="">
-                </div>
-
-                <h2>Speedy Clicker Web Game</h2>
-                <p>JavaScript, HTML, CSS</p>
-            </a>
-           
-        </section>
-
-        <section data-aos="fade-up">
-            <a href="https://catelynbu.github.io/des157a/madlibs/v2-final/index.html" target="_blank">
-                <div class="img-container">
-                    <img src="../images/studio-images/madlibs.jpg" alt="">
-                </div>
-
-                <h2>Madlibs Web Game</h2>
-                <p>JavaScript, HTML, CSS</p>
-            </a>
-            
-        </section>
-        
-        <section data-aos="fade-up">
-            <a href="https://catelynbu.github.io/des157a/everyimg-container/v2/index.html">
-                <div class="img-container">
-                    <img src="../images/studio-images/narrative.gif" alt="">
-                </div>
-
-                <h2>Interactive Narrative Website</h2>
-                <p>JavaScript, HTML, CSS</p>
-            </a>
-           
-        </section>
-
-        <section data-aos="fade-up">
+        <section class="project" data-category="web-dev" data-aos="fade-up">
             <a href="https://ucdbestbuddies.org/">
                 <div class="img-container">
                     <img src="../images/studio-images/bestbuddies.png" alt="">
@@ -203,11 +185,78 @@
                 <h2>Best Buddies Website</h2>
                 <p>React, SCSS</p>
             </a>
-           
         </section>
 
+        <section class="project" data-category="web-dev" data-aos="fade-up">
+            <a href="https://catelynbu.github.io/des157a/everyimg-container/v2/index.html">
+                <div class="img-container">
+                    <img src="../images/studio-images/narrative.gif" alt="">
+                </div>
 
-        <section data-aos="fade-up">
+                <h2>Interactive Narrative Website</h2>
+                <p>JavaScript, HTML, CSS</p>
+            </a>
+        </section>
+
+        <section class="project" data-category="art graphic" data-aos="fade-up">
+            <div class="img-container">
+                <img src="../images/studio-images/color.jpg" alt="">
+            </div>
+
+            <h2>Color and Perspective Study</h2>
+            <p>Adobe Illustrator</p>
+        </section>
+
+        <section class="project" data-category="ui" data-aos="fade-up">
+            <div class="img-container">
+                <img src="../images/studio-images/parse.gif" alt="">
+            </div>
+
+            <h2>News Aggregator App</h2>
+            <p>Figma</p>
+        </section>
+
+        <section class="project" data-category="graphic" data-aos="fade-up">
+            <div class="img-container">
+                <img src="../images/studio-images/type.jpg" alt="">
+            </div>
+
+            <h2>Typography Graphic Poster</h2>
+            <p>Adobe Illustrator</p>
+        </section>
+
+        <section class="project" data-category="graphic web-dev" data-aos="fade-up">
+            <a href="https://catelynbu.github.io/des157a/game/final/index.html">
+                <div class="img-container">
+                    <img src="../images/studio-images/clicker.gif" alt="">
+                </div>
+
+                <h2>Speedy Clicker Web Game</h2>
+                <p>JavaScript, HTML, CSS</p>
+            </a>
+        </section>
+
+        <section class="project" data-category="art web-dev" data-aos="fade-up">
+            <a href="https://catelynbu.github.io/des157a/madlibs/v2-final/index.html" target="_blank">
+                <div class="img-container">
+                    <img src="../images/studio-images/madlibs.jpg" alt="">
+                </div>
+
+                <h2>Madlibs Web Game</h2>
+                <p>JavaScript, HTML, CSS</p>
+            </a>
+        </section>
+
+        <section class="project" data-category="graphic" data-aos="fade-up">
+            <div class="img-container">
+                <img src="../images/studio-images/info.jpg" alt="">
+            </div>
+
+            <h2>Information Design Poster</h2>
+            <p>Figma</p>
+        </section>
+
+        <section class="project" data-category="graphic" data-aos="fade-up">
             <div class="img-container">
                 <img src="../images/studio-images/zine.jpg" alt="">
             </div>
@@ -216,39 +265,7 @@
             <p>Adobe Photoshop, Illustrator, InDesign</p>
         </section>
 
-
-        <section data-aos="fade-up">
-            <div class="img-container">
-                <img src="../images/studio-images/composite1.png" alt="">
-            </div>
-
-            <h2>Photography Composite</h2>
-            <p>Adobe Photoshop</p>
-        </section>
-
-        <section data-aos="fade-up">
-            <div class="img-container">
-                <img src="../images/studio-images/composite2.png" alt="">
-            </div>
-
-            <h2>Photography Composite</h2>
-            <p>Adobe Photoshop</p>
-        </section>
-
-        <section data-aos="fade-up">
-            <div class="img-container">
-                <img src="../images/studio-images/composite3.png" alt="">
-            </div>
-
-            <h2>Photography Composite</h2>
-            <p>Adobe Photoshop</p>
-        </section>
-
-
-
-
-
-        <section data-aos="fade-up">
+        <section class="project" data-category="art" data-aos="fade-up">
             <div class="img-container">
                 <img src="../images/studio-images/orchid.jpg" alt="">
             </div>
@@ -257,7 +274,7 @@
             <p>Charcoal</p>
         </section>
 
-        <section data-aos="fade-up">
+        <section class="project" data-category="art" data-aos="fade-up">
             <div class="img-container">
                 <img src="../images/studio-images/bellucy.jpg" alt="">
             </div>
@@ -266,7 +283,7 @@
             <p>Pen & Ink</p>
         </section>
 
-        <section data-aos="fade-up">
+        <section class="project" data-category="art" data-aos="fade-up">
             <div class="img-container">
                 <img src="../images/studio-images/venetian.jpg" alt="">
             </div>
@@ -274,8 +291,33 @@
             <h2>Venetian Mask Drawing</h2>
             <p>Pen & Ink</p>
         </section>
-        
 
+        <section class="project" data-category="photo" data-aos="fade-up">
+            <div class="img-container">
+                <img src="../images/studio-images/composite1.png" alt="">
+            </div>
+
+            <h2>Photography Composite</h2>
+            <p>Adobe Photoshop</p>
+        </section>
+
+        <section class="project" data-category="photo" data-aos="fade-up">
+            <div class="img-container">
+                <img src="../images/studio-images/composite2.png" alt="">
+            </div>
+
+            <h2>Photography Composite</h2>
+            <p>Adobe Photoshop</p>
+        </section>
+
+        <section class="project" data-category="photo" data-aos="fade-up">
+            <div class="img-container">
+                <img src="../images/studio-images/composite3.png" alt="">
+            </div>
+
+            <h2>Photography Composite</h2>
+            <p>Adobe Photoshop</p>
+        </section>
 
     </section>
 
@@ -340,5 +382,7 @@
     once: true,
   });
 </script>
+
+<script src="studio.js"></script>
 
 </html>
